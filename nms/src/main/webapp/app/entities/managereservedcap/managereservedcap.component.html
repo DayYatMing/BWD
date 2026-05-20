@@ -1,0 +1,145 @@
+<div *ngIf="loading" class="d-flex justify-content-center align-items-center" style="height:100px;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div *ngIf="!loading">
+  <h2 class="mb-3 text-center fw-bold">Manage Reserved Capacity</h2>
+  <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="table-responsive p-3 border rounded shadow-sm custom-class-table">
+      <div *ngIf="errorMessage" class="alert alert-danger mb-3">
+        {{ errorMessage }}
+      </div>
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th class="customer-col"></th>
+            <th *ngFor="let item of capacityList; let rowIndex = index" colspan="8">{{ item }}</th>
+          </tr>
+          <tr>
+            <th></th><th colspan="8">Segment</th><th colspan="8">Segment</th><th colspan="8">Segment</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th *ngFor="let segment of segmentList" [attr.colspan]="segment.colspan">{{ segment.segment }}</th>
+            <th *ngFor="let segment of segmentList" [attr.colspan]="segment.colspan">{{ segment.segment }}</th>
+            <th *ngFor="let segment of segmentList" [attr.colspan]="segment.colspan">{{ segment.segment }}</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th *ngFor="let fiberpair of fiberPairList" [attr.colspan]="fiberpair.colspan">{{ fiberpair.fiberpair }}</th>
+          </tr>
+          <tr>
+            <th>Customer</th>
+            <th *ngFor="let dls of dlsList">{{ dls }}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let item of data; let rowIndex = index">
+          <td>
+            <ng-container *ngIf="!editMode[rowIndex]">
+              <div class="d-flex align-items-center justify-content-between">
+                <span>{{ item.customerName }}</span>
+                <div>
+                  <button (click)="toggleEditMode(rowIndex, item.customerName)"
+                          [disabled]="editMode.includes(true) && !editMode[rowIndex]"
+                          class="btn btn-sm btn-warning me-1">
+                    <i class="fa fa-pencil"></i>
+                  </button>
+                  <button type="button" (click)="deleteCustomer(rowIndex)" class="btn btn-sm btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="editMode[rowIndex]">
+              <div class="d-flex align-items-center justify-content-between">
+                <span>{{ item.customerName }}</span>
+                <div>
+                  <button (click)="saveEdit(rowIndex)" class="btn btn-sm btn-success me-1"><i class="fa fa-save"></i></button>
+                  <button (click)="cancelEdit(rowIndex)" class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+            </ng-container>
+          </td>
+          <!-- Segment 1 -->
+          <td *ngFor="let dls of item.capacities[0].dlsNames; let rowIndexdls = index">
+            <ng-container *ngIf="editMode[rowIndex]; else showTotal">
+              <input type="number" [value]="dls.total"
+                     (input)="updateDlsTotal($event, rowIndex, 0, rowIndexdls)"
+                     name="dlsTotal_{{rowIndex}}_0_{{rowIndexdls}}"
+                     class="form-control form-control-sm">
+            </ng-container>
+            <ng-template #showTotal>{{ dls.total }}</ng-template>
+          </td>
+
+          <!-- Segment 2 -->
+          <td *ngFor="let dls of item.capacities[1].dlsNames; let rowIndexdls = index">
+            <ng-container *ngIf="editMode[rowIndex]; else showTotal">
+              <input type="number" [value]="dls.total"
+                     (input)="updateDlsTotal($event, rowIndex, 1, rowIndexdls)"
+                     name="dlsTotal_{{rowIndex}}_1_{{rowIndexdls}}"
+                     class="form-control form-control-sm">
+            </ng-container>
+            <ng-template #showTotal>{{ dls.total }}</ng-template>
+          </td>
+
+          <!-- Segment 3 -->
+          <td *ngFor="let dls of item.capacities[2].dlsNames; let rowIndexdls = index">
+            <ng-container *ngIf="editMode[rowIndex]; else showTotal">
+              <input type="number" [value]="dls.total"
+                     (input)="updateDlsTotal($event, rowIndex, 2, rowIndexdls)"
+                     name="dlsTotal_{{rowIndex}}_2_{{rowIndexdls}}"
+                     class="form-control form-control-sm" readonly>
+            </ng-container>
+            <ng-template #showTotal>{{ dls.total }}</ng-template>
+          </td>
+        </tr>
+
+        <tr *ngIf="isModalVisible" class="table-success">
+          <td>
+            <select class="form-select form-select-sm" id="customer_id" name="customer_id" [(ngModel)]="formData.customer_id">
+              <option *ngFor="let customer of filteredCustomers" [value]="customer.customerId">{{ customer.customerName }}</option>
+            </select>
+          </td>
+          <td><input type="number" class="form-control form-control-sm" id="dls16_1_1" name="dls16_1_1" [(ngModel)]="formData.dls16_1_1" (change)="calculateDifferenceNew('dls16_1_1', 'dls16_11_2', 'dls16_21_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls11_4_1" name="dls11_4_1" [(ngModel)]="formData.dls11_4_1" (change)="calculateDifferenceNew('dls11_4_1', 'dls11_14_2', 'dls11_24_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls14_5_1" name="dls14_5_1" [(ngModel)]="formData.dls14_5_1" (change)="calculateDifferenceNew('dls14_5_1', 'dls14_15_2', 'dls14_25_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls54_6_1" name="dls54_6_1" [(ngModel)]="formData.dls54_6_1" (change)="calculateDifferenceNew('dls54_6_1', 'dls54_16_2', 'dls54_26_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls27_7_1" name="dls27_7_1" [(ngModel)]="formData.dls27_7_1" (change)="calculateDifferenceNew('dls27_7_1', 'dls27_17_2', 'dls27_27_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls57_8_1" name="dls57_8_1" [(ngModel)]="formData.dls57_8_1" (change)="calculateDifferenceNew('dls57_8_1', 'dls57_18_2', 'dls57_28_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls67_9_1" name="dls67_9_1" [(ngModel)]="formData.dls67_9_1" (change)="calculateDifferenceNew('dls67_9_1', 'dls67_19_2', 'dls67_29_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls_10_1" name="dls_10_1" [(ngModel)]="formData.dls_10_1" (change)="calculateDifferenceNew('dls_10_1', 'dls_20_2', 'dls_30_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls16_11_2" name="dls16_11_2" [(ngModel)]="formData.dls16_11_2" (change)="calculateDifferenceNew('dls16_1_1', 'dls16_11_2', 'dls16_21_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls11_14_2" name="dls11_14_2" [(ngModel)]="formData.dls11_14_2" (change)="calculateDifferenceNew('dls11_4_1', 'dls11_14_2', 'dls11_24_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls14_15_2" name="dls14_15_2" [(ngModel)]="formData.dls14_15_2" (change)="calculateDifferenceNew('dls14_5_1', 'dls14_15_2', 'dls14_25_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls54_16_2" name="dls54_16_2" [(ngModel)]="formData.dls54_16_2"    (change)="calculateDifferenceNew('dls54_6_1', 'dls54_16_2', 'dls54_26_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls27_17_2" name="dls27_17_2" [(ngModel)]="formData.dls27_17_2" (change)="calculateDifferenceNew('dls27_7_1', 'dls27_17_2', 'dls27_27_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls57_18_2"  name="dls57_18_2" [(ngModel)]="formData.dls57_18_2"   (change)="calculateDifferenceNew('dls57_8_1', 'dls57_18_2', 'dls57_28_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls67_19_2" name="dls67_19_2" [(ngModel)]="formData.dls67_19_2" (change)="calculateDifferenceNew('dls67_9_1', 'dls67_19_2', 'dls67_29_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls_20_2"   name="dls_20_2" [(ngModel)]="formData.dls_20_2" (change)="calculateDifferenceNew('dls_10_1', 'dls_20_2', 'dls_30_3')"></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls16_21_3" name="dls16_21_3" [(ngModel)]="formData.dls16_21_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls11_24_3" name="dls11_24_3" [(ngModel)]="formData.dls11_24_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls14_25_3" name="dls14_25_3" [(ngModel)]="formData.dls14_25_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls54_26_3" name="dls54_26_3" [(ngModel)]="formData.dls54_26_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls27_27_3" name="dls27_27_3" [(ngModel)]="formData.dls27_27_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls57_28_3" name="dls57_28_3" [(ngModel)]="formData.dls57_28_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls67_29_3" name="dls67_29_3" [(ngModel)]="formData.dls67_29_3" readonly></td>
+          <td><input type="number" class="form-control form-control-sm" id="dls_30_3" name="dls_30_3" [(ngModel)]="formData.dls_30_3" readonly></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="d-flex justify-content-between mt-3">
+        <button type="button" class="btn btn-success" *ngIf="!isModalVisible" (click)="openModal()">Add New Row</button>
+        <div *ngIf="isModalVisible">
+          <button type="submit" class="btn btn-primary me-2">Save</button>
+          <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>

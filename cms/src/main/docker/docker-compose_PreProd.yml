@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+    cms:
+        image: bwdigital/cms:v1.0.0
+        container_name: cms
+        restart: unless-stopped
+        networks:
+            - preprod_network
+        deploy:
+            resources:
+                limits:
+                    memory: 2048M
+        ports:
+            - "9006:9006"
+            - "5702:5702/udp"
+        environment:
+            - SPRING_PROFILES_ACTIVE=dev
+        volumes:
+            - '/docker-files/cms-volume/logs:/var/logs'
+
+networks:
+    preprod_network:
+        external: true

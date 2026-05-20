@@ -1,0 +1,182 @@
+<div class="filter-row">
+  <!-- LEFT: MESSAGE -->
+  <div class="filter-section message-section">
+    <span class="info-message" *ngIf="infoMsg; else infoMsgStats">
+      {{ infoMsg }}
+    </span>
+
+    <ng-template #infoMsgStats>
+      <span class="info-message info-placeholder"> * Data is loaded in Coordinated Universal Time (UTC). </span>
+    </ng-template>
+  </div>
+
+  <!-- CENTER: SERVICE -->
+  <div class="filter-section service-section">
+    <label>Service ID</label>
+    <select name="serviceId" [(ngModel)]="selectedServiceId" class="form-control">
+      <option *ngFor="let sId of serviceId" [ngValue]="sId">
+        {{ sId }}
+      </option>
+    </select>
+  </div>
+
+  <!-- RIGHT: DATE FILTER -->
+  <div class="filter-section date-section">
+    <div class="date-item">
+      <label>From</label>
+      <ejs-datetimepicker #dtPickerFr [value]="fromDate" [step]="15" [format]="'yyyy-MM-dd hh:mm a'"> </ejs-datetimepicker>
+    </div>
+
+    <div class="date-item">
+      <label>To</label>
+      <ejs-datetimepicker #dtPickerTo [value]="today" [step]="15" [format]="'yyyy-MM-dd hh:mm a'"> </ejs-datetimepicker>
+    </div>
+
+    <button type="button" class="btn btn-secondary" (click)="btnDt()">Refresh</button>
+  </div>
+</div>
+
+<br />
+
+<!-- Loader -->
+<div *ngIf="progressLoader" class="loader">
+  <div class="spinner"></div>
+</div>
+
+<div class="chart-row" *ngIf="!progressLoader">
+  <!-- Link Fail Seconds - In -->
+  <ejs-chart
+    class="chart-col"
+    id="linkFailSecIn"
+    title="Link Fail Seconds - In"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="linkFailSecInData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Link Fail Seconds - Out -->
+  <ejs-chart
+    class="chart-col"
+    id="linkFailSecOut"
+    title="Link Fail Seconds - Out"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="linkFailSecOutData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Physical Error Count - In -->
+  <ejs-chart
+    class="chart-col"
+    id="physicalErrCntIn"
+    title="Physical Error Count - In"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="physicalErrCntInData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Physical Error Count - Out -->
+  <ejs-chart
+    class="chart-col"
+    id="physicalErrCntOut"
+    title="Physical Error Count - Out"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="physicalErrCntOutData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Frame Check Sequence Error Count - In -->
+  <ejs-chart
+    class="chart-col"
+    id="frameChkSeqErrCntIn"
+    title="Frame Check Sequence Error Count - In"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="frameChkSeqErrCntInData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Frame Check Sequence Error Count - Out -->
+  <ejs-chart
+    class="chart-col"
+    id="frameChkSeqErrCntOut"
+    title="Frame Check Sequence Error Count - Out"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="frameChkSeqErrCntOutData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Number of Seconds in Bin - Tx Line Card -->
+  <ejs-chart
+    class="chart-col"
+    id="numOfSecInBinTxLineCard"
+    title="Number of Seconds in Bin - Tx Line Card"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="numOfSecInBinTxLineCardData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+
+  <!-- Number of Seconds in Bin - Rx Line Card -->
+  <ejs-chart
+    class="chart-col"
+    id="numOfSecInBinRxLineCard"
+    title="Number of Seconds in Bin - Rx Line Card"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    [legendSettings]="legendSettings"
+    [tooltip]="tooltip"
+    [palettes]="palette"
+  >
+    <e-series-collection>
+      <e-series *ngFor="let s of source" [dataSource]="numOfSecInBinRxLineCardData" type="Line" xName="time" yName="{{ s }}" name="{{ s }}">
+      </e-series>
+    </e-series-collection>
+  </ejs-chart>
+</div>

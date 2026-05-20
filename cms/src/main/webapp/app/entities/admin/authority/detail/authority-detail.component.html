@@ -1,0 +1,28 @@
+<div class="container-fluid py-5 bg-light min-vh-100 d-flex justify-content-center align-items-start">
+  <div class="col-12 col-md-6">
+    @if (authority(); as authorityRef) {
+      <div class="bg-white shadow-sm rounded p-5 border">
+        <h2 data-cy="authorityDetailsHeading" class="fw-bold mb-4 text-center">
+          <span jhiTranslate="cmsApp.adminAuthority.detail.title">Authority</span>
+        </h2>
+
+        <hr />
+
+        <jhi-alert-error />
+        <jhi-alert />
+
+        <dl class="row mb-4">
+          <dt class="col-sm-4 fw-semibold"><span jhiTranslate="cmsApp.adminAuthority.name">Name</span></dt>
+          <dd class="col-sm-8">{{ authorityRef.name }}</dd>
+        </dl>
+
+        <div class="d-flex justify-content-end">
+          <button type="button" (click)="previousState()" class="btn btn-info d-flex align-items-center">
+            <fa-icon icon="arrow-left" class="me-2"></fa-icon>
+            <span jhiTranslate="entity.action.back">Back</span>
+          </button>
+        </div>
+      </div>
+    }
+  </div>
+</div>

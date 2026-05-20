@@ -1,0 +1,40 @@
+<div>
+  <h6 style="color: red">{{ infoMsg }}</h6>
+</div>
+<div style="width: 100%; text-align: center">
+  <h1>Route</h1>
+  <!-- Loader -->
+  <div *ngIf="progressLoader" class="loader">
+    <div class="spinner"></div>
+  </div>
+  <div *ngIf="!progressLoader">
+<!--  <syncfusion-worldmap></syncfusion-worldmap><br />-->
+  <div class="tablegrid" style="width: 100%; height: 100%">
+    <ejs-grid
+      #routegrid
+      id="routegrid"
+      gridLines="Horizontal"
+      [dataSource]="routes"
+      allowSorting="true"
+      allowPaging="true"
+      allowTextWrap="true"
+      [height]="520"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      [editSettings]="editSettings"
+      [selectionSettings]="selectionOptions"
+      [allowSelection]="true"
+      [contextMenuItems]="contextMenuItems"
+      (actionComplete)="actionComplete($event)"
+      (rowSelected)="rowSelected($event)">
+      <e-columns>
+        <e-column field="id" headerText="ID" width="120" textAlign="Left" [visible]="false"></e-column>
+        <e-column field='routename' headerText='Route Name' width='120' textAlign='Left'  ></e-column>
+        <e-column field='aend' headerText='A-End' width='120' textAlign='Left'   autoFit="true"   textAlign='Left' isPrimaryKey='true'  ></e-column>
+        <e-column field='zend' headerText='Z-End' width='120' textAlign='Left'   autoFit="true"   textAlign='Left'  isPrimaryKey='true' ></e-column>
+        <e-column field='segments' headerText='Segments' width='120' textAlign='Left'   autoFit="true"   textAlign='Left' ></e-column>
+        <e-column field='comment' headerText='Comments' width='150' textAlign='Left'   ></e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+</div>

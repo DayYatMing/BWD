@@ -1,0 +1,199 @@
+<div class="page-container">
+
+  <!-- HEADER -->
+  <div class="header-bar">
+    <h2>📊 Capacity Dashboard</h2>
+    <div class="actions">
+      <button (click)="exportToExcel()" class="btn btn-success">Export</button>
+      <button (click)="openModal()" class="btn btn-info">Update FP</button>
+      <button (click)="togglePieChart()" class="btn btn-warning">Charts</button>
+    </div>
+  </div>
+
+  <!-- LOADING -->
+<!--  <div *ngIf="isLoading" class="loading-spinner">-->
+<!--    <span>Loading data...</span>-->
+<!--  </div>-->
+
+  <!-- Modal Spinner -->
+  <div class="modal-overlay-spin" *ngIf="isLoading">
+    <div class="modal-spinner">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-text">Loading data...</div>
+    </div>
+  </div>
+
+  <!-- PIVOT -->
+  <div class="card" style="display:none">
+    <ejs-pivotview
+      #pivotview
+      id='pivotview'
+      [dataSourceSettings]=dataSource
+      allowExcelExport='true'
+      allowValueFilter='true'
+      allowConditionalFormatting='true'
+      allowPdfExport='true'
+      showToolbar='true'
+      allowCalculatedField='true'
+      showGroupingBar='true'
+      showFieldList='true'
+      width='100%'
+      height='500'
+      [chartSettings]='chartSettings'
+      [displayOption]='displayOption'
+      [gridSettings]='gridSettings'
+      [toolbar]='toolbarOptions'
+      tooltipTemplate='#Template'
+      (aggregateCellInfo)='aggregateCell($event)'
+      allowDrillThrough='true'
+      (beginDrillThrough)='beginDrillThrough($event)'>
+    </ejs-pivotview>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrapper mt-3">
+    <table>
+      <thead>
+      <tr>
+        <th></th><th></th>
+        <th colspan="2" class="border_right">Per Dls(Gbps)</th>
+        <th colspan="7">Per Fp(Gbps)</th>
+      </tr>
+      <tr>
+        <th>Segment</th>
+        <th>DLS</th>
+        <th>Lit</th>
+        <th class="border_right">Reserved</th>
+        <th>Lit</th>
+        <th>Sold</th>
+        <th>Immediate</th>
+        <th>Reserved</th>
+        <th>Estimated</th>
+        <th>Future</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let row of formattedData"
+          [ngStyle]="{'background-color': getRowColor(row.segmentOrFiberPair ?? '', row.dlsName ?? '')}">
+
+        <td class="fw-bold">{{ row.segmentOrFiberPair }}</td>
+        <td>{{ row.dlsName }}</td>
+        <td>{{ row.litData }}</td>
+        <td class="border_right">{{ row.reservedData }}</td>
+        <td>{{ row.litfp }}</td>
+        <td>{{ row.soldpf }}</td>
+        <td>{{ row.avimfp }}</td>
+        <td>{{ row.reservedfp }}</td>
+        <td>{{ row.estfp }}</td>
+        <td>{{ row.avfufp }}</td>
+        <td>{{ row.totalavai }}</td>
+      </tr>
+
+      <tr *ngIf="formattedData.length === 0">
+        <td colspan="11">No data available</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- Modal Section for Updating Estimated FP Capacity -->
+  <div class="modal-overlay" *ngIf="isModalOpen" [ngClass]="{'show': isModalOpen}">
+    <div class="modal_estimatedcap">
+      <h4 style="text-align:center">Estimated FP Capacities</h4>
+      <div class="modal-estimated-content">
+        <form [formGroup]="updateForm" (ngSubmit)="updateAllFP()">
+          <div class="form-group" style="display:none;">
+            <label for="id">id</label>
+            <input id="id" formControlName="id" type="text"  />
+          </div>
+          <div class="form-group">
+            <label for="au_nz_fp1_dls16">AU-NZ FP1 DLS16</label>
+            <input id="au_nz_fp1_dls16" formControlName="au_nz_fp1_dls16" type="text"  />
+          </div>
+
+          <div class="form-group">
+            <label for="nz_hi_fp1_dls02">NZ-HI FP1 DLS02</label>
+            <input id="nz_hi_fp1_dls02" formControlName="nz_hi_fp1_dls02" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="nz_hi_fp1_dls13">NZ-HI FP1 DLS13</label>
+            <input id="nz_hi_fp1_dls13" formControlName="nz_hi_fp1_dls13" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="nz_hi_fp1_dls11">NZ-HI FP1 DLS11</label>
+            <input id="nz_hi_fp1_dls11" formControlName="nz_hi_fp1_dls11" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="au_hi_fp1_dls14">AU-HI FP1 DLS14</label>
+            <input id="au_hi_fp1_dls14" formControlName="au_hi_fp1_dls14" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="au_hi_fp2_dls54">AU-HI FP2 DLS54</label>
+            <input id="au_hi_fp2_dls54" formControlName="au_hi_fp2_dls54" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="hi_uf_fp1_dls27">HI-UF FP1 DLS27</label>
+            <input id="hi_uf_fp1_dls27" formControlName="hi_uf_fp1_dls27" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="hi_uf_fp1_dls67">HI-UF FP1 DLS67</label>
+            <input id="hi_uf_fp1_dls67" formControlName="hi_uf_fp1_dls67" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="hi_uf_fp2_dls57">HI-UF FP2 DLS57</label>
+            <input id="hi_uf_fp2_dls57" formControlName="hi_uf_fp2_dls57" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="hi_uf_fp3_dls">HI-UF FP3 DLS</label>
+            <input id="hi_uf_fp3_dls" formControlName="hi_uf_fp3_dls" type="text" />
+          </div>
+
+          <div class="buttons d-flex" style="justify-content: center;">
+            <button type="submit" class="update-button btn-primary mr-3">Update</button>
+            <button type="button" class="cancel-button btn-danger" (click)="closeModal()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- PIE CHARTS -->
+  <div id="piechartDisplay" *ngIf="isVisible" class="pchartmain">
+    <div *ngFor="let chart of transformedDataPieChart" class="chart-card">
+      <h4>{{ chart.name }}</h4>
+
+      <ejs-accumulationchart
+        [id]="'chart-container-' + chart.name"
+        [legendSettings]='legendSettings'>
+
+        <e-accumulation-series-collection>
+          <e-accumulation-series
+            [dataSource]='chart.data'
+            xName='x'
+            yName='y'
+            [dataLabel]='datalabel'
+            [palettes]="colorPalette">
+          </e-accumulation-series>
+        </e-accumulation-series-collection>
+
+      </ejs-accumulationchart>
+    </div>
+  </div>
+
+</div>
+

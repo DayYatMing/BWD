@@ -1,0 +1,2 @@
+Q Factor report for  7 Feb 2024
+<br/><br/><table border="1"><tr style="font-weight: bold"><td>Customer</td><td>Service ID</td><td>PM's</td><td>Baseline</td><td>Current value</td><td>Difference</td></tr></table>

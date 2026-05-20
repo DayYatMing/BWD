@@ -1,0 +1,24 @@
+
+<div class="capacity-planning-container">
+
+  <!-- Header -->
+  <h1 class="home-label">Capacity Planning</h1>
+  <h6 class="info-msg" *ngIf="infoMsg">{{ infoMsg }}</h6>
+
+  <!-- PivotView Card -->
+  <div class="pivot-card">
+    <ejs-pivotview #pivotview
+                   id="PivotView"
+                   [dataSourceSettings]="dataSourceSettings"
+                   [width]="width"
+                   height="600"
+                   showFieldList="true"
+                   allowConditionalFormatting="true"
+                   allowCalculatedField="true"
+                   allowDrillThrough="true"
+                   enablePersistence="true"
+                   (aggregateCellInfo)="aggregateCell($event)"
+                   (beginDrillThrough)="beginDrillThrough($event)">
+    </ejs-pivotview>
+  </div>
+</div>

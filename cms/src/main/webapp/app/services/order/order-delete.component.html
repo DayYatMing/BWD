@@ -1,0 +1,60 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Delete Order</b></h3>
+  </div>
+</div>
+
+<div class="container py-4">
+  <form #orderForm="ngForm" (ngSubmit)="delete()">
+    <label class="form-control-label" for="field_entityName"
+      ><b>Customer Name</b> <span class="text-danger" *ngIf="entityName.invalid && entityName.touched"> * required field </span></label
+    >
+    <input name="entityName" [(ngModel)]="order.entityName" required #entityName="ngModel" class="form-control mb-1" readonly />
+    <br />
+
+    <label class="form-control-label" for="field_name"
+      ><b>Service Name</b> <span class="text-danger" *ngIf="name.invalid && name.touched"> * required field </span></label
+    >
+    <input type="text" name="name" [(ngModel)]="order.name" required #name="ngModel" class="form-control mb-1" readonly /><br />
+
+    <label class="form-control-label" for="field_status"
+      ><b>Status</b> <span class="text-danger" *ngIf="status.invalid && status.touched"> * required field </span></label
+    >
+    <input type="text" name="status" [(ngModel)]="order.status" required #status="ngModel" class="form-control mb-1" readonly /><br />
+
+    <label class="form-control-label" for="field_duration"
+      ><b>Duration (lease in years)</b>
+      <span class="text-danger" *ngIf="duration.invalid && duration.touched"> * required field </span></label
+    >
+    <input type="text" name="duration" [(ngModel)]="order.duration" required #duration="ngModel" class="form-control mb-1" readonly /><br />
+    <br />
+
+    <div *ngIf="order.circuit; else noImage">
+      <label class="form-control-label" for="field_existingFile"> <b>Existing Circuit (click to enlarge)</b> </label><br />
+      <div style="width: 20vw; height: 20vw; overflow: hidden">
+        <img [src]="imageType + order.circuit?.toString()" class="img-fluid thumbnail" (click)="openImage()" alt="circuit" />
+      </div>
+
+      <div align="center" class="image-modal" *ngIf="showImage" (click)="closeImage()">
+        <div class="image-modal-content" (click)="$event.stopPropagation()">
+          <button class="close-btn" (click)="closeImage()">✕</button>
+
+          <img [src]="imageType + order.circuit?.toString()" class="modal-image" alt="circuit" />
+        </div>
+      </div>
+    </div>
+
+    <ng-template #noImage>
+      <div class="no-image-placeholder">
+        <b>No circuit image available</b>
+      </div>
+      <br />
+    </ng-template>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary" [disabled]="orderForm.invalid">Delete</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/services/order']">Back</button>
+  </form>
+</div>

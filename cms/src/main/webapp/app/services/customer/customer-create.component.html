@@ -1,0 +1,63 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Create New Entry</b></h3>
+  </div>
+</div>
+
+<div class="container py-4">
+  <form #customerForm="ngForm" (ngSubmit)="new()">
+    <label class="form-control-label" for="field_user"
+      ><b>User</b> <span class="text-danger" *ngIf="user.invalid && user.touched"> * required field </span></label
+    >
+    <select name="user" [(ngModel)]="customer.user" required #user="ngModel" class="form-control mb-1">
+      <option *ngFor="let user of users" [ngValue]="user">
+        {{ user }}
+      </option></select
+    ><br />
+
+    <label class="form-control-label" for="field_name"
+      ><b>Customer Name</b> <span class="text-danger" *ngIf="name.invalid && name.touched"> * required field </span></label
+    >
+    <select
+      name="name"
+      [(ngModel)]="customer.name"
+      (ngModelChange)="onEntitySelected($event)"
+      required
+      #name="ngModel"
+      class="form-control mb-1"
+    >
+      <option *ngFor="let entity of entities" [ngValue]="entity.name">
+        {{ entity.name }}
+      </option></select
+    ><br />
+
+    <label class="form-control-label" for="field_shortName"
+      ><b>Short Name</b> <span class="text-danger" *ngIf="shortName.invalid && shortName.touched"> * required field </span></label
+    >
+    <input
+      type="text"
+      name="shortName"
+      [(ngModel)]="customer.shortName"
+      required
+      #shortName="ngModel"
+      class="form-control mb-1"
+      readonly
+    /><br />
+
+    <label class="form-control-label" for="field_contact"
+      ><b>Contact</b> <span class="text-danger" *ngIf="contact.invalid && contact.touched"> * required field </span></label
+    >
+    <input type="text" name="contact" [(ngModel)]="customer.contact" required #contact="ngModel" class="form-control mb-1" /><br />
+
+    <label class="form-control-label" for="field_address"
+      ><b>Address</b> <span class="text-danger" *ngIf="address.invalid && address.touched"> * required field </span></label
+    >
+    <input type="text" name="address" [(ngModel)]="customer.address" required #address="ngModel" class="form-control mb-1" /><br />
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary" [disabled]="customerForm.invalid">Create</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/services/customer']">Back</button>
+  </form>
+</div>

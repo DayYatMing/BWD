@@ -1,0 +1,184 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3>
+      <b>Ticket # {{ ticketManagement.TicketNumber }}</b>
+    </h3>
+  </div>
+
+  <!-- Loader -->
+  <div *ngIf="progressLoader" class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div *ngIf="!progressLoader">
+    <div class="container py-4">
+      <div align="left">
+        <span><b>Ticket Overview</b></span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                <span class="text-nowrap">Ticket #</span>
+              </th>
+              <th>
+                <span>Title</span>
+              </th>
+              <th>
+                <span>Type</span>
+              </th>
+              <th>
+                <span>Queue</span>
+              </th>
+              <th>
+                <span>State</span>
+              </th>
+              <th>
+                <span>Service</span>
+              </th>
+              <th>
+                <span>Created</span>
+              </th>
+              <th>
+                <span>Age</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ ticketManagement.TicketNumber }}</td>
+              <td>{{ ticketManagement.Title }}</td>
+              <td>{{ ticketManagement.Type }}</td>
+              <td>{{ ticketManagement.Owner }}</td>
+              <td>{{ ticketManagement.State }}</td>
+              <td>{{ ticketManagement.Service }}</td>
+              <td>{{ ticketManagement.Created }}</td>
+              <td>{{ ticketManagement.convertedAge }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container py-4" *ngIf="showUpdateComponent">
+      <div align="left">
+        <span><b>Ticket Detail</b></span>
+      </div>
+
+      <div class="table-responsive" *ngIf="ticketManagement?.Article" align="center">
+        <table class="table table-striped" style="height: 450px">
+          <thead>
+            <tr>
+              <th>
+                <span class="text-nowrap">Created/Updated By</span>
+              </th>
+              <th>
+                <span class="text-nowrap">Changed Time</span>
+              </th>
+              <th>
+                <span>Subject</span>
+              </th>
+              <th>
+                <span>Updates</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let article of pagedArticles">
+              <td>{{ article.From == customerMail ? customerName : article.From }}</td>
+              <td>{{ article.ChangeTime }}</td>
+              <td>{{ article.Subject }}</td>
+              <td *ngIf="article.Body as body">
+                {{ body.substring(0, numLimit) }}
+                {{ body.length > numLimit ? '...' : '' }}
+                <button *ngIf="body.length > numLimit" type="button" class="read-more-btn" (click)="readMore(article)">Read More</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ejs-pager [pageSize]="pageSize" [totalRecordsCount]="totalArticles" [pageCount]="5" (click)="articlesPageChanged($event)">
+        </ejs-pager>
+      </div>
+
+      <div class="container py-4">
+        <div *ngIf="display" id="popup-modal-window">
+          <div class="modal-backdrop fade show"></div>
+          <div role="dialog" style="display: block" tabindex="-1" class="modal fade show">
+            <div role="document" class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                  <h4 class="modal-title">Updates</h4>
+                  <button type="button" class="close" aria-label="Close" (click)="clear()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>{{ articleVal.Body }}</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4" *ngIf="!showUpdateComponent">
+    <div align="left">
+      <span><b>Ticket Update</b></span>
+    </div>
+
+    <br />
+    <form #ticketForm="ngForm" (ngSubmit)="save()" *ngIf="ticketManagement as ticket">
+      <!-- PRIORITY SELECT -->
+      <label class="form-control-label" for="field_priority"
+        ><b>Priority</b> <span class="text-danger" *ngIf="priority.invalid && priority.touched"> * required field </span></label
+      >
+      <select class="form-control" name="priority" [(ngModel)]="ticket.PriorityID" id="field_priority" required #priority="ngModel">
+        <option value="1">1 Very Low</option>
+        <option value="2">2 Low</option>
+        <option value="3">3 Normal</option>
+        <option value="4">4 High</option>
+        <option value="5">5 Very High</option>
+      </select>
+      <br />
+
+      <!-- SUBJECT INPUT -->
+      <label class="form-control-label" for="field_subject"
+        ><b>Subject</b> <span class="text-danger" *ngIf="subject.invalid && subject.touched"> * required field </span></label
+      >
+      <input type="text" name="subject" [(ngModel)]="ticket.Subject" required #subject="ngModel" class="form-control mb-1" /><br />
+
+      <!-- BODY TEXTAREA -->
+      <label class="form-control-label" for="field_body">
+        <b>Updates</b>
+        <span class="text-danger" *ngIf="body.invalid && body.touched"> * required field </span>
+      </label>
+      <textarea
+        class="form-control mb-1"
+        name="body"
+        id="field_body"
+        cols="80"
+        rows="11"
+        [(ngModel)]="ticket.Body"
+        required
+        #body="ngModel"
+        style="white-space: pre-wrap"
+      ></textarea>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit" class="btn btn-primary" [disabled]="ticketForm.invalid">Save</button>
+      <button class="btn btn-primary" (click)="toggleComponents()">Cancel Update</button>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/entities/ticket-management']">Back</button>
+    </form>
+  </div>
+
+  <div class="container py-4" align="left" *ngIf="showUpdateComponent">
+    <button class="btn btn-primary" (click)="toggleComponents()">Update Ticket</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/entities/ticket-management']">Back</button>
+  </div>
+</div>

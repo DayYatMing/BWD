@@ -1,0 +1,26 @@
+.custom-bot-icon {
+  background-image: url('/content/images/bot.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.e-chat-ui.custom-container .e-chat-header {
+  background: lightgray;
+}
+
+.custom-avatar {
+  background-image: url('/content/images/bot_amy.png');
+  background-color: white;
+  display: inline-block;
+  color: transparent;
+  border-radius: 5px;
+}
+
+.custom-msg {
+  color: red;
+  font-size: 10px;
+}

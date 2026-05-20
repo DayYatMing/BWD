@@ -1,0 +1,1256 @@
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:04,402 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:15:21,671 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 9 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52909                                             ***
+*** Karaf Port:8810                                                         ***
+*** OSGI Service Port:9059                                                  ***
+*******************************************************************************
+Dec 03, 2024 11:15:22 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/03 23:15:22 - Kitchen - Start of run.
+23:15:23,979 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+23:15:23,979 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-12-03 23:15:24.955:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-03 23:15:25.003:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9059
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 03, 2024 11:15:25 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 03, 2024 11:15:26 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+23:15:26,411 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+23:15:26,418 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+23:15:26,419 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+23:15:26,419 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+23:15:26,419 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+23:15:26,419 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 03, 2024 11:15:28 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 03, 2024 11:15:28 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 03, 2024 11:15:29 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/03 23:15:30 - JOB_sendEmail - Start of job execution
+2024/12/03 23:15:30 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/03 23:15:30 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/12/03 23:15:30 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/03 23:15:30 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/03 23:15:30 - LoadConfiguration - Using legacy execution engine
+2024/12/03 23:15:30 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/03 23:15:30 - Property Input.0 - Finished processing (I=12, O=0, R=0, W=12, U=0, E=0)
+2024/12/03 23:15:30 - Row denormaliser.0 - Finished processing (I=0, O=0, R=12, W=1, U=0, E=0)
+2024/12/03 23:15:30 - Set Variables.0 - Setting environment variables...
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_PORT to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_PASSWORD to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_SUBJECT to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/03 23:15:30 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/03 23:15:30 - Set Variables.0 - Finished after 1 rows.
+2024/12/03 23:15:30 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/03 23:15:30 - Table input.0 - Finished reading query, closing connection.
+2024/12/03 23:15:30 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/03 23:15:30 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/03 23:15:30 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/03 23:15:30 - JOB_sendEmail - Job execution finished
+2024/12/03 23:15:30 - Kitchen - Finished!
+2024/12/03 23:15:30 - Kitchen - Start=2024/12/03 23:15:22.756, Stop=2024/12/03 23:15:30.832
+2024/12/03 23:15:30 - Kitchen - Processing ended after 8 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:03,551 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:17:31,713 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 10 at /hawaiki_il/data-integration/./system/kara ***
+***   f/caches/kitchen/data-14                                              ***
+*** FastBin Provider Port:52910                                             ***
+*** Karaf Port:8811                                                         ***
+*** OSGI Service Port:9060                                                  ***
+*******************************************************************************
+Dec 04, 2024 11:17:32 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/04 23:17:32 - Kitchen - Start of run.
+2024-12-04 23:17:35.561:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-04 23:17:35.613:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9060
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 04, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 04, 2024 11:17:36 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 04, 2024 11:17:38 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 04, 2024 11:17:39 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 04, 2024 11:17:39 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/04 23:17:40 - JOB_datacollection - Start of job execution
+2024/12/04 23:17:40 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/04 23:17:40 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/04 23:17:40 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/04 23:17:40 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/04 23:17:40 - LoadConfiguration - Using legacy execution engine
+2024/12/04 23:17:40 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/04 23:17:41 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/04 23:17:41 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/04 23:17:41 - Set Variables.0 - Setting environment variables...
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/04 23:17:41 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/04 23:17:41 - Set Variables.0 - Finished after 1 rows.
+2024/12/04 23:17:41 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/04 23:17:42 - Table input.0 - Finished reading query, closing connection.
+2024/12/04 23:17:42 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/04 23:17:42 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/04 23:17:42 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/04 23:17:42 - JOB_datacollection - Job execution finished
+2024/12/04 23:17:42 - Kitchen - Finished!
+2024/12/04 23:17:42 - Kitchen - Start=2024/12/04 23:17:32.788, Stop=2024/12/04 23:17:42.320
+2024/12/04 23:17:42 - Kitchen - Processing ended after 9 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:03,386 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:19:41,766 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 11 at /hawaiki_il/data-integration/./system/kara ***
+***   f/caches/kitchen/data-2                                               ***
+*** FastBin Provider Port:52911                                             ***
+*** Karaf Port:8812                                                         ***
+*** OSGI Service Port:9061                                                  ***
+*******************************************************************************
+Dec 05, 2024 11:19:42 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/05 23:19:42 - Kitchen - Start of run.
+23:19:44,137 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+23:19:44,137 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-12-05 23:19:45.139:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-05 23:19:45.180:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9061
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 05, 2024 11:19:45 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 05, 2024 11:19:46 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 05, 2024 11:19:46 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+23:19:46,788 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+23:19:46,794 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+23:19:46,794 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+23:19:46,795 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+23:19:46,795 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+23:19:46,796 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 05, 2024 11:19:48 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 05, 2024 11:19:48 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 05, 2024 11:19:49 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/05 23:19:50 - JOB_datacollection - Start of job execution
+2024/12/05 23:19:50 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/05 23:19:50 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/05 23:19:50 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/05 23:19:50 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/05 23:19:50 - LoadConfiguration - Using legacy execution engine
+2024/12/05 23:19:50 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/05 23:19:50 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/05 23:19:50 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/05 23:19:50 - Set Variables.0 - Setting environment variables...
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/05 23:19:50 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/05 23:19:50 - Set Variables.0 - Finished after 1 rows.
+2024/12/05 23:19:50 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/05 23:19:51 - Table input.0 - Finished reading query, closing connection.
+2024/12/05 23:19:51 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/05 23:19:51 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/05 23:19:51 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/05 23:19:51 - JOB_datacollection - Job execution finished
+2024/12/05 23:19:51 - Kitchen - Finished!
+2024/12/05 23:19:51 - Kitchen - Start=2024/12/05 23:19:42.947, Stop=2024/12/05 23:19:51.845
+2024/12/05 23:19:51 - Kitchen - Processing ended after 8 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:03,923 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:21:53,864 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 12 at /hawaiki_il/data-integration/./system/kara ***
+***   f/caches/kitchen/data-11                                              ***
+*** FastBin Provider Port:52912                                             ***
+*** Karaf Port:8813                                                         ***
+*** OSGI Service Port:9062                                                  ***
+*******************************************************************************
+Dec 06, 2024 11:21:54 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/06 23:21:54 - Kitchen - Start of run.
+2024-12-06 23:21:57.815:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-06 23:21:57.872:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9062
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 06, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 06, 2024 11:21:58 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 06, 2024 11:22:01 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 06, 2024 11:22:01 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 06, 2024 11:22:02 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/06 23:22:03 - JOB_datacollection - Start of job execution
+2024/12/06 23:22:03 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/06 23:22:03 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/06 23:22:03 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/06 23:22:03 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/06 23:22:03 - LoadConfiguration - Using legacy execution engine
+2024/12/06 23:22:03 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/06 23:22:03 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/06 23:22:03 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/06 23:22:03 - Set Variables.0 - Setting environment variables...
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/06 23:22:03 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/06 23:22:03 - Set Variables.0 - Finished after 1 rows.
+2024/12/06 23:22:03 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/06 23:22:05 - Table input.0 - Finished reading query, closing connection.
+2024/12/06 23:22:05 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/06 23:22:05 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/06 23:22:05 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/06 23:22:05 - JOB_datacollection - Job execution finished
+2024/12/06 23:22:05 - Kitchen - Finished!
+2024/12/06 23:22:05 - Kitchen - Start=2024/12/06 23:21:54.997, Stop=2024/12/06 23:22:05.205
+2024/12/06 23:22:05 - Kitchen - Processing ended after 10 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:03,889 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:24:03,907 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 13 at /hawaiki_il/data-integration/./system/kara ***
+***   f/caches/kitchen/data-7                                               ***
+*** FastBin Provider Port:52913                                             ***
+*** Karaf Port:8814                                                         ***
+*** OSGI Service Port:9063                                                  ***
+*******************************************************************************
+Dec 07, 2024 11:24:05 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/07 23:24:05 - Kitchen - Start of run.
+23:24:07,791 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+23:24:07,791 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-12-07 23:24:08.784:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-07 23:24:08.849:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9063
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 07, 2024 11:24:09 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 07, 2024 11:24:09 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+23:24:10,341 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+23:24:10,342 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+23:24:10,343 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+23:24:10,343 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+23:24:10,343 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+23:24:10,344 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 07, 2024 11:24:12 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 07, 2024 11:24:12 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 07, 2024 11:24:13 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/07 23:24:14 - JOB_datacollection - Start of job execution
+2024/12/07 23:24:14 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/07 23:24:14 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/07 23:24:14 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/07 23:24:14 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/07 23:24:14 - LoadConfiguration - Using legacy execution engine
+2024/12/07 23:24:14 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/07 23:24:14 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/07 23:24:14 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/07 23:24:14 - Set Variables.0 - Setting environment variables...
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/07 23:24:14 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/07 23:24:14 - Set Variables.0 - Finished after 1 rows.
+2024/12/07 23:24:14 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/07 23:24:19 - Table input.0 - Finished reading query, closing connection.
+2024/12/07 23:24:19 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/07 23:24:19 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/07 23:24:19 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/07 23:24:19 - JOB_datacollection - Job execution finished
+2024/12/07 23:24:19 - Kitchen - Finished!
+2024/12/07 23:24:19 - Kitchen - Start=2024/12/07 23:24:05.461, Stop=2024/12/07 23:24:19.191
+2024/12/07 23:24:19 - Kitchen - Processing ended after 13 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:04,018 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:26:16,007 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 14 at /hawaiki_il/data-integration/./system/kara ***
+***   f/caches/kitchen/data-6                                               ***
+*** FastBin Provider Port:52914                                             ***
+*** Karaf Port:8815                                                         ***
+*** OSGI Service Port:9064                                                  ***
+*******************************************************************************
+Dec 08, 2024 11:26:16 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/08 23:26:17 - Kitchen - Start of run.
+23:26:18,346 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+23:26:18,346 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-12-08 23:26:19.268:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-08 23:26:19.317:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9064
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 08, 2024 11:26:19 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 08, 2024 11:26:20 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 08, 2024 11:26:20 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+23:26:20,893 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+23:26:20,894 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+23:26:20,894 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+23:26:20,895 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+23:26:20,895 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+23:26:20,895 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 08, 2024 11:26:22 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 08, 2024 11:26:22 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 08, 2024 11:26:23 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/08 23:26:24 - JOB_datacollection - Start of job execution
+2024/12/08 23:26:24 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/08 23:26:24 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/08 23:26:24 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/08 23:26:24 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/08 23:26:24 - LoadConfiguration - Using legacy execution engine
+2024/12/08 23:26:24 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/08 23:26:25 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/08 23:26:25 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/08 23:26:25 - Set Variables.0 - Setting environment variables...
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/08 23:26:25 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/08 23:26:25 - Set Variables.0 - Finished after 1 rows.
+2024/12/08 23:26:25 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/08 23:26:27 - Table input.0 - Finished reading query, closing connection.
+2024/12/08 23:26:27 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/08 23:26:27 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/08 23:26:27 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/08 23:26:27 - JOB_datacollection - Job execution finished
+2024/12/08 23:26:27 - Kitchen - Finished!
+2024/12/08 23:26:27 - Kitchen - Start=2024/12/08 23:26:17.145, Stop=2024/12/08 23:26:27.381
+2024/12/08 23:26:27 - Kitchen - Processing ended after 10 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:04,242 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:17:32,740 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 9 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52909                                             ***
+*** Karaf Port:8810                                                         ***
+*** OSGI Service Port:9059                                                  ***
+*******************************************************************************
+Dec 09, 2024 11:17:33 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/09 23:17:33 - Kitchen - Start of run.
+23:17:34,888 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+23:17:34,888 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-12-09 23:17:35.679:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-09 23:17:35.715:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9059
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 09, 2024 11:17:36 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 09, 2024 11:17:36 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+23:17:37,270 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+23:17:37,271 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+23:17:37,272 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+23:17:37,272 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+23:17:37,272 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+23:17:37,273 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 09, 2024 11:17:39 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 09, 2024 11:17:39 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 09, 2024 11:17:40 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/09 23:17:40 - JOB_datacollection - Start of job execution
+2024/12/09 23:17:40 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/09 23:17:40 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/09 23:17:40 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/09 23:17:41 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/09 23:17:41 - LoadConfiguration - Using legacy execution engine
+2024/12/09 23:17:41 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/09 23:17:41 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/09 23:17:41 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/09 23:17:41 - Set Variables.0 - Setting environment variables...
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/09 23:17:41 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/09 23:17:41 - Set Variables.0 - Finished after 1 rows.
+2024/12/09 23:17:41 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/09 23:17:54 - Table input.0 - Finished reading query, closing connection.
+2024/12/09 23:17:54 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/09 23:17:54 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/09 23:17:54 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/09 23:17:54 - JOB_datacollection - Job execution finished
+2024/12/09 23:17:54 - Kitchen - Finished!
+2024/12/09 23:17:54 - Kitchen - Start=2024/12/09 23:17:33.805, Stop=2024/12/09 23:17:54.920
+2024/12/09 23:17:54 - Kitchen - Processing ended after 21 seconds.
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+23:00:03,544 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:21:53,858 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 12 at /hawaiki_il/data-integration/./system/kara ***
+***   f/caches/kitchen/data-11                                              ***
+*** FastBin Provider Port:52912                                             ***
+*** Karaf Port:8813                                                         ***
+*** OSGI Service Port:9062                                                  ***
+*******************************************************************************
+Dec 10, 2024 11:21:54 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/12/10 23:21:54 - Kitchen - Start of run.
+2024-12-10 23:21:57.574:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-12-10 23:21:57.612:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9062
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Dec 10, 2024 11:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Dec 10, 2024 11:21:58 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Dec 10, 2024 11:22:00 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Dec 10, 2024 11:22:01 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Dec 10, 2024 11:22:01 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/12/10 23:22:02 - JOB_datacollection - Start of job execution
+2024/12/10 23:22:02 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/12/10 23:22:03 - JOB_datacollection - Starting entry [LoadConfiguration]
+2024/12/10 23:22:03 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/endpointcentral/LoadConfiguration.ktr]
+2024/12/10 23:22:03 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/12/10 23:22:03 - LoadConfiguration - Using legacy execution engine
+2024/12/10 23:22:03 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/12/10 23:22:03 - Property Input.0 - Finished processing (I=18, O=0, R=0, W=18, U=0, E=0)
+2024/12/10 23:22:03 - Row denormaliser.0 - Finished processing (I=0, O=0, R=18, W=1, U=0, E=0)
+2024/12/10 23:22:03 - Set Variables.0 - Setting environment variables...
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [niuday@bw-digital.com]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Week XX: Endpoints health summary ]
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value []
+2024/12/10 23:22:03 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value []
+2024/12/10 23:22:03 - Set Variables.0 - Finished after 1 rows.
+2024/12/10 23:22:03 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/12/10 23:22:10 - Table input.0 - Finished reading query, closing connection.
+2024/12/10 23:22:10 - Table input.0 - Finished processing (I=82, O=0, R=0, W=82, U=0, E=0)
+2024/12/10 23:22:10 - Text file output.0 - Finished processing (I=0, O=83, R=82, W=82, U=0, E=0)
+2024/12/10 23:22:10 - JOB_datacollection - Finished job entry [LoadConfiguration] (result=[true])
+2024/12/10 23:22:10 - JOB_datacollection - Job execution finished
+2024/12/10 23:22:10 - Kitchen - Finished!
+2024/12/10 23:22:10 - Kitchen - Start=2024/12/10 23:21:54.893, Stop=2024/12/10 23:22:10.967
+2024/12/10 23:22:10 - Kitchen - Processing ended after 16 seconds.

@@ -1,0 +1,38 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Ticket Ratio</b></h3>
+  </div>
+
+  <!-- Loader -->
+  <div *ngIf="progressLoader" class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div *ngIf="!progressLoader">
+    <ejs-circularchart3d
+      style="display: block"
+      align="center"
+      [tilt]="tilt"
+      [legendSettings]="legendSettings"
+      [enableAnimation]="enableAnimation"
+    >
+      <e-circularchart3d-series-collection>
+        <e-circularchart3d-series
+          [dataSource]="dataSource"
+          xName="x"
+          yName="y"
+          [dataLabel]="dataLabel"
+          r
+          [pointColorMapping]="pointColorMapping"
+          [innerRadius]="innerRadius"
+        >
+        </e-circularchart3d-series
+      ></e-circularchart3d-series-collection>
+    </ejs-circularchart3d>
+  </div>
+  <div align="left">
+    <button [routerLink]="['../ticket-management']" class="btn btn-primary">Ticket Management</button>
+  </div>
+</div>

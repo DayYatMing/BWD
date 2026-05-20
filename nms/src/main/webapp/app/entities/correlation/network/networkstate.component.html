@@ -1,0 +1,58 @@
+<h6 style="color: red">{{ infoMsg }}</h6>
+<div class="nsd">
+  <div class="nsd-title">Network State</div>
+
+  <div class="nsd-description">
+    Please click buttons below to download or open Network State Diagram.<br>
+    You can also upload a new NSD version to replace the existing one.<br>
+    The data on the diagram refreshes in approximately 15 seconds with the latest details when export or show on new tab.
+  </div>
+
+  <div>
+    <span class="nsd-label" *ngIf="countdownActive">Counting in {{countdown}}s</span>
+  </div>
+
+  <div>
+    <a class="nsd-button" href="#" (click)="startCountdown(downloadFile.bind(this), true, $event)"
+       [class.disabled]="!isReady"
+       [attr.disabled]="!isReady ? true : null">
+      Export
+    </a>
+  </div>
+  <div>
+    <a class="nsd-button" href="#" (click)="triggerFileInput($event)"
+       [class.disabled]="!isReady"
+       [attr.disabled]="!isReady ? true : null">
+      Upload a raw diagram
+    </a>
+    <input
+      type="file"
+      #fileInput
+      style="display: none"
+      accept=".svg"
+      (change)="onFileSelected($event)"
+    />
+  </div>
+  <div>
+    <a class="nsd-button" href="#" (click)="startCountdown(showNewTab.bind(this), true, $event)"
+       [class.disabled]="!isReady"
+       [attr.disabled]="!isReady ? true : null">
+      Show on new tab
+    </a>
+  </div>
+  <div>
+    <a class="nsd-button" href="#" (click)="startCountdown(showNewTab.bind(this), false, $event)"
+       [class.disabled]="!isReady"
+       [attr.disabled]="!isReady ? true : null">
+      Show on new tab (without customer names)
+    </a>
+  </div>
+
+  <div class="nsd-info">
+    Status of current NSD<br>
+    -----------------------------<br>
+    Version ID:<span class="nsd-label"> {{networkState.id}}</span> <br>
+    Updated By:<span class="nsd-label"> {{networkState.updatedby}}</span> <br>
+    Date Updated:<span class="nsd-label"> {{networkState.dateupdated}}</span>
+  </div>
+</div>

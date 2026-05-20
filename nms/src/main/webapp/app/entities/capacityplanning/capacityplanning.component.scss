@@ -1,0 +1,48 @@
+.capacity-planning-container {
+  padding: 20px;
+
+  .home-label {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #3498db;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .info-msg {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .pivot-card {
+    height: 633px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    ::ng-deep .e-pivotview {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}

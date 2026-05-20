@@ -1,0 +1,60 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Ticket Management</b></h3>
+
+    <div align="left">
+      (Please contact Hawaiki NOC to request tickets older than a year.) <br />
+      <span class="dropdown-menu-left">
+        <label class="dropdown-menu-right" for="field_filter"><b>Ticket Filter</b></label>
+        <select class="dropdown-header" name="filter" id="field_filter" (change)="onChange($event)">
+          <option value="open">Open</option>
+          <option value="closed">Closed</option>
+          <option value="all">All</option>
+        </select>
+      </span>
+    </div>
+
+    <!-- Loader -->
+    <div *ngIf="progressLoader" class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="table-responsive" *ngIf="!progressLoader">
+      <table class="table table-striped" style="height: 500px">
+        <thead>
+          <tr>
+            <th>Ticket #</th>
+            <th>Title</th>
+            <th>Age</th>
+            <th>Priority</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ticketManagement of pagedData">
+            <td>
+              <a [routerLink]="['../ticket-management/id', ticketManagement.id]">{{ ticketManagement.TicketNumber }}</a>
+            </td>
+            <td>{{ ticketManagement.Title }}</td>
+            <td>{{ ticketManagement.convertedAge }}</td>
+            <td>{{ ticketManagement.Priority }}</td>
+            <td class="text-right">
+              <div class="btn-group flex-btn-group-container">
+                <button type="submit" [routerLink]="['../ticket-management/id', ticketManagement.id]" class="btn btn-info btn-sm">
+                  <span class="d-none d-md-inline">View/Edit</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ejs-pager [pageSize]="pageSize" [totalRecordsCount]="totalRecords" [pageCount]="5" (click)="pageChanged($event)"> </ejs-pager>
+    </div>
+  </div>
+  <div align="left">
+    <button [routerLink]="['../ticket-management/c']" class="btn btn-primary">Create New Ticket</button>
+  </div>
+</div>

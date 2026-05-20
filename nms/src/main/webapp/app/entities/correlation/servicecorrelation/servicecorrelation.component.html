@@ -1,0 +1,299 @@
+<h6 style="color: red">{{ infoMsg }}</h6>
+<div class="status-header d-flex justify-content-between align-items-center mb-3">
+  <h4 class="mb-0">Service Correlation</h4>
+</div>
+
+<!-- Loader -->
+<div *ngIf="progressLoader" class="loader">
+  <div class="spinner"></div>
+</div>
+<div *ngIf="!progressLoader" class="control-section3 template" id="CorelationGrid" >
+  <div >
+    <ejs-dialog id="ticketstatusdialog" #ticketstatusdialog  [buttons]='ticketReponseDlgButtons' enableResize='true'
+                [visible]='visible1' [header]='dialogHeaderTicket' [animationSettings]='animationSettings1'
+                [showCloseIcon]='dialogCloseIcon'[target]='target'
+                [width]='dialogWidth1'>
+      <h6 >Created Tickets from NRMS:</h6>
+      <div class="responsive-align">
+        <div class="row">
+          <br>
+          <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 search-item">
+            <ejs-grid #ticketreponsegrid [dataSource]='ticketReponse'  gridLines="Both" id='ticketreponsegrid'   allowPaging='true'
+                      [allowExcelExport]='true' [toolbar]="tickettoolbar" (toolbarClick)='ticketstatustoolbarbarClick($event)'
+                      allowPaging='true' [pageSettings]='pageSettings'   #ticketreponse >
+              <e-columns>
+                <e-column field='service' headerText='ServiceId' width='120'
+                          textAlign='left'>
+                </e-column>
+                <e-column field='status' headerText='Status' width='100'
+                          textAlign='left'>
+                </e-column>
+                <e-column field='' headerText='Ticket' width='150' autoFit="true" >
+                  <ng-template #template let-data>
+                    <div class="loc">
+                      <a href="{{data.ticketid}}" target="_blank">{{data.ticketnumber}}</a>
+                    </div>
+                  </ng-template>
+                </e-column>
+                <e-column field='title' headerText='Title' width='100'
+                          textAlign='left'>
+                </e-column>
+                <e-column field='statusmessage' headerText='StatusMessage' width='500'
+                          textAlign='left'>
+                </e-column>
+                <e-column field='eventdate' headerText='Ticket Creation Time' width='200'  format="dd-MMM-yy hh:mm"
+                          textAlign='left'>
+                </e-column>
+              </e-columns>
+            </ejs-grid>
+          </div>
+        </div>
+      </div>
+    </ejs-dialog>
+    <ejs-dialog id="serviceDialog" #serviceDialog  [buttons]='ticketDlgButtons' enableResize='true'
+                [visible]='visible1' [header]='dialogHeader1' [animationSettings]='animationSettings1'
+                [showCloseIcon]='dialogCloseIcon'[target]='target'
+                [width]='dialogWidth1'>
+      <h6 >Select Services:</h6>
+      <div class="responsive-align">
+        <div class="row">
+          <br>
+          <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 search-item">
+            <ejs-grid [dataSource]='services' id='servicegrid'
+                      [allowSelection]='true'    gridLines="Both" #servicegrid [selectionSettings]="selectionOptionsservices">
+              <e-columns>
+                <e-column field="id" isPrimaryKey="true" [visible]="false"></e-column>
+                <e-column type='checkbox' width='50'></e-column>
+                <e-column field='servicename' headerText='Service' width='120'
+                          textAlign='left'>
+                </e-column>
+              </e-columns>
+            </ejs-grid>
+          </div>
+        </div>
+      </div>
+    </ejs-dialog>
+
+    <ejs-dialog id="ticketDialog" [isModal]='isModal' #ticketDialog enableResize='true' [buttons]='secondDlgButtons'
+                [visible]='visible2' [header]='secondDlgHeader' [animationSettings]='animationSettings2'
+                [showCloseIcon]='secondDialogCloseIcon' [target]='target'
+                [width]='secondDialogWidth'>
+      <div class="col-lg-12  content-wrapper">
+        <div class="accrodianhelp">
+          <ejs-accordion #accordion expandMode='Single' >
+            <e-accordionitems>
+              <e-accordionitem header='Help' content='#Help'></e-accordionitem>
+            </e-accordionitems>
+          </ejs-accordion>
+          <div id='Help' style="display:none">
+            <table class="customtable">
+              <tr>
+                <th>Ticket Type</th>
+                <th>OTRS Type</th>
+                <th>External Ticket Generated</th>
+                <th>Internal Ticket Generated</th>
+              </tr>
+              <tr>
+                <td>One Ticket Per Service</td>
+                <td>Maintenance</td>
+                <td>N Tickets generated and sent for n services</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Incident</td>
+                <td>Incident</td>
+                <td>One Ticket Per Customer</td>
+                <td>N Tickets generated internally</td>
+              </tr>
+              <tr>
+                <td>Hazardous Condition</td>
+                <td>Hazardous Condition</td>
+                <td>One Ticket Per Customer</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Maintenance_service Impacting</td>
+                <td>Maitainence</td>
+                <td>One Ticket Per Customer</td>
+                <td>N Tickets generated for N services</td>
+              </tr>
+              <tr>
+                <td>Maintenance_non-service Impacting</td>
+                <td>Maintenance</td>
+                <td>One Ticket Per Customer</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Internal_Only_Incident</td>
+                <td>Incident</td>
+                <td>No</td>
+                <td>N Tickets generated internally and sent for n services</td>
+              </tr>
+              <tr>
+                <td>Internal_Only_Maintenance</td>
+                <td>Maintenance</td>
+                <td>No</td>
+                <td>N Tickets generated internally and sent for n services</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id='content' class='box-form' style="margin: 0 auto; width:1100px; padding:25px">
+
+          <form #form="ngForm" class="ticket-form">
+
+            <!-- Title -->
+            <h6>Title:</h6>
+            <div class="form-group">
+              <div class="e-float-input full-width">
+                <input type="text"
+                       required
+                       #title="ngModel"
+                       autocomplete="off"
+                       [(ngModel)]="titlemodel"
+                       name="title"
+                       maxlength="200" class="p5"/>
+                <span class="e-float-line"></span>
+              </div>
+            </div>
+
+            <!-- Ticket Type -->
+            <h6>Ticket Type:</h6>
+            <div class="form-group">
+              <ejs-dropdownlist
+                class="full-width"
+                name="ticketype"
+                required
+                #ticketype="ngModel"
+                [(ngModel)]="ticketypemodel"
+                [allowFiltering]="true"
+                (change)="changetemplate($event)"
+                [dataSource]="ticketypedata"
+                floatLabelType="Auto">
+              </ejs-dropdownlist>
+            </div>
+
+            <!-- Details -->
+            <h6>Details:</h6>
+            <div class="form-group">
+              <ejs-richtexteditor id='rte'  #rte  [toolbarSettings]='tools'  class="full-width rte-bordered">
+                <ng-template #valueTemplate><div></div>
+                </ng-template>
+              </ejs-richtexteditor>
+            </div>
+          </form>
+        </div>
+      </div>
+    </ejs-dialog>
+
+    <ejs-dialog #confirmDialog [buttons]='confirmDlgButtons' [visible]='hidden' [header]='confirmHeader' [animationSettings]='animationSettings'  [target]='target'
+                style="min-height: 300px;"   [width]='confirmWidth'>
+      <ng-template #content>
+        <span>Are you sure you want to create Bulk Tickets ?</span><br/><br/><br/>
+        <div [innerHTML]="resString"></div>
+      </ng-template>
+    </ejs-dialog>
+  </div>
+  <br>
+  <div  class="row">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+      <button #contractBtn ejs-progressbutton id="contract" content="Toggle Columns" [enableProgress]="true" cssClass="e-success" (end)="slide()"></button>
+    </div>
+
+  </div>
+  <br>
+  <div>
+    <div class="table-responsive" >
+      <ejs-grid id='overviewgrid'    #overviewgrid  [allowSelection]='true'  allowTextWrap='true'  [allowSorting]='true'
+                [toolbar]="toolbar"  allowResizing= 'true' showColumnMenu='true' [filterSettings]='filterSettings'  [editSettings]='editSettings'
+                [allowExcelExport]='true' [allowPdfExport]='true' gridLines="Both" showHider='true' width="auto"
+                [allowFiltering]='true'  [allowGrouping]='true'   [groupSettings]='groupOptions'
+                [allowReordering]='true' [showColumnChooser]='true'  [columnMenuItems]='columnMenuItems'   [contextMenuItems]="contextMenuItems"
+                [dataSource]='data' [allowPaging]="true" [pageSettings]="pageOptions" (toolbarClick)='clickHandler($event)'  (rowDeselected)='rowdeselected($event)'
+                [selectionSettings]="selectionOptions" (toolbarClick)='toolbarClick($event)'  (rowSelected)="onRowSelected($event)"
+                (contextMenuClick)='contextMenuClick($event)' (actionComplete)='actionComplete($event)'
+      >
+        <e-columns>
+          <e-column type='checkbox' width='50'></e-column>
+          <e-column headerText='Service/Network Details'  [customAttributes]='customNetworkAttributes'  width="2000" [columns]='genericColumns'>
+
+          </e-column>
+
+          <e-column headerText='Client Port Details' [customAttributes]='customPortAttributes'   width="1500" [columns]='portColumns'></e-column>
+          <e-column field='' headerText='' width='40' autoFit="true" >
+            <ng-template #template let-data>
+              <div class="loc">
+                <img  src="../../../content/images/right-arrow-icon.png" class="e-image" />
+              </div>
+            </ng-template>
+          </e-column>
+          <e-column headerText='Client Port Comments/Passthrough/Backhauls' [customAttributes]='customPortAttributes'   width="500" [columns]='passthroughportColumns'></e-column>
+          <e-column field='' headerText='' width='40' autoFit="true" >
+            <ng-template #template let-data>
+              <div class="loc">
+                <img  src="../../../content/images/right-arrow-icon.png" class="e-image" />
+              </div>
+            </ng-template>
+          </e-column>
+          <e-column headerText='LSI Port Details'  [customAttributes]='odfCustomAttributes'  width="1500" [columns]='lsiODFColumns' ></e-column>
+          <e-column field='' headerText='' width='40' autoFit="true" >
+            <ng-template #template let-data>
+              <div class="loc">
+                <img  src="../../../content/images/right-arrow-icon.png" class="e-image" />
+              </div>
+            </ng-template>
+          </e-column>
+          <e-column headerText='Patch ODF Port Details'  [customAttributes]='patchCustomAttributes'  width="1500" [columns]='patchColumns'></e-column>
+          <e-column field='' headerText='' width='40' autoFit="true" >
+            <ng-template #template let-data>
+              <div class="loc">
+                <img  src="../../../content/images/right-arrow-icon.png" class="e-image" />
+              </div>
+            </ng-template>
+          </e-column>
+          <e-column headerText='Patch MMR Port Details'  [customAttributes]='mmrCustomAttributes'   width="1500" [columns]='patchColumns1'></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+  </div>
+  <br>
+  <h6>Details:</h6> Click on links to go to Ciena or Stats Dashboards
+
+  <ejs-grid  id='overviewgriddetail'  #overviewgriddetail  allowResizing= 'true'
+             gridLines="Both" showHider='true' width="auto" height="60"  [dataSource]='datadetail'
+             [allowReordering]='true' [showColumnChooser]='true'
+             [selectionSettings]="selectionOptions"  >
+    <e-columns>
+      <e-column field="id" isPrimaryKey="true" [visible]="false"></e-column>
+      <e-column field='' headerText='StatsPortal' width='80' autoFit="true" >
+        <ng-template #template let-data>
+          <div class="loc"><a href="{{grafanaUrl}}&var-customer={{data.customername}}&var-service_id={{data.servicename}}" target="_blank">
+            <img  src="../../../content/images/stats12x.png" class="e-image"  alt=""/>
+
+          </a>
+          </div>
+        </ng-template>
+      </e-column>
+      <e-column field='' headerText='Customer' width='120' autoFit="true" >
+        <ng-template #template let-data>
+          <div class="loc">
+            <a href="{{mcsServiceUrl}}={{data.customername}}" target="_blank">{{data.customername}}</a>
+          </div>
+        </ng-template>
+      </e-column>
+      <e-column field='' headerText='ServiceID' width='100' autoFit="true" >
+        <ng-template #template let-data>
+          <div class="loc">
+            <a href="{{mcsServiceUrl}}={{data.servicename}}" target="_blank">{{data.servicename}}</a>
+          </div>
+        </ng-template>
+      </e-column>
+      <e-column field='capacity' headerText='capacity' width='80'></e-column>
+      <e-column field='aendfiber' headerText='FiberPair A-End' width='150'></e-column>
+      <e-column field='bendfiber' headerText='FiberPair B-End' width='150'></e-column>
+      <e-column field='tnumber' headerText='T#' width='150'></e-column>
+      <e-column field='nename' headerText='NE' width='150'></e-column>
+      <e-column field='neportname' headerText='Port' width='150'></e-column>
+    </e-columns>
+  </ejs-grid>
+</div>

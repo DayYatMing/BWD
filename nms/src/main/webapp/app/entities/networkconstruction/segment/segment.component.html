@@ -1,0 +1,44 @@
+<div>
+  <h6 style="color: red">{{ infoMsg }}</h6>
+</div>
+<div style="width: 100%; text-align: center">
+  <h1>Segments</h1>
+</div>
+<!-- Loader -->
+<div *ngIf="progressLoader" class="loader">
+  <div class="spinner"></div>
+</div>
+<div *ngIf="!progressLoader">
+  <div class="tablegrid" style="width: 100%; height: 100%">
+    <ejs-grid
+      #segmentgrid
+      id="segmentgrid"
+      gridLines="Horizontal"
+      [dataSource]="segments"
+      allowSorting="true"
+      allowPaging="true"
+      allowTextWrap="true"
+      [height]="520"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      [editSettings]="editSettings"
+      [selectionSettings]="selectionOptions"
+      [allowSelection]="true"
+      [contextMenuItems]="contextMenuItems"
+      (actionComplete)="actionComplete($event)"
+      (rowSelected)="rowSelected($event)">
+      <e-columns>
+        <e-column field="id" headerText="ID" width="120" textAlign="Left" [visible]="false"></e-column>
+        <e-column field='segmentname' headerText='Segment Name' width='120' textAlign='Left'></e-column>
+        <e-column field='dls' headerText='DLS' width='120' textAlign='Left' isPrimaryKey='true'></e-column>
+        <e-column field='aend'headerText='A-End' width='120' textAlign='Left'></e-column>
+        <e-column field='bend'headerText='B-End' width='120' textAlign='Left'></e-column>
+        <e-column field='aendfiber'headerText='A-End Fiber Pair' width='120' textAlign='Left'></e-column>
+        <e-column field='bendfiber'headerText='B-End Fiber Pair' width='120' textAlign='Left'></e-column>
+        <e-column field='networktype'headerText='Network Type' width='120' textAlign='Left'></e-column>
+
+        <e-column field='comment' headerText='Comment' width='150' textAlign='Left' ></e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+</div>

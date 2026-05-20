@@ -1,0 +1,54 @@
+<div>
+  <h6 style="color: red">{{ infoMsg }}</h6>
+</div>
+<div style="width: 100%; text-align: center">
+  <h1>Off-Net</h1>
+</div>
+<!-- Loader -->
+<div *ngIf="progressLoader" class="loader">
+  <div class="spinner"></div>
+</div>
+<div *ngIf="!progressLoader">
+<!--  <syncfusion-worldmap></syncfusion-worldmap><br />-->
+  <div class="tablegrid" style="width: 100%; height: 100%">
+    <ejs-grid
+      #offnetgrid
+      id="offnetgrid"
+      gridLines="Horizontal"
+      [dataSource]="offnets"
+      allowSorting="true"
+      allowPaging="true"
+      allowTextWrap="true"
+      [height]="520"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      [editSettings]="editSettings"
+      [selectionSettings]="selectionOptions"
+      [allowSelection]="true"
+      [contextMenuItems]="contextMenuItems"
+      (actionComplete)="actionComplete($event)"
+      (rowSelected)="rowSelected($event)">
+      <e-columns>
+        <e-column field="id" headerText="ID" width="120" textAlign="Left" [visible]="false"></e-column>
+        <e-column field='vendorname' headerText='Offnet Vendor' width='220' textAlign='Left'  isPrimaryKey='true' ></e-column>
+        <e-column field='name' headerText='Offnet-Id'  width='370' textAlign='Left'  isPrimaryKey='true' ></e-column>
+        <e-column field='capacity' headerText='Capacity' width='200' textAlign='Left'  width=120  isPrimaryKey='true'></e-column>
+        <e-column field='protectedcircuit' headerText='Protected' width='150' textAlign='Left'   type='boolean'></e-column>
+
+        <e-column field='frequency' headerText='Frequency' width='150' textAlign='Left'  ></e-column>
+
+        <e-column field='segment' headerText='Segment' width='120' textAlign='Left'   autoFit="true"   isPrimaryKey='true'textAlign='Left'  isPrimaryKey='true'  ></e-column>
+        <e-column field='aend' headerText='A-End' width='120' textAlign='Left'   autoFit="true"   isPrimaryKey='true'  textAlign='Left'  isPrimaryKey='true'  ></e-column>
+        <e-column field='aenddetails' headerText='A-End Details' width='220' textAlign='Left'   autoFit="true"   isPrimaryKey='true'  textAlign='Left'  isPrimaryKey='true'  ></e-column>
+        <e-column field='bend' headerText='B-End' width='120' textAlign='Left'   autoFit="true"   isPrimaryKey='true' textAlign='Left' isPrimaryKey='true'  ></e-column>
+        <e-column field='benddetails' headerText='B-End Details' width='220' textAlign='Left'   autoFit="true"   isPrimaryKey='true'  textAlign='Left'  isPrimaryKey='true' ></e-column>
+
+        <e-column field='customer'    headerText='Customer' width='350' textAlign='Left'  ></e-column>
+        <e-column field='service'    headerText='Service' width='150' textAlign='Left'     ></e-column>
+        <e-column field='status' headerText='Status' width='150' textAlign='Left'   ></e-column>
+
+        <e-column field='comment' headerText='Comment' width='350' textAlign='Left'   ></e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+</div>

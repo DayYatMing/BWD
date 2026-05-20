@@ -1,0 +1,69 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+  <div align="center">
+    <h3><b>Create New Ticket</b></h3>
+  </div>
+</div>
+
+<div class="container py-4">
+  <form #ticketForm="ngForm" (ngSubmit)="new()">
+    <!-- TYPE SELECT -->
+    <label class="form-control-label" for="field_type"
+      ><b>Type</b> <span class="text-danger" *ngIf="type.invalid && type.touched"> * required field </span></label
+    >
+    <select class="form-control" name="type" [(ngModel)]="ticketManagement.Type" id="field_type" #type="ngModel" required>
+      <option value="Incident">Incident</option>
+      <option value="Unclassified">Unclassified</option>
+    </select>
+    <br />
+
+    <!-- PRIORITY SELECT -->
+    <label class="form-control-label" for="field_priority"
+      ><b>Priority</b> <span class="text-danger" *ngIf="priority.invalid && priority.touched"> * required field </span></label
+    >
+    <select
+      class="form-control mb-1"
+      name="priority"
+      [(ngModel)]="ticketManagement.PriorityID"
+      id="field_priority"
+      #priority="ngModel"
+      required
+    >
+      <option value="1">1 Very Low</option>
+      <option value="2">2 Low</option>
+      <option value="3">3 Normal</option>
+      <option value="4">4 High</option>
+      <option value="5">5 Very High</option>
+    </select>
+    <br />
+
+    <span><b>Ticket Detail</b></span>
+
+    <!-- SUBJECT INPUT -->
+    <label class="form-control-label" for="field_subject"
+      ><b>Subject</b> <span class="text-danger" *ngIf="subject.invalid && subject.touched"> * required field </span></label
+    >
+    <input type="text" name="subject" [(ngModel)]="ticketManagement.Subject" required #subject="ngModel" class="form-control mb-1" /><br />
+
+    <!-- BODY TEXTAREA -->
+    <label class="form-control-label" for="field_body">
+      <b>Messages</b>
+      <span class="text-danger" *ngIf="body.invalid && body.touched"> * required field </span>
+    </label>
+    <textarea
+      class="form-control mb-1"
+      name="body"
+      id="field_body"
+      cols="80"
+      rows="10"
+      [(ngModel)]="ticketManagement.Body"
+      required
+      #body="ngModel"
+      style="white-space: pre-wrap"
+    ></textarea>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary" [disabled]="ticketForm.invalid">Create</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/entities/ticket-management']">Back</button>
+  </form>
+</div>

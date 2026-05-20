@@ -1,0 +1,1850 @@
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:04,224 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:33,350 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 01, 2024 6:23:34 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/01 06:23:34 - Kitchen - Start of run.
+Updating configuration from org.apache.aries.rsa.provider.fastbin.cfg
+Updating configuration from org.ops4j.pax.web.cfg
+Updating configuration from org.apache.karaf.shell.cfg
+06:23:35,873 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:35,882 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-01 06:23:37.070:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-01 06:23:37.122:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 01, 2024 6:23:37 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 01, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 01, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 01, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 01, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 01, 2024 6:23:38 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:38,564 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:38,565 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:38,565 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:38,565 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:38,565 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:38,565 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Feb 01, 2024 6:23:40 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Feb 01, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Feb 01, 2024 6:23:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/01 06:23:42 - JOB_sendEmail - Start of job execution
+2024/02/01 06:23:42 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/01 06:23:42 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/01 06:23:42 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+2024/02/01 06:23:42 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/01 06:23:42 - LoadConfiguration - Using legacy execution engine
+2024/02/01 06:23:42 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/02/01 06:23:42 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/01 06:23:42 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/01 06:23:42 - Set Variables.0 - Setting environment variables...
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/01 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/01 06:23:42 - Set Variables.0 - Finished after 1 rows.
+2024/02/01 06:23:42 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:23:42 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/01 06:23:42 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+2024/02/01 06:23:43 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/01 06:23:43 - GenerateMissingPMs - Using legacy execution engine
+2024/02/01 06:23:43 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/01 06:33:02 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/01 06:33:02 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/01 06:33:02 - Table input.0 - Finished reading query, closing connection.
+2024/02/01 06:33:02 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/01 06:33:02 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/01 06:33:02 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:33:02 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/01 06:33:02 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:33:02 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/01 06:33:02 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/01 06:33:02 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/01 06:33:02 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/01 06:33:02 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/01 06:33:02 - GenerateLogs - Using legacy execution engine
+2024/02/01 06:33:02 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/01 06:33:03 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:43:49 - Table input.0 - Finished reading query, closing connection.
+2024/02/01 06:43:49 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/01 06:43:49 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/01 06:43:49 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:43:49 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/01 06:43:49 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:43:49 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:43:49 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/01 06:43:49 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/01 06:43:49 - JOB_sendEmail - Starting entry [Send email]
+2024/02/01 06:43:49 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/01 06:43:49 - Send email - Using run configuration [Pentaho local]
+2024/02/01 06:43:49 - Send email - Using legacy execution engine
+2024/02/01 06:43:49 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/01 06:43:49 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/01 06:43:49 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/01 06:43:55 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/01 06:43:55 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/01 06:43:55 - Mail 2.0 - Can not send mail!
+2024/02/01 06:43:55 - Mail 2.0 - Could not convert socket to TLS
+2024/02/01 06:43:55 - Mail 2.0 - 
+2024/02/01 06:43:55 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/01 06:43:55 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/01 06:43:55 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/01 06:43:55 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/01 06:43:55 - Mail 2.0 -   nested exception is:
+2024/02/01 06:43:55 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/01 06:43:55 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/01 06:43:55 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/01 06:43:55 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/01 06:43:55 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/01 06:43:55 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/01 06:43:55 - Mail 2.0 - 	... 2 more
+2024/02/01 06:43:55 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/01 06:43:55 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/01 06:43:55 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/01 06:43:55 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/01 06:43:55 - Mail 2.0 - 	... 6 more
+2024/02/01 06:43:55 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/01 06:43:55 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/01 06:43:55 - Mail 2.0 - 	... 11 more
+2024/02/01 06:43:55 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/01 06:43:55 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/01 06:43:55 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/01 06:43:55 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/01 06:43:55 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/01 06:43:55 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/01 06:43:55 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/01 06:43:55 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/01 06:43:55 - JOB_sendEmail - Job execution finished
+2024/02/01 06:43:55 - SendEmail - Transformation is killing the other steps!
+2024/02/01 06:43:55 - Kitchen - Finished!
+2024/02/01 06:43:55 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/01 06:43:55 - Kitchen - Start=2024/02/01 06:23:34.513, Stop=2024/02/01 06:43:55.460
+2024/02/01 06:43:55 - Kitchen - Processing ended after 20 minutes and 20 seconds (1220 seconds total).
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:05,224 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:34,241 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 02, 2024 6:23:35 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/02 06:23:35 - Kitchen - Start of run.
+Updating configuration from org.apache.aries.rsa.provider.fastbin.cfg
+Updating configuration from org.ops4j.pax.web.cfg
+Updating configuration from org.apache.karaf.shell.cfg
+06:23:36,680 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:36,680 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-02 06:23:37.758:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-02 06:23:37.850:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 02, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 02, 2024 6:23:38 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:39,384 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:39,385 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:39,385 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:39,385 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:39,385 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:39,385 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+2024/02/02 06:23:39 - JOB_sendEmail - Start of job execution
+2024/02/02 06:23:40 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/02 06:23:40 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2024/02/02 06:23:41 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/02 06:23:41 - LoadConfiguration - Using legacy execution engine
+2024/02/02 06:23:41 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+Feb 02, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Feb 02, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+2024/02/02 06:23:42 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/02 06:23:42 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/02 06:23:42 - Set Variables.0 - Setting environment variables...
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/02 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/02 06:23:42 - Set Variables.0 - Finished after 1 rows.
+2024/02/02 06:23:42 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:23:42 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/02 06:23:42 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+Feb 02, 2024 6:23:43 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/02 06:23:43 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/02 06:23:43 - GenerateMissingPMs - Using legacy execution engine
+2024/02/02 06:23:43 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/02 06:29:21 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/02 06:29:21 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/02 06:29:21 - Table input.0 - Finished reading query, closing connection.
+2024/02/02 06:29:21 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/02 06:29:21 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/02 06:29:21 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:29:21 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/02 06:29:21 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:29:22 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/02 06:29:22 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/02 06:29:22 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/02 06:29:22 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/02 06:29:22 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/02 06:29:22 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/02 06:29:22 - GenerateLogs - Using legacy execution engine
+2024/02/02 06:29:22 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/02 06:29:22 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:38:41 - Table input.0 - Finished reading query, closing connection.
+2024/02/02 06:38:41 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/02 06:38:41 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/02 06:38:41 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:38:41 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/02 06:38:41 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/02 06:38:41 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/02 06:38:41 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:38:41 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:38:41 - JOB_sendEmail - Starting entry [Send email]
+2024/02/02 06:38:41 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/02 06:38:41 - Send email - Using run configuration [Pentaho local]
+2024/02/02 06:38:41 - Send email - Using legacy execution engine
+2024/02/02 06:38:41 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/02 06:38:41 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/02 06:38:41 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/02 06:38:47 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/02 06:38:47 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/02 06:38:47 - Mail 2.0 - Can not send mail!
+2024/02/02 06:38:47 - Mail 2.0 - Could not convert socket to TLS
+2024/02/02 06:38:47 - Mail 2.0 - 
+2024/02/02 06:38:47 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/02 06:38:47 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/02 06:38:47 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/02 06:38:47 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/02 06:38:47 - Mail 2.0 -   nested exception is:
+2024/02/02 06:38:47 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/02 06:38:47 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/02 06:38:47 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/02 06:38:47 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/02 06:38:47 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/02 06:38:47 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/02 06:38:47 - Mail 2.0 - 	... 2 more
+2024/02/02 06:38:47 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/02 06:38:47 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/02 06:38:47 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/02 06:38:47 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/02 06:38:47 - Mail 2.0 - 	... 6 more
+2024/02/02 06:38:47 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/02 06:38:47 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/02 06:38:47 - Mail 2.0 - 	... 11 more
+2024/02/02 06:38:47 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/02 06:38:47 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/02 06:38:47 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/02 06:38:47 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/02 06:38:47 - SendEmail - Transformation is killing the other steps!
+2024/02/02 06:38:47 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/02 06:38:47 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/02 06:38:47 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/02 06:38:47 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/02 06:38:47 - JOB_sendEmail - Job execution finished
+2024/02/02 06:38:47 - Kitchen - Finished!
+2024/02/02 06:38:47 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/02 06:38:47 - Kitchen - Start=2024/02/02 06:23:35.373, Stop=2024/02/02 06:38:47.400
+2024/02/02 06:38:47 - Kitchen - Processing ended after 15 minutes and 12 seconds (912 seconds total).
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:04,577 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:33,729 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 03, 2024 6:23:34 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/03 06:23:34 - Kitchen - Start of run.
+06:23:36,262 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:36,262 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-03 06:23:37.449:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-03 06:23:37.487:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 03, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 03, 2024 6:23:38 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:38,980 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:38,980 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:38,981 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:38,981 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:38,981 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:38,981 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Feb 03, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Feb 03, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Feb 03, 2024 6:23:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/03 06:23:42 - JOB_sendEmail - Start of job execution
+2024/02/03 06:23:42 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/03 06:23:43 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/03 06:23:43 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+2024/02/03 06:23:43 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/03 06:23:43 - LoadConfiguration - Using legacy execution engine
+2024/02/03 06:23:43 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/02/03 06:23:43 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/03 06:23:43 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/03 06:23:43 - Set Variables.0 - Setting environment variables...
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/03 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/03 06:23:43 - Set Variables.0 - Finished after 1 rows.
+2024/02/03 06:23:43 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:23:43 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/03 06:23:43 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+2024/02/03 06:23:43 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/03 06:23:43 - GenerateMissingPMs - Using legacy execution engine
+2024/02/03 06:23:43 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/03 06:34:21 - Table input.0 - Finished reading query, closing connection.
+2024/02/03 06:34:21 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/03 06:34:21 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/03 06:34:21 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:34:21 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/03 06:34:21 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/03 06:34:21 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:34:21 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/03 06:34:21 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/03 06:34:21 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/03 06:34:21 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/03 06:34:21 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/03 06:34:21 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/03 06:34:21 - GenerateLogs - Using legacy execution engine
+2024/02/03 06:34:21 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/03 06:34:21 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:45:38 - Table input.0 - Finished reading query, closing connection.
+2024/02/03 06:45:39 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/03 06:46:02 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/03 06:46:11 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/03 06:46:45 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:46:47 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/03 06:47:00 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/03 06:48:19 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:48:19 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:48:45 - JOB_sendEmail - Starting entry [Send email]
+2024/02/03 06:49:07 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/03 06:49:21 - Send email - Using run configuration [Pentaho local]
+2024/02/03 06:49:21 - Send email - Using legacy execution engine
+2024/02/03 06:49:21 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/03 06:49:22 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/03 06:49:22 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/03 06:49:29 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/03 06:49:29 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/03 06:49:29 - Mail 2.0 - Can not send mail!
+2024/02/03 06:49:29 - Mail 2.0 - Could not convert socket to TLS
+2024/02/03 06:49:29 - Mail 2.0 - 
+2024/02/03 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/03 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/03 06:49:29 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/03 06:49:29 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/03 06:49:29 - Mail 2.0 -   nested exception is:
+2024/02/03 06:49:29 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/03 06:49:29 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/03 06:49:29 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/03 06:49:29 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/03 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/03 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/03 06:49:29 - Mail 2.0 - 	... 2 more
+2024/02/03 06:49:29 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/03 06:49:29 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/03 06:49:29 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/03 06:49:29 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/03 06:49:29 - Mail 2.0 - 	... 6 more
+2024/02/03 06:49:29 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/03 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/03 06:49:29 - Mail 2.0 - 	... 11 more
+2024/02/03 06:49:29 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/03 06:49:29 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/03 06:49:29 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/03 06:49:29 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/03 06:49:29 - SendEmail - Transformation is killing the other steps!
+2024/02/03 06:49:29 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/03 06:49:29 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/03 06:49:29 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/03 06:49:29 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/03 06:49:29 - JOB_sendEmail - Job execution finished
+2024/02/03 06:49:29 - Kitchen - Finished!
+2024/02/03 06:49:29 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/03 06:49:29 - Kitchen - Start=2024/02/03 06:23:34.729, Stop=2024/02/03 06:49:29.286
+2024/02/03 06:49:29 - Kitchen - Processing ended after 25 minutes and 54 seconds (1554 seconds total).
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:05,414 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:34,496 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 04, 2024 6:23:35 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/04 06:23:35 - Kitchen - Start of run.
+06:23:36,900 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:36,901 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-04 06:23:38.058:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-04 06:23:38.120:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 04, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 04, 2024 6:23:39 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 04, 2024 6:23:39 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 04, 2024 6:23:39 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 04, 2024 6:23:39 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 04, 2024 6:23:39 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 04, 2024 6:23:39 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:39,659 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:39,659 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:39,659 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:39,660 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:39,660 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:39,660 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+2024/02/04 06:23:40 - JOB_sendEmail - Start of job execution
+2024/02/04 06:23:40 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/04 06:23:40 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2024/02/04 06:23:41 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/04 06:23:41 - LoadConfiguration - Using legacy execution engine
+Feb 04, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+2024/02/04 06:23:41 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+Feb 04, 2024 6:23:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Feb 04, 2024 6:23:43 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/04 06:23:43 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/04 06:23:43 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/04 06:23:43 - Set Variables.0 - Setting environment variables...
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/04 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/04 06:23:43 - Set Variables.0 - Finished after 1 rows.
+2024/02/04 06:23:43 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:23:43 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/04 06:23:43 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/04 06:23:43 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+2024/02/04 06:23:44 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/04 06:23:44 - GenerateMissingPMs - Using legacy execution engine
+2024/02/04 06:23:44 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/04 06:30:46 - Table input.0 - Finished reading query, closing connection.
+2024/02/04 06:30:46 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/04 06:30:46 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/04 06:30:46 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:30:46 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/04 06:30:46 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:30:46 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/04 06:30:46 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/04 06:30:46 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/04 06:30:46 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/04 06:30:46 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/04 06:30:46 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/04 06:30:46 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/04 06:30:46 - GenerateLogs - Using legacy execution engine
+2024/02/04 06:30:46 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/04 06:30:46 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:41:27 - Table input.0 - Finished reading query, closing connection.
+2024/02/04 06:41:27 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/04 06:41:27 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/04 06:41:27 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:41:27 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/04 06:41:27 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:41:27 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:41:27 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/04 06:41:27 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/04 06:41:27 - JOB_sendEmail - Starting entry [Send email]
+2024/02/04 06:41:27 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/04 06:41:27 - Send email - Using run configuration [Pentaho local]
+2024/02/04 06:41:27 - Send email - Using legacy execution engine
+2024/02/04 06:41:27 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/04 06:41:27 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/04 06:41:27 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/04 06:41:33 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/04 06:41:33 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/04 06:41:33 - Mail 2.0 - Can not send mail!
+2024/02/04 06:41:33 - Mail 2.0 - Could not convert socket to TLS
+2024/02/04 06:41:33 - Mail 2.0 - 
+2024/02/04 06:41:33 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/04 06:41:33 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/04 06:41:33 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/04 06:41:33 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/04 06:41:33 - Mail 2.0 -   nested exception is:
+2024/02/04 06:41:33 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/04 06:41:33 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/04 06:41:33 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/04 06:41:33 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/04 06:41:33 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/04 06:41:33 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/04 06:41:33 - Mail 2.0 - 	... 2 more
+2024/02/04 06:41:33 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/04 06:41:33 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/04 06:41:33 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/04 06:41:33 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/04 06:41:33 - Mail 2.0 - 	... 6 more
+2024/02/04 06:41:33 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/04 06:41:33 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/04 06:41:33 - Mail 2.0 - 	... 11 more
+2024/02/04 06:41:33 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/04 06:41:33 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/04 06:41:33 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/04 06:41:33 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/04 06:41:33 - SendEmail - Transformation is killing the other steps!
+2024/02/04 06:41:33 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/04 06:41:33 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/04 06:41:33 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/04 06:41:33 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/04 06:41:33 - JOB_sendEmail - Job execution finished
+2024/02/04 06:41:33 - Kitchen - Finished!
+2024/02/04 06:41:33 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/04 06:41:33 - Kitchen - Start=2024/02/04 06:23:35.708, Stop=2024/02/04 06:41:33.501
+2024/02/04 06:41:33 - Kitchen - Processing ended after 17 minutes and 57 seconds (1077 seconds total).
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:04,874 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:33,857 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 05, 2024 6:23:34 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/05 06:23:34 - Kitchen - Start of run.
+06:23:36,614 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:36,615 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-05 06:23:37.686:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-05 06:23:37.752:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 05, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 05, 2024 6:23:38 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:39,183 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:39,184 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:39,184 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:39,184 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:39,184 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:39,184 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+2024/02/05 06:23:39 - JOB_sendEmail - Start of job execution
+2024/02/05 06:23:39 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/05 06:23:39 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2024/02/05 06:23:41 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/05 06:23:41 - LoadConfiguration - Using legacy execution engine
+2024/02/05 06:23:41 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+Feb 05, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Feb 05, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Feb 05, 2024 6:23:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/05 06:23:42 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/05 06:23:42 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/05 06:23:42 - Set Variables.0 - Setting environment variables...
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/05 06:23:42 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/05 06:23:42 - Set Variables.0 - Finished after 1 rows.
+2024/02/05 06:23:42 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:23:42 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/05 06:23:42 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+2024/02/05 06:23:43 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/05 06:23:43 - GenerateMissingPMs - Using legacy execution engine
+2024/02/05 06:23:43 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/05 06:23:43 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/05 06:34:00 - Table input.0 - Finished reading query, closing connection.
+2024/02/05 06:34:00 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/05 06:34:00 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/05 06:34:00 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:34:00 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/05 06:34:00 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:34:00 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/05 06:34:00 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/05 06:34:00 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/05 06:34:00 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/05 06:34:00 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/05 06:34:00 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/05 06:34:01 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/05 06:34:01 - GenerateLogs - Using legacy execution engine
+2024/02/05 06:34:01 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/05 06:34:01 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:45:48 - Table input.0 - Finished reading query, closing connection.
+2024/02/05 06:45:49 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/05 06:46:04 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/05 06:46:11 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/05 06:46:18 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:46:18 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/05 06:46:28 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/05 06:47:36 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:47:36 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:48:32 - JOB_sendEmail - Starting entry [Send email]
+2024/02/05 06:48:57 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/05 06:49:14 - Send email - Using run configuration [Pentaho local]
+2024/02/05 06:49:14 - Send email - Using legacy execution engine
+2024/02/05 06:49:14 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/05 06:49:15 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/05 06:49:15 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/05 06:49:29 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/05 06:49:29 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/05 06:49:29 - Mail 2.0 - Can not send mail!
+2024/02/05 06:49:29 - Mail 2.0 - Could not convert socket to TLS
+2024/02/05 06:49:29 - Mail 2.0 - 
+2024/02/05 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/05 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/05 06:49:29 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/05 06:49:29 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/05 06:49:29 - Mail 2.0 -   nested exception is:
+2024/02/05 06:49:29 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/05 06:49:29 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/05 06:49:29 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/05 06:49:29 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/05 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/05 06:49:29 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/05 06:49:29 - Mail 2.0 - 	... 2 more
+2024/02/05 06:49:29 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/05 06:49:29 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/05 06:49:29 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/05 06:49:29 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/05 06:49:29 - Mail 2.0 - 	... 6 more
+2024/02/05 06:49:29 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/05 06:49:29 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/05 06:49:29 - Mail 2.0 - 	... 11 more
+2024/02/05 06:49:29 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/05 06:49:29 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/05 06:49:29 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/05 06:49:29 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/05 06:49:29 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/05 06:49:29 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/05 06:49:29 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/05 06:49:29 - JOB_sendEmail - Job execution finished
+2024/02/05 06:49:29 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/05 06:49:29 - Kitchen - Finished!
+2024/02/05 06:49:29 - SendEmail - Transformation is killing the other steps!
+2024/02/05 06:49:29 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/05 06:49:29 - Kitchen - Start=2024/02/05 06:23:35.012, Stop=2024/02/05 06:49:29.944
+2024/02/05 06:49:29 - Kitchen - Processing ended after 25 minutes and 54 seconds (1554 seconds total).
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:04,564 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:33,601 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 06, 2024 6:23:34 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/06 06:23:34 - Kitchen - Start of run.
+06:23:36,139 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:36,139 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-06 06:23:37.380:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-06 06:23:37.444:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 06, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 06, 2024 6:23:38 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:38,937 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:38,939 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:38,940 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:38,942 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:38,942 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:38,942 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+2024/02/06 06:23:39 - JOB_sendEmail - Start of job execution
+2024/02/06 06:23:39 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/06 06:23:39 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Feb 06, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+2024/02/06 06:23:41 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/06 06:23:41 - LoadConfiguration - Using legacy execution engine
+2024/02/06 06:23:41 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+Feb 06, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+2024/02/06 06:23:41 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/06 06:23:41 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/06 06:23:41 - Set Variables.0 - Setting environment variables...
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/06 06:23:41 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/06 06:23:41 - Set Variables.0 - Finished after 1 rows.
+2024/02/06 06:23:41 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:23:41 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/06 06:23:41 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+Feb 06, 2024 6:23:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/06 06:23:42 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/06 06:23:42 - GenerateMissingPMs - Using legacy execution engine
+2024/02/06 06:23:42 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/06 06:29:58 - Table input.0 - Finished reading query, closing connection.
+2024/02/06 06:29:58 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/06 06:29:58 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/06 06:29:58 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:29:58 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/06 06:29:58 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:29:58 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/06 06:29:58 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/06 06:29:58 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/06 06:29:58 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/06 06:29:58 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/06 06:29:58 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/06 06:29:58 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/06 06:29:58 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/06 06:29:58 - GenerateLogs - Using legacy execution engine
+2024/02/06 06:29:58 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/06 06:29:58 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:39:08 - Table input.0 - Finished reading query, closing connection.
+2024/02/06 06:39:08 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/06 06:39:08 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/06 06:39:08 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:39:08 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/06 06:39:08 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:39:08 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:39:08 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/06 06:39:08 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/06 06:39:08 - JOB_sendEmail - Starting entry [Send email]
+2024/02/06 06:39:08 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/06 06:39:08 - Send email - Using run configuration [Pentaho local]
+2024/02/06 06:39:08 - Send email - Using legacy execution engine
+2024/02/06 06:39:08 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/06 06:39:08 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/06 06:39:08 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/06 06:39:14 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/06 06:39:14 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/06 06:39:14 - Mail 2.0 - Can not send mail!
+2024/02/06 06:39:14 - Mail 2.0 - Could not convert socket to TLS
+2024/02/06 06:39:14 - Mail 2.0 - 
+2024/02/06 06:39:14 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/06 06:39:14 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/06 06:39:14 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/06 06:39:14 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/06 06:39:14 - Mail 2.0 -   nested exception is:
+2024/02/06 06:39:14 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/06 06:39:14 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/06 06:39:14 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/06 06:39:14 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/06 06:39:14 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/06 06:39:14 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/06 06:39:14 - Mail 2.0 - 	... 2 more
+2024/02/06 06:39:14 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/06 06:39:14 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/06 06:39:14 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/06 06:39:14 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/06 06:39:14 - Mail 2.0 - 	... 6 more
+2024/02/06 06:39:14 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/06 06:39:14 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/06 06:39:14 - Mail 2.0 - 	... 11 more
+2024/02/06 06:39:14 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/06 06:39:14 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/06 06:39:14 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/06 06:39:14 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/06 06:39:14 - SendEmail - Transformation is killing the other steps!
+2024/02/06 06:39:14 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/06 06:39:14 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/06 06:39:14 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/06 06:39:14 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/06 06:39:14 - JOB_sendEmail - Job execution finished
+2024/02/06 06:39:14 - Kitchen - Finished!
+2024/02/06 06:39:14 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/06 06:39:14 - Kitchen - Start=2024/02/06 06:23:34.857, Stop=2024/02/06 06:39:14.120
+2024/02/06 06:39:14 - Kitchen - Processing ended after 15 minutes and 39 seconds (939 seconds total).
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+06:15:05,093 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+06:23:34,117 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 5 at /hawaiki_il/data-integration/./system/karaf ***
+***   /caches/kitchen/data-5                                                ***
+*** FastBin Provider Port:52905                                             ***
+*** Karaf Port:8806                                                         ***
+*** OSGI Service Port:9055                                                  ***
+*******************************************************************************
+Feb 07, 2024 6:23:34 AM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+2024/02/07 06:23:35 - Kitchen - Start of run.
+Updating configuration from org.apache.aries.rsa.provider.fastbin.cfg
+Updating configuration from org.ops4j.pax.web.cfg
+Updating configuration from org.apache.karaf.shell.cfg
+06:23:36,537 ERROR [BootFeaturesInstaller] Error Boot feature pentaho-client-minimal not found
+06:23:36,537 ERROR [BootFeaturesInstaller] Error Boot feature config not found
+2024-02-07 06:23:37.681:INFO:oejs.Server:jetty-8.1.15.v20140411
+2024-02-07 06:23:37.737:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9055
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (192) [org.apache.cxf.management.InstrumentationManager]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (195) [org.apache.cxf.wsdl.WSDLManager]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (197) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (198) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (217) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (199) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (201) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (213) [org.apache.cxf.transport.local.LocalTransportFactory]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (214) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (234) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (236) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (238) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Feb 07, 2024 6:23:38 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (239) [org.apache.cxf.javascript.JavascriptServerListener]
+Feb 07, 2024 6:23:38 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+06:23:39,191 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-client
+06:23:39,191 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-metaverse
+06:23:39,191 ERROR [KarafCapabilityProvider] No feature found matching id: pentaho-dataservice
+06:23:39,191 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-data-refinery
+06:23:39,192 ERROR [KarafCapabilityProvider] No feature found matching id: pdi-marketplace
+06:23:39,192 ERROR [KarafCapabilityProvider] No feature found matching id: community-edition
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/hawaiki_il/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Feb 07, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Feb 07, 2024 6:23:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+Feb 07, 2024 6:23:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2024/02/07 06:23:43 - JOB_sendEmail - Start of job execution
+2024/02/07 06:23:43 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2024/02/07 06:23:43 - JOB_sendEmail - Starting entry [LoadConfiguration]
+2024/02/07 06:23:43 - LoadConfiguration - Loading transformation from XML file [file:///hawaiki_il/tesubcom/LoadConfiguration.ktr]
+2024/02/07 06:23:43 - LoadConfiguration - Using run configuration [Pentaho local]
+2024/02/07 06:23:43 - LoadConfiguration - Using legacy execution engine
+2024/02/07 06:23:43 - LoadConfiguration - Dispatching started for transformation [LoadConfiguration]
+2024/02/07 06:23:43 - Property Input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2024/02/07 06:23:43 - Row denormaliser.0 - Finished processing (I=0, O=0, R=21, W=1, U=0, E=0)
+2024/02/07 06:23:43 - Set Variables.0 - Setting environment variables...
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_DB_IP to value [10.10.13.201]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_DB_NAME to value [pm_db]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_DB_PORT to value [3306]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_DB_USER to value [mediation_rw]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_DB_PASS to value [PqTLyM41TjEuiTfF]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_IP to value [172.29.136.30]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PORT to value [21]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_USERNAME to value [tems_adm]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_PASSWORD to value [tems_adm]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_SERVER_DIRECTORY to value [/home/tems_adm/temsNMS/schedReport/new/och]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_LOCAL_FILE_DIRECTORY to value [/hawaiki_il/tesubcom/och]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FTP_LOGS_DIRECTORY to value [ftp_logs/ftp_logs.txt]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_DESTINATION_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_SENDER_ADDRESS to value [no-reply@bw-digital.com]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_SMTP_SERVER to value [smtp.office365.com]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_PORT to value [587]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_PASSWORD to value [JkKL7+su&=wybsLGjnY@&j5ZV^e_C^J&%LvqrdQk]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_SUBJECT to value [Missing PM Sources - TEMS Pre production - 10.10.12.108]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_SUBJECT_Q_FACTOR to value [Q Factor Report - TEMS Pre production - 10.10.12.108]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_FILE_PATH_Q_FACTOR to value [/email/q_factor_report.txt]
+2024/02/07 06:23:43 - Set Variables.0 - Set variable TARGET_EMAIL_QFACTOR_ADDRESS to value [itdev@hawaikicable.co.nz]
+2024/02/07 06:23:43 - Set Variables.0 - Finished after 1 rows.
+2024/02/07 06:23:43 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:23:43 - JOB_sendEmail - Starting entry [GenerateMissingPMs]
+2024/02/07 06:23:43 - GenerateMissingPMs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateMissingPMs.ktr]
+2024/02/07 06:23:43 - GenerateMissingPMs - Using run configuration [Pentaho local]
+2024/02/07 06:23:43 - GenerateMissingPMs - Using legacy execution engine
+2024/02/07 06:23:43 - GenerateMissingPMs - Dispatching started for transformation [GenerateMissingPMs]
+2024/02/07 06:33:34 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/07 06:33:34 - Table input 2.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2024/02/07 06:33:34 - Table input.0 - Finished reading query, closing connection.
+2024/02/07 06:33:34 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/07 06:33:34 - User Defined Java Class.0 - <font color='red'><h3>14 PM source completely missing!</h3></font>
+2024/02/07 06:33:34 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/07 06:33:34 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:33:34 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:33:34 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2024/02/07 06:33:34 - Text file output 2.0 - Finished processing (I=0, O=15, R=14, W=14, U=0, E=0)
+2024/02/07 06:33:34 - JOB_sendEmail - Starting entry [GenerateLogs]
+2024/02/07 06:33:34 - GenerateLogs - Loading transformation from XML file [file:///hawaiki_il/tesubcom/GenerateFTPlogs.ktr]
+2024/02/07 06:33:34 - GenerateLogs - Using run configuration [Pentaho local]
+2024/02/07 06:33:34 - GenerateLogs - Using legacy execution engine
+2024/02/07 06:33:34 - GenerateFTPlogs - Dispatching started for transformation [GenerateFTPlogs]
+2024/02/07 06:33:34 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:44:41 - Table input.0 - Finished reading query, closing connection.
+2024/02/07 06:44:41 - User Defined Java Class.0 - <font color='green'><h3>No PM sources partially missing!</h3></font>
+2024/02/07 06:44:41 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024/02/07 06:44:41 - User Defined Java Class.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:44:41 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024/02/07 06:44:41 - Java Filter.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:44:41 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:44:41 - Table input 2.0 - Finished reading query, closing connection.
+2024/02/07 06:44:41 - Text file output 2 2.0 - Finished processing (I=0, O=1, R=0, W=0, U=0, E=0)
+2024/02/07 06:44:41 - JOB_sendEmail - Starting entry [Send email]
+2024/02/07 06:44:41 - Send email - Loading transformation from XML file [file:///hawaiki_il/tesubcom/SendEmail.ktr]
+2024/02/07 06:44:41 - Send email - Using run configuration [Pentaho local]
+2024/02/07 06:44:41 - Send email - Using legacy execution engine
+2024/02/07 06:44:41 - SendEmail - Dispatching started for transformation [SendEmail]
+2024/02/07 06:44:41 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024/02/07 06:44:41 - Load ftp log content in memory.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+org.pentaho.di.core.exception.KettleException: 
+Can not send mail!
+Could not convert socket to TLS
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+  nested exception is:
+	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+	at javax.mail.Service.connect(Service.java:295)
+	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+	... 2 more
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+	... 6 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+	... 11 more
+2024/02/07 06:44:46 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Unexpected error
+2024/02/07 06:44:46 - Mail 2.0 - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2024/02/07 06:44:46 - Mail 2.0 - Can not send mail!
+2024/02/07 06:44:46 - Mail 2.0 - Could not convert socket to TLS
+2024/02/07 06:44:46 - Mail 2.0 - 
+2024/02/07 06:44:46 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:510)
+2024/02/07 06:44:46 - Mail 2.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/02/07 06:44:46 - Mail 2.0 - 	at java.lang.Thread.run(Thread.java:748)
+2024/02/07 06:44:46 - Mail 2.0 - Caused by: javax.mail.MessagingException: Could not convert socket to TLS;
+2024/02/07 06:44:46 - Mail 2.0 -   nested exception is:
+2024/02/07 06:44:46 - Mail 2.0 - 	javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/07 06:44:46 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1907)
+2024/02/07 06:44:46 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:666)
+2024/02/07 06:44:46 - Mail 2.0 - 	at javax.mail.Service.connect(Service.java:295)
+2024/02/07 06:44:46 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.sendMail(Mail.java:713)
+2024/02/07 06:44:46 - Mail 2.0 - 	at org.pentaho.di.trans.steps.mail.Mail.processRow(Mail.java:493)
+2024/02/07 06:44:46 - Mail 2.0 - 	... 2 more
+2024/02/07 06:44:46 - Mail 2.0 - Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1310)
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1151)
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1054)
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:394)
+2024/02/07 06:44:46 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+2024/02/07 06:44:46 - Mail 2.0 - 	at com.sun.mail.util.SocketFetcher.startTLS(SocketFetcher.java:486)
+2024/02/07 06:44:46 - Mail 2.0 - 	at com.sun.mail.smtp.SMTPTransport.startTLS(SMTPTransport.java:1902)
+2024/02/07 06:44:46 - Mail 2.0 - 	... 6 more
+2024/02/07 06:44:46 - Mail 2.0 - Caused by: java.io.EOFException: SSL peer shut down incorrectly
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:167)
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+2024/02/07 06:44:46 - Mail 2.0 - 	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1143)
+2024/02/07 06:44:46 - Mail 2.0 - 	... 11 more
+2024/02/07 06:44:46 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/07 06:44:46 - Mail 2.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/02/07 06:44:46 - SendEmail - Transformation detected one or more steps with errors.
+2024/02/07 06:44:46 - SendEmail - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Errors detected!
+2024/02/07 06:44:46 - SendEmail - Transformation is killing the other steps!
+2024/02/07 06:44:46 - JOB_sendEmail - Finished job entry [Send email] (result=[false])
+2024/02/07 06:44:46 - JOB_sendEmail - Finished job entry [GenerateLogs] (result=[false])
+2024/02/07 06:44:46 - JOB_sendEmail - Finished job entry [GenerateMissingPMs] (result=[false])
+2024/02/07 06:44:46 - JOB_sendEmail - Finished job entry [LoadConfiguration] (result=[false])
+2024/02/07 06:44:46 - JOB_sendEmail - Job execution finished
+2024/02/07 06:44:46 - Kitchen - Finished!
+2024/02/07 06:44:46 - Kitchen - ERROR (version 8.1.0.0-365, build 8.1.0.0-365 from 2018-04-30 09.42.24 by buildguy) : Finished with errors
+2024/02/07 06:44:46 - Kitchen - Start=2024/02/07 06:23:35.137, Stop=2024/02/07 06:44:46.775
+2024/02/07 06:44:46 - Kitchen - Processing ended after 21 minutes and 11 seconds (1271 seconds total).

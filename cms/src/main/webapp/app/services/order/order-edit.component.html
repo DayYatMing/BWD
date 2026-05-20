@@ -1,0 +1,79 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Edit Order</b></h3>
+  </div>
+</div>
+
+<div class="container py-4">
+  <form #orderForm="ngForm" (ngSubmit)="edit()">
+    <label class="form-control-label" for="field_entityName"
+      ><b>Customer Name</b> <span class="text-danger" *ngIf="entityName.invalid && entityName.touched"> * required field </span></label
+    >
+    <input name="entityName" [(ngModel)]="order.entityName" required #entityName="ngModel" class="form-control mb-1" readonly />
+    <br />
+
+    <label class="form-control-label" for="field_name"
+      ><b>Service Name</b> <span class="text-danger" *ngIf="name.invalid && name.touched"> * required field </span></label
+    >
+    <input type="text" name="name" [(ngModel)]="order.name" required #name="ngModel" class="form-control mb-1" /><br />
+
+    <label class="form-control-label" for="field_status"
+      ><b>Status</b> <span class="text-danger" *ngIf="status.invalid && status.touched"> * required field </span></label
+    >
+    <select name="status" [(ngModel)]="order.status" required #status="ngModel" class="form-control mb-1">
+      <option value="SERVICE">SERVICE</option>
+      <option value="PROVISIONING">PROVISIONING</option>
+      <option value="DECOMMISSIONNED">DECOMMISSIONNED</option>
+      <option value="TESTING">TESTING</option></select
+    ><br />
+
+    <label class="form-control-label" for="field_duration"
+      ><b>Duration (lease in years)</b>
+      <span class="text-danger" *ngIf="duration.invalid && duration.touched"> * required and must not be a negative number </span></label
+    >
+    <input
+      type="number"
+      name="duration"
+      [(ngModel)]="order.duration"
+      required
+      #duration="ngModel"
+      class="form-control mb-1"
+      min="0"
+      step="1"
+    /><br />
+    <br />
+
+    <label class="form-control-label" for="field_file">
+      <b>Upload Circuit (only support .png or .jpg/jpeg)</b>
+    </label>
+    <input type="file" (change)="onFileSelected($event)" class="form-control mb-1" accept=".png,.jpg,.jpeg" />
+    <br />
+
+    <div *ngIf="order.circuit; else noImage">
+      <label class="form-control-label" for="field_existingFile"> <b>Existing Circuit (click to enlarge)</b> </label><br />
+      <div style="width: 20vw; height: 20vw; overflow: hidden">
+        <img [src]="imageType + order.circuit?.toString()" class="img-fluid thumbnail" (click)="openImage()" alt="circuit" />
+      </div>
+      <div align="center" class="image-modal" *ngIf="showImage" (click)="closeImage()">
+        <div class="image-modal-content" (click)="$event.stopPropagation()">
+          <button class="close-btn" (click)="closeImage()">✕</button>
+
+          <img [src]="imageType + order.circuit?.toString()" class="modal-image" alt="circuit" />
+        </div>
+      </div>
+    </div>
+
+    <ng-template #noImage>
+      <div class="no-image-placeholder">
+        <b>No circuit image available</b>
+      </div>
+      <br />
+    </ng-template>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary" [disabled]="orderForm.invalid">Edit</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/services/order']">Back</button>
+  </form>
+</div>

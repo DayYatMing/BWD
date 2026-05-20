@@ -1,0 +1,1 @@
+/hawaiki_il/data-integration/kitchen.sh -file /hawaiki_il/ciena/REST_Call_and_Load_Ciena_Backhaul_to_DB.kjb

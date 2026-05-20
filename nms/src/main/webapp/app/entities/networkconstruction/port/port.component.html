@@ -1,0 +1,85 @@
+<div>
+  <h6 style="color: red">{{ infoMsg }}</h6>
+</div>
+<div style="width: 100%; text-align: center">
+  <h1>Port</h1>
+</div>
+<!-- Loader -->
+<div *ngIf="progressLoader" class="loader">
+  <div class="spinner"></div>
+</div>
+<div *ngIf="!progressLoader">
+  <div class="tablegrid" style="width: 100%; height: 100%">
+    <ejs-grid
+      #portgrid
+      id="portgrid"
+      gridLines="Horizontal"
+      [dataSource]="ports"
+      allowSorting="true"
+      allowPaging="true"
+      allowTextWrap="true"
+      [height]="520"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      [editSettings]="editSettings"
+      [selectionSettings]="selectionOptions"
+      [allowSelection]="true"
+      [contextMenuItems]="contextMenuItems"
+      (actionComplete)="actionComplete($event)"
+      (rowSelected)="rowSelected($event)">
+      <e-columns>
+        <e-column field="id" headerText="ID" width="120" textAlign="Left" [visible]="false"></e-column>
+        <e-column field='portname' headerText='NRMS Port Name' width='400' textAlign='Left'   autoFit='true' isPrimaryKey='true'   ></e-column>
+        <e-column field='mappedportname'   headerText='Mapped Port Name' width='400' textAlign='Left' autoFit="true"  textAlign='Left'></e-column>
+        <e-column field='site' headerText='Site' width='150' textAlign='Left'  autoFit='true'   isPrimaryKey='true'  ></e-column>
+        <e-column field='roomlocation' headerText='Room' width='200' textAlign='Left'  autoFit='true'    isPrimaryKey='true'  ></e-column>
+        <e-column field='cardtype' headerText='Card Type' width='150' textAlign='Left' autoFit='true'  isPrimaryKey='true' ></e-column>
+        <e-column field='shelf' headerText='Shelf' width='120' textAlign='Left' autoFit='true'  isPrimaryKey='true'></e-column>
+        <e-column field='slot' headerText='Slot' width='120' textAlign='Left'  autoFit='true' defaultValue= ' '   isPrimaryKey='true'></e-column>
+        <e-column field='position' headerText='Position' width='120' textAlign='Left' autoFit='true' isPrimaryKey='true'  ></e-column>
+        <e-column field='labelname' headerText='Port Number' width='120' textAlign='Left' autoFit='true'></e-column>
+        <e-column field='direction' headerText='Direction' width='120' textAlign='Left'  defaultValue= 'TX'   autoFit='true'></e-column>
+        <e-column field='connector' headerText='Connector' width='120' textAlign='Left' defaultValue= 'LCU' autoFit='true'  ></e-column>
+        <e-column field='capacity' headerText='Capacity' width='120' textAlign='Left' editType='number' defaultValue=0 autoFit='true'></e-column>
+        <e-column field='thirdparty' headerText='Third Party' width='120' textAlign='Left'  defaultValue= ' ' autoFit='true'></e-column>
+        <e-column field='comment' headerText='Comment' width='150' textAlign='Left'   autoFit='true'></e-column>
+        <e-column field='frequency' headerText='Frequency' width='120' textAlign='Left'  autoFit='true'></e-column>
+        <e-column field='wavelength' headerText='Wavelength' width='120' textAlign='Left'  autoFit='true'></e-column>
+        <e-column field='portstatus' headerText='Status' width='120' textAlign='Left'  defaultValue= 'FREE' autoFit='true' isPrimaryKey='true' ></e-column>
+        <e-column field='serviceid' headerText='ServiceID' width='150' textAlign='Left'  isPrimaryKey='true'   autoFit='true'></e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+</div>
+<br />
+<div>
+  <label for="field_file" class="mb-0 fw-bold">
+  For adding multiple ports, please use bulk features below.
+  </label>
+  <br />
+  <label for="field_file" class="mb-0 fw-bold">
+    Bulk Upload (.CSV) -
+
+    <a href="/content/docs/BulkUploadTemplate.csv" download class="text-decoration-none">
+      (Download CSV Template)
+    </a>
+  </label>
+</div>
+
+<form #uploadBulkPorts="ngForm" (ngSubmit)="upload()" class="d-flex align-items-center gap-2 p-2 border rounded">
+  <input
+    type="file"
+    (change)="onFileSelected($event)"
+    class="form-control form-control-sm"
+    id="field_file"
+    accept=".csv"
+  />
+
+  <button
+    type="submit"
+    class="btn btn-primary btn-sm"
+    [disabled]="uploadBulkPorts.invalid"
+  >
+    Upload
+  </button>
+</form>

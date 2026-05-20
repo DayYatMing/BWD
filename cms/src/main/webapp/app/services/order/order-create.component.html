@@ -1,0 +1,68 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Create New Order</b></h3>
+  </div>
+</div>
+
+<div class="container py-4">
+  <form #orderForm="ngForm" (ngSubmit)="new()">
+    <label class="form-control-label" for="field_entityName"
+      ><b>Customer Name</b> <span class="text-danger" *ngIf="entityName.invalid && entityName.touched"> * required field </span></label
+    >
+    <select
+      name="entityName"
+      [(ngModel)]="order.entityName"
+      (ngModelChange)="onEntitySelected($event)"
+      required
+      #entityName="ngModel"
+      class="form-control mb-1"
+    >
+      <option *ngFor="let entity of entities" [ngValue]="entity.name">
+        {{ entity.name }}
+      </option></select
+    ><br />
+
+    <label class="form-control-label" for="field_name"
+      ><b>Service Name</b> <span class="text-danger" *ngIf="name.invalid && name.touched"> * required field </span></label
+    >
+    <input type="text" name="name" [(ngModel)]="order.name" required #name="ngModel" class="form-control mb-1" /><br />
+
+    <label class="form-control-label" for="field_status"
+      ><b>Status</b> <span class="text-danger" *ngIf="status.invalid && status.touched"> * required field </span></label
+    >
+    <select name="status" [(ngModel)]="order.status" required #status="ngModel" class="form-control mb-1">
+      <option value="SERVICE">SERVICE</option>
+      <option value="PROVISIONING">PROVISIONING</option>
+      <option value="DECOMMISSIONNED">DECOMMISSIONNED</option>
+      <option value="TESTING">TESTING</option></select
+    ><br />
+
+    <label class="form-control-label" for="field_duration"
+      ><b>Duration (lease in years)</b>
+      <span class="text-danger" *ngIf="duration.invalid && duration.touched"> * required and must not be a negative number </span></label
+    >
+    <input
+      type="number"
+      name="duration"
+      [(ngModel)]="order.duration"
+      required
+      #duration="ngModel"
+      class="form-control mb-1"
+      min="0"
+      step="1"
+    /><br />
+    <br />
+
+    <label class="form-control-label" for="field_file">
+      <b>Upload Circuit (only support .png or .jpg/jpeg)</b>
+    </label>
+    <input type="file" (change)="onFileSelected($event)" class="form-control mb-1" accept=".png,.jpg,.jpeg" />
+    <br />
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary" [disabled]="orderForm.invalid">Create</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/services/order']">Back</button>
+  </form>
+</div>

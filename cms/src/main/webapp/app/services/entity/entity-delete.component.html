@@ -1,0 +1,30 @@
+<div class="container py-4">
+  <b>{{ infoMsg }}</b>
+
+  <div align="center">
+    <h3><b>Delete Entry</b></h3>
+  </div>
+</div>
+
+<div class="container py-4">
+  <form #entityForm="ngForm" (ngSubmit)="delete()">
+    <label class="form-control-label" for="field_name"><b>Name</b> </label>
+    <input type="text" name="name" [(ngModel)]="entity.name" class="form-control mb-1" readonly /><br />
+
+    <label class="form-control-label" for="field_shortName"><b>Short Name</b> </label>
+    <input type="text" name="shortName" [(ngModel)]="entity.shortName" class="form-control mb-1" readonly /><br />
+
+    <label class="form-control-label" for="field_contact"><b>Contact</b> </label>
+    <input type="text" name="contact" [(ngModel)]="entity.contact" class="form-control mb-1" readonly /><br />
+
+    <label class="form-control-label" for="field_address"><b>Address</b> </label>
+    <input type="text" name="address" [(ngModel)]="entity.address" class="form-control mb-1" readonly /><br />
+
+    <label class="form-control-label" for="field_active"><b>Active</b> </label>
+    <input type="text" name="active" [(ngModel)]="entity.active" class="form-control mb-1" readonly /><br />
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary" [disabled]="entityForm.invalid">Delete</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/services/entity']">Back</button>
+  </form>
+</div>

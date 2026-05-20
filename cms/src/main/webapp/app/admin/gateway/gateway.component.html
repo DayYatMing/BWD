@@ -1,0 +1,87 @@
+<div class="container py-5">
+  <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+    <h2 id="gateway-page-heading" data-cy="GatewayHeading" class="mb-2 mb-md-0 fw-bold">
+      <span jhiTranslate="gateway.title">Gateway</span>
+    </h2>
+
+    <div class="d-flex flex-wrap gap-2">
+      <button class="btn btn-info d-flex align-items-center shadow-sm" (click)="refresh()" [disabled]="updatingRoutes">
+        <fa-icon icon="sync" [animation]="updatingRoutes ? 'spin' : undefined" class="me-2"></fa-icon>
+        <span jhiTranslate="gateway.refresh.button">Refresh</span>
+      </button>
+    </div>
+  </div>
+
+  <jhi-alert-error />
+  <jhi-alert />
+
+  @if (gatewayRoutes.length === 0) {
+    <div class="alert alert-warning shadow-sm rounded" id="no-result">
+      <span jhiTranslate="gateway.routes.notFound">No routes found</span>
+    </div>
+  } @else {
+    <div class="table-responsive shadow-sm rounded border">
+      <table class="table table-hover align-middle mb-0" aria-describedby="gateway-page-heading">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" class="fw-semibold">
+              <div class="d-flex align-items-center">
+                <span jhiTranslate="gateway.routes.url">URL</span>
+              </div>
+            </th>
+            <th scope="col" class="fw-semibold">
+              <div class="d-flex align-items-center">
+                <span jhiTranslate="gateway.routes.service">Service</span>
+              </div>
+            </th>
+            <th scope="col" class="fw-semibold">Available servers</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (route of gatewayRoutes; track route.path) {
+            <tr>
+              <td class="align-top">{{ route.path }}</td>
+              <td class="align-top">{{ route.serviceId }}</td>
+              <td>
+                @if (route.serviceInstances.length === 0) {
+                  <div class="alert alert-danger py-1 px-2 mb-2 rounded" jhiTranslate="gateway.routes.error">
+                    Warning: no server available!
+                  </div>
+                } @else {
+                  <div class="table-responsive">
+                    <table class="table table-striped mb-0">
+                      @for (instance of route.serviceInstances; track instance.uri) {
+                        <tr>
+                          <td>
+                            <a href="{{ instance.uri }}" target="_blank">{{ instance.uri }}</a>
+                          </td>
+                          <td>
+                            @if (instance.instanceInfo) {
+                              <div class="badge bg-{{ instance.instanceInfo.status === 'UP' ? 'success' : 'danger' }}">
+                                {{ instance.instanceInfo.status }}
+                              </div>
+                            } @else {
+                              <div class="badge bg-warning">?</div>
+                            }
+                          </td>
+                          <td>
+                            @for (entry of instance.metadata | keyvalue; track entry.key) {
+                              <span class="badge bg-default fw-normal me-1 mb-1 d-inline-block">
+                                <span class="badge rounded-pill bg-info fw-normal">{{ entry.key }}</span>
+                                <span class="text-secondary">{{ entry.value }}</span>
+                              </span>
+                            }
+                          </td>
+                        </tr>
+                      }
+                    </table>
+                  </div>
+                }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

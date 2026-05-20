@@ -1,0 +1,186 @@
+<h1 style="text-align: center" class="home-label">Performance Metrics</h1>
+
+<h6 style="color: red">{{ infoMsg }}</h6>
+<div style="height: 700px">
+  <div id="tab_wizard"></div>
+
+  <div id="customer" style="display: none">
+    <br />
+    <h6 style="color: blue">Select Customer</h6>
+    <div class="btn-container">
+      <button id="cust_next" class="e-btn" (click)="btnNavigation($event)">Next</button>
+    </div>
+    <div id="custGrid" style="height: 500px">
+      <ejs-grid
+        id="customerGrid"
+        #customerGrid
+        gridLines="Both"
+        [dataSource]="customers"
+        [allowSorting]="true"
+        [allowResizing]="true"
+        [allowPaging]="true"
+        [pageSettings]="pageSettings"
+        [toolbar]="toolbarSettings"
+        [editSettings]="editSettings"
+        (toolbarClick)="toolbarClick($event)"
+        (rowSelected)="rowSelected($event)"
+        (actionComplete)="editComplete($event)"
+      >
+        <e-columns>
+          <e-column headerText="Name" width="30" field="name" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Shortname" width="10" field="shortname" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Active" width="10" field="active"></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+    <div style="font-size: smaller; color: steelblue">
+      <br />
+      Note:
+      <ul>
+        <li>
+          Active customer is set to 1, otherwise inactive customer is set to 0 or empty. It also associates with Stats Portal display.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="service" style="display: none">
+    <br />
+    <h6 *ngIf="customers.length > 0" style="color: blue">{{ customers[selectedCustomerIndex].name }}</h6>
+    <div class="btn-container">
+      <button id="serv_back" class="e-btn" (click)="btnNavigation($event)">Back</button>
+      <button id="serv_next" class="e-btn" (click)="btnNavigation($event)">Next</button>
+    </div>
+    <div id="servGrid">
+      <ejs-grid
+        id="serviceGrid"
+        #serviceGrid
+        gridLines="Both"
+        [dataSource]="services"
+        [allowSorting]="true"
+        [allowResizing]="true"
+        [allowPaging]="true"
+        [pageSettings]="pageSettings"
+        [toolbar]="toolbarSettings"
+        [editSettings]="editSettings"
+        (toolbarClick)="toolbarClick($event)"
+        (rowSelected)="rowSelected($event)"
+        (actionComplete)="editComplete($event)"
+      >
+        <e-columns>
+          <e-column headerText="Service ID" width="10" field="serviceId" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Start Date" width="7" field="startDate"></e-column>
+          <e-column headerText="End Date" width="7" field="endDate"></e-column>
+          <e-column headerText="Bandwidth" width="8" field="bandwidth" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Active" width="6" field="active" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Visible" width="6" field="visibleToCustomer" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Masked" width="6" field="masked"></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+    <div style="font-size: smaller; color: steelblue">
+      Note:
+      <ul>
+        <li>Please put date format as in "yyyy-mm-dd", ie: 2024-11-03.</li>
+        <li>Please put bandwidth format as in "### GB", ie: 100 GB.</li>
+        <li>Active service is set to 1, otherwise inactive service is set to 0. It also associates with Stats Portal display.</li>
+        <li>Visible is to display service to customer in Stats Portal external. Set to 1 to display, otherwise set to 0.</li>
+        <li>Masked is to display service in Network Diagram. Set to 1 to display, otherwise set to 0 or empty.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="source" style="display: none">
+    <br />
+    <h6 *ngIf="customers.length > 0 && services.length > 0" style="color: blue">
+      {{ customers[selectedCustomerIndex].name }} : {{ services[selectedServiceIndex].serviceId }}
+    </h6>
+    <div class="btn-container">
+      <button id="sour_back" class="e-btn" (click)="btnNavigation($event)">Back</button>
+      <button id="sour_next" class="e-btn" (click)="btnNavigation($event)">Next</button>
+    </div>
+    <div id="sourGrid">
+      <ejs-grid
+        id="sourceGrid"
+        #sourceGrid
+        gridLines="Both"
+        [dataSource]="sources"
+        [allowSorting]="true"
+        [allowResizing]="true"
+        [allowPaging]="true"
+        [pageSettings]="pageSettings"
+        [toolbar]="toolbarSettings"
+        [editSettings]="editSettings"
+        (toolbarClick)="toolbarClick($event)"
+        (rowSelected)="rowSelected($event)"
+        (actionComplete)="editComplete($event)"
+      >
+        <e-columns>
+          <e-column headerText="PM Source" width="10" field="pmSource" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Visible" width="5" field="visibleToCustomer" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Route End" width="5" field="routeEnd"></e-column>
+          <e-column headerText="Segment End" width="5" field="segmentEnd"></e-column>
+          <e-column headerText="Source" width="5" field="source" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Node ID" width="10" field="nodeId" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Route" width="5" field="route" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Segment" width="5" field="segment" [validationRules]="valueRules"></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+    <div style="font-size: smaller; color: steelblue">
+      Note:
+      <ul>
+        <li>Please put PM Source format as in "AAAA:BBBB-#-#", ie: HIKA:PORT-1-1.</li>
+        <li>Visible is to display source to customer in Stats Portal external. Set to 1 to display, otherwise set to 0.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="configuration" style="display: none">
+    <br />
+    <h6 *ngIf="customers.length > 0 && services.length > 0" style="color: blue">
+      {{ customers[selectedCustomerIndex].name }} : {{ services[selectedServiceIndex].serviceId }}
+    </h6>
+    <div class="btn-container">
+      <button id="conf_back" class="e-btn" (click)="btnNavigation($event)">Back</button>
+    </div>
+    <div id="confGrid">
+      <ejs-grid
+        id="configurationGrid"
+        #configurationGrid
+        gridLines="Both"
+        [dataSource]="configurations"
+        [allowSorting]="true"
+        [allowResizing]="true"
+        [allowPaging]="true"
+        [pageSettings]="pageSettings"
+        [toolbar]="toolbarSettings"
+        [editSettings]="editSettings"
+        (toolbarClick)="toolbarClick($event)"
+        (rowSelected)="rowSelected($event)"
+        (actionComplete)="editComplete($event)"
+      >
+        <e-columns>
+          <e-column headerText="PM Source" width="8" field="sourceName" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Node ID" width="10" field="nodeId" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Vendor" width="5" field="vendor" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Label Name" width="10" field="labelName" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Route End" width="5" field="routeDirection"></e-column>
+          <e-column headerText="Segment End" width="5" field="segmentDirection"></e-column>
+          <e-column headerText="Disable" width="4" field="disableCollection" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Visible" width="4" field="visibleToCustomer" [validationRules]="valueRules"></e-column>
+          <e-column headerText="Frequency" width="5" field="frequency" [validationRules]="valueRules"></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+    <div style="font-size: smaller; color: steelblue">
+      Note:
+      <ul>
+        <li>Please put PM Source format as in "AAAA:BBBB-#-#", ie: HIKA:PORT-1-1.</li>
+        <li>Please put Label Name format as in "AAAA:BBBB-#:CCCC-#-#", ie: HIKA:CWSAI-1:PORT-1-1.</li>
+        <li>Disable is for Mediation data collection. 1 is to disable data collection, otherwise set to 0.</li>
+        <li>Visible is to display source to customer in Stats Portal external. Set to 1 to display, otherwise set to 0.</li>
+      </ul>
+    </div>
+  </div>
+</div>
