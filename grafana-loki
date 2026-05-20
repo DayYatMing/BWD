@@ -1,0 +1,48 @@
+services:
+  loki:
+    image: grafana/loki:2.9.0
+    container_name: logs_loki
+    ports:
+      - "3101:3100"
+    command: -config.file=/etc/loki/loki-config.yaml
+    volumes:
+      - loki-data:/loki
+      - ./loki-config.yaml:/etc/loki/loki-config.yaml
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: logs_grafana
+    ports:
+      - "3001:3000"
+    depends_on:
+      - loki
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+  fluent-bit:
+    image: fluent/fluent-bit:latest
+    user: root
+    container_name: logs_fluentbit
+    environment:
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=localhost,127.0.0.1,loki,10.0.0.0/8,192.168.0.0/16
+    volumes:
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro,rslave
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./fluent-bit/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
+      - ./fluent-bit/parsers.conf:/fluent-bit/etc/parsers.conf
+      - ./fluent-bit/strip_ansi.lua:/fluent-bit/etc/strip_ansi.lua
+      - ./fluent-bit/container_map.lua:/fluent-bit/etc/container_map.lua
+    depends_on:
+      - loki
+
+networks:
+  default:
+    name: loki-net
+
+volumes:
+  loki-data:
+  grafana-data:
