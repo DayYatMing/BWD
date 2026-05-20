@@ -1,0 +1,8 @@
+Flask==2.3.0
+requests==2.32.4
+tiktoken==0.11.0
+openai==1.99.9
+numpy<2.3.2
+httpx==0.28.1
+scikit-learn==1.7.1
+urllib3==2.2.3

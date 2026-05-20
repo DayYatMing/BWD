@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    brokerai:
+        image: bwdigital/brokerai:v1.0.0
+        container_name: brokerai
+        restart: unless-stopped
+        networks:
+            - preprod_network
+        expose:
+            - "3100"
+        volumes:
+            - '/docker-files/brokerai-volume/logs:/var/logs'
+
+networks:
+    preprod_network:
+        external: true

@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  brokerotrs:
+        image: bwdigital/brokerotrs:v1.0.0
+        container_name: brokerotrs
+        restart: unless-stopped
+        environment:
+          SPRING_PROFILES_ACTIVE: dev
+        networks:
+            - preprod_network
+        expose:
+            - "3000"
+        volumes:
+            - '/docker-files/brokerotrs-volume/logs:/var/logs'
+
+networks:
+    preprod_network:
+        external: true
