@@ -1,0 +1,250 @@
+#jenkins pipeline script: sample
+pipeline {
+    agent any
+
+    stages {
+        stage("build") {
+            steps {
+                // Echo a message indicating the build stage
+                echo "this is build stage"
+            }
+        }
+        stage("test") {
+            steps {
+                // Echo a message indicating the test stage
+                echo "this is test stage"
+            }
+        }
+        stage("integration") {
+            steps {
+                // Execute a shell command to echo a message into output.txt
+                sh 'echo "this is integration" > output.txt'
+            }
+        }
+        stage("prod") {
+            steps {
+                // Echo a message indicating the production stage
+                echo "this is prod stage"
+            }
+        }
+    }
+    // Post actions act the same as after_script GitLab
+    post {
+        failure {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'failed')
+        }
+        unstable {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'failed')
+        }
+        success {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'success')
+        }
+        aborted {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'canceled')
+        }
+        always { 
+            deleteDir()                     // clean up workspace
+        }
+    }
+}
+
+
+
+#jenkins agent
+pipeline {
+    agent any
+
+    options {
+        gitLabConnection('gitlab')
+    }
+
+    stages {
+        stage("build and test") {
+            parallel {
+                stage("build") {
+                    agent {
+                        docker {
+                            image 'python:3.6'
+                            args '-u root'
+                        }
+                    }
+                    steps {
+                        sh """
+                        pip3 install --user virtualenv
+                        python3 -m virtualenv env
+                           . env/bin/activate
+                        pip3 install -r requirements.txt
+                        python3 manage.py check
+                        """
+                    }
+                }
+                stage("test") {
+                    agent {
+                        docker {
+                            image 'python:3.6'
+                            args '-u root'
+                        }
+                    }
+                    steps {
+                        sh """
+                        pip3 install --user virtualenv
+                        python3 -m virtualenv env
+                        . env/bin/activate
+                        pip3 install -r requirements.txt
+                        python3 manage.py test taskManager
+                        """
+                    }
+                }
+            }
+        }
+        stage("integration") {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+                    echo "This is an integration step"
+                    sh "exit 1"
+                   }
+            }
+        }
+        stage("prod") {
+            steps {
+                input "Deploy to production?"
+                   echo "This is a deploy step."
+            }
+        }
+    }
+    post {
+        failure {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'failed')
+        }
+        unstable {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'failed')
+        }
+        success {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'success')
+        }
+        aborted {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'canceled')
+        }
+        always { 
+            deleteDir()                     // clean up workspace
+        }
+    }
+}
+
+
+#jenkins artifact
+pipeline {
+    agent any
+
+    options {
+        gitLabConnection('gitlab')
+    }
+
+    stages {
+        stage("build and test") {
+            parallel {
+                stage("build") {
+                    agent {
+                        docker {
+                            image 'python:3.6'
+                            args '-u root'
+                        }
+                    }
+                    steps {
+                        sh """
+                        pip3 install --user virtualenv
+                        python3 -m virtualenv env
+                           . env/bin/activate
+                        pip3 install -r requirements.txt
+                        python3 manage.py check
+                        """
+                    }
+                }
+                stage("test") {
+                    agent {
+                        docker {
+                            image 'python:3.6'
+                            args '-u root'
+                        }
+                    }
+                    steps {
+                        sh """
+                        pip3 install --user virtualenv
+                        python3 -m virtualenv env
+                        . env/bin/activate
+                        pip3 install -r requirements.txt
+                        python3 manage.py test taskManager
+                        """
+                    }
+                }
+            }
+        }
+        stage("integration") {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+                    echo "This is an integration step"
+                    sh "exit 1"
+                }
+            }
+        }
+        stage("prod") {
+            steps {
+                input "Deploy to production?"
+                echo "This is a deploy step"
+            }
+        }
+        stage("artifact") {
+            steps {
+                script {
+                    // Create a simple text file using the echo command
+                    sh 'echo "This is an artifact file" > artifact.txt'
+
+                    // Archive the artifact file
+                    archiveArtifacts artifacts: 'artifact.txt'
+                }
+            }
+        }
+    }
+    post {
+        failure {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'failed')
+        }
+        unstable {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'failed')
+        }
+        success {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'success')
+        }
+        aborted {
+            updateGitlabCommitStatus(name: "\${env.STAGE_NAME}", state: 'canceled')
+        }
+        always { 
+            deleteDir()                     // clean up workspace
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

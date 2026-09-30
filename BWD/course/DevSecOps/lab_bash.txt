@@ -1,0 +1,149 @@
+#cut command to extract specific details
+#-d (delimiter) flag, -f (field) option to get the field.
+cat filename.txt | cut -d ':' -f 1
+
+
+#ps command to get a list of running processes
+#grep command to identify a particular process
+ps -aux | grep bash
+
+
+#cat and EOL to create a file with input
+cat > myfile <<EOL
+this is text 1.
+this is text 2.
+this is text 3.
+EOL
+
+
+#stat command to verify the permissions of a file
+stat myfile
+
+
+#create a user called john (password is pdevsecops)
+#usermod command to add the user to the sudo group
+#login as john 
+echo -e "pdevsecops\npdevsecops" | adduser --gecos "" john
+usermod -aG sudo john
+sudo su - john
+
+
+#exit code 0 is successful, otherwise is not.
+ls
+echo $?
+
+
+#login remote machine, -i allows to specify private key, root is a user to login, prod-haykyryr is hostname
+#avoid the host authenticity check using the following command by explicitly adding (whitelisting) the target host’s fingerprint to a list of known hosts in the ~/.ssh/known_hosts file
+#use ssh to run commands remotely on the remote machine
+ssh -i ~/.ssh/id_rsa root@prod-haykyryr
+ssh-keyscan -t rsa prod-haykyryr >> ~/.ssh/known_hosts
+ssh root@prod-haykyryr "hostname"
+
+
+#SH enables password-less logins using public-private key pairs.
+#Public-private key pairs are located in the ~/.ssh/ directory.
+#The ssh server should be configured to allow password-less login, which can be done by un-commenting or adding the following two lines to the ssh configuration file (/etc/ssh/sshd_config).
+
+
+#jq is built to take JSON input and emit JSON output, such as prettify JSON object
+echo '{"cloudprovider":{"name":"AWS","url":"www.aws.com"}} ' | jq '.'
+jq '.' filename.json
+
+
+#jq '.[] | .details' command to extract details parts of JSON
+jq '.[] | .details' filename.json
+jq '.[] | {name: .details.name, url:.details.url}' filename.json
+jq '.[1] | {name: .details.name, url: .details.url}' filename.json
+jq '[.[] | {name: .details.name, url: .details.url}]' filename.json
+jq '.[] | {name: .details.name, url: .details.url, services: .services[]}' filename.json
+jq '.[] | {name: .details.name, url: .details.url, services: [.services[]]}' filename.json
+jq '.[] | {name: .details.name, url: .details.url, services: .services}' filename.json
+
+
+#jq with length, select, 
+jq '.[] | {name: .details.name, servicecount: .services | length}' filename.json
+jq '.[] | select(.details.name=="AWS")' filename.json
+jq '.[] | select(.services[].type=="CI-CD") | .details.name' filename.json
+jq '.[].services[] | select(.type=="CI-CD")' filename.json
+jq '.[].services[] | select(.type=="CI-CD") | .name' filename.json
+
+
+#in text editor, type / to search word
+#press n to move to the next occurrence and press shift + n for the previous occurrence
+#press v to enter the visual mode
+#press Shift + v to enter the line mode
+#place cursor before the line and press d to delete this line
+#press dd to delete this line without highlighting it
+#nano editor, press Ctrl+x to exit, press Ctrl+o to save
+#nano to press Ctrl+f to search, alt + f for the next occurrence and alt + q for previous occurrence
+
+
+#python to host an http server, access it by its ip and port
+python3 -m http.server &
+
+
+#grep
+#-v Invert match: Selects all lines not containing the specified pattern.
+#-i Ignore case: Ignores case distinctions in both the pattern and the input files.
+#-r or -R Recurse: Reads all files under each directory, recursively.
+#-l Only the names of files containing the pattern are listed, not the lines containing the occurrences.
+#-c Suppresses normal output and gives the count of lines matching the pattern for each input file.
+
+
+#Displaying Matches: -A (after), -B (before), and -C (context) flags
+#match 5 lines after keyworkd
+#match 2 lines before and 2 lines after keyworkd
+grep -A5 "keyworkd" line.txt
+grep -C2 "keyworkd" line.txt
+
+
+#Awk
+#print the first column of each row in the file, $1 refers to column, note: $0 means all columns
+#$2 equals to "Douglas"
+#-F field separator : to identify each column 
+#calculate field sums of $2, then print the result
+awk '{print $1, $2}' names.txt
+awk '$2 == "Douglas" {print $0}' names.txt
+cat /etc/passwd | awk -F: '{print $1}'
+awk '{ sum += $2; } END { print "Total Score:", sum; }' scores.txt
+
+
+#Sed
+#print tge first line, -n option stops from printing every line by default, 1p to print the first line
+#delete line, -i option tells to edit/save the file instantly, 1d to delete the first line 
+#replace banana to mango, s/ search, /g get, it won't edit the actual file
+#/d delete keyword
+sed -n '1p' myfile.txt
+sed -i '1d' myfile.txt
+sed 's/banana/mango/g' myfile.txt
+sed '/keyword/d' myfile.txt
+
+
+#Find
+#fine filename with file name *.txt in a location
+#list all directories within the /home/user/documents directory
+#find all files larger than 1MB within a directory
+#find to delete all *.txt files within a directory
+find /home/user/documents -name "*.txt"
+find /home/user/documents -type d
+find /home/user/documents -size +1M
+find /home/user/documents -name "*.txt" -delete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

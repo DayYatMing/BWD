@@ -1,1 +1,0 @@
-  /hawaiki_il/data-integration/kitchen.sh -file /hawaiki_il/backhaul/REST_Call_and_LoadBackhaul_SwitchEvent_Data_to_DB.kjb

@@ -1,1 +1,0 @@
-/hawaiki_il/data-integration/kitchen.sh -file /hawaiki_il/bandwidth/REST_Call_and_LoadCiena_Datatwo_to_DB.kjb

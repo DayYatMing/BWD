@@ -1,0 +1,107 @@
+#FROM Creates a layer from Docker Image. Specifies the base image to use
+#COPY Copies the files from the local directory to the docker image on a specific location
+#ADD Similar to COPY but supports file download (HTTP), auto extracting compressed file(s), and replacing the existing file to a specific location if needed forcefully
+#RUN Run OS command (just like you would do on a terminal) but only executes it during the image creation process
+#ENTRYPOINT Run a command as the default command when the container starts. Its the entrypoint to the utility/command
+#CMD Command to run when a container starts or arguments to ENTRYPOINT if specified
+#more than one CMD instruction is specified, only the last CMD instruction is considered
+
+
+#sample Dockerfile
+#-c option means that bash should execute the string as a command
+#sleep infinity tells the container to keep the process alive
+#FROM ubuntu:20.04
+#RUN apt update && apt install nginx -y
+#CMD ["/bin/bash", "-c" , "service nginx start; sleep infinity"]
+
+
+#to build an image based on a Dockerfile
+docker build -t image_title .
+
+
+#install nginx and start, -y is to confirm 'Yes' to proceed the installation if process requires typing 'Yes' to proceed 
+#install curl
+apt update
+apt install -y nginx
+service nginx start
+apt install curl -y
+
+
+#sample Dockerfile with ENTRYPOINT
+#if removing 'sleep infinity', container will exit.
+#but use Docker command with bash to override CMD, it won't exit.
+#FROM ubuntu:20.04
+#RUN apt update && apt install nginx -y
+#ENTRYPOINT ["/bin/bash", "-c"]
+#CMD ["service nginx start; sleep infinity"] or CMD ["service nginx start"]
+docker run -d --name nginx-server -it custom-nginx bash
+
+
+#Docker Compose
+#create a docker-compose.yml file
+#docker compose starting, -d detach, docker-compose.yml is default file to be used, if different path, -f to specify the location
+#docker compose stopping
+cat >docker-compose.yml<<EOF
+version: "3"
+services:
+  ubuntu:
+    image: ubuntu:20.04
+    container_name: ubuntu1
+    stdin_open: true        # the same as docker run -i
+EOF
+
+docker-compose up -d
+docker-compose -f /opt/docker-compose.yml up -d
+docker-compose down
+
+
+#sample of docker-compose.yml
+version: "3"
+services:
+  web:
+    image: nginx
+    container_name: webserver       # name of container
+    ports:
+     - "80:80"                      # similar to docker run -p 80:80
+    environment:
+     - NGINX_HOST=example.com       # similar to docker run -e VAR=value
+    volumes:
+     - ./:/var/www/html/app             # ./ means a bind mounts
+     - image_data:/var/www/html/images  # image_data means use docker volume
+volumes:
+  image_data:                       # similar to docker volume create
+
+
+#another sample of docker-compose.yml
+cat >~/docker-compose.yml<<EOF
+version: "3"
+services:
+  ubuntu:
+    image: ubuntu:20.04
+    container_name: myubuntu
+    volumes:
+     - data:/opt
+  alpine:
+    image: alpine:3.13
+    container_name: myalpine
+    volumes:
+     - data:/tmp
+volumes:
+  data:
+EOF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,0 @@
-otrs:
-  host: https://ticketing.local.bw-digital.com
-  urn: /otrs/nph-genericinterface.pl/Webservice/GenericTicketConnectorREST/Ticket
-  username: ics-api
-  password: gwPAkPiDH1z2VCSm
-

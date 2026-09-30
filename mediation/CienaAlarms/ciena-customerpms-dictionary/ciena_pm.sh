@@ -1,1 +1,0 @@
-/hawaiki_il/data-integration/kitchen.sh -file /opt/HawaikiTools/CienaAlarms/ciena-customerpms-dictionary/REST_Call_and_LoadCiena_Data_to_DB.kjb

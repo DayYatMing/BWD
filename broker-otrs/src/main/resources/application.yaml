@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: brokerotrs
-
-server:
-  port: 3000
-

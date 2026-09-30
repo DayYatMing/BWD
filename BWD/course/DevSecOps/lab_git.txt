@@ -1,0 +1,27 @@
+#multiple ways to create new branch
+#checkout, or switch command to switch to specific existing branch
+git branch new-branch
+git checkout -b checkout-branch
+git switch -c switch-branch
+
+
+#delete branch
+git branch -D new-branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

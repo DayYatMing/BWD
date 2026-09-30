@@ -1,9 +1,0 @@
-IMPORTANT NOTE: PLEASE USE ; TO SEPARETE EACH DATA. IF DATA IS EMPTY, STILL USING ; BEFORE NEXT DATA.
------------------------------------------------------------------------------------------------------
-NRMS Port Name;Mapped Port Name;Site;Room;Card Type;Shelf;Slot;Position;Port Number;Direction;Connector;Capacity;Third Party;Comment;Frequency;Wavelength;Status;Service ID
-HIKA/FOTR/010104.01/S_2:Sl_7:P_21-Tx:C_LCU;HIKA/ODF_TRX/010102.05/S_3-G:P_12:Ps_B:C_SCA;HIKA;1.5;FOTR;2;7;B;20;TX;LCU;10;3rd Party Name;This is comment;195;1545;FREE;ABC-BC0001
-
-
-
-
-

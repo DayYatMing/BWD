@@ -1,0 +1,130 @@
+# This is how a comment is added to a YAML file; please read them carefully.
+stages:         # Dictionary
+ - build        # this is build stage
+ - test         # this is test stage
+ - integration  # this is an integration stage
+ - prod         # this is prod/production stage
+
+job1:
+  stage: build  # this job belongs to the build stage.
+  script:
+    - echo "This is a build step."  # We are running an echo command, but it can be any command.
+
+job2:
+  stage: test
+  script:
+    - echo "This is a test step."
+    - exit 1          # Non zero exit code, fails a job.
+
+job3:          
+  stage: integration  # integration stage
+  script:
+    - echo "This is an integration step."
+
+job4:
+  stage: prod
+  script:
+    - echo "This is a deploy step."
+	
+
+#initial step is the build process. This phase tests whether the application’s build condition can meet the expected outcome.
+#The last command, python manage.py check, is executed to verify the application’s functionality.
+image: docker:20.10
+
+services:
+  - docker:dind
+
+stages:
+  - build
+
+django_build:
+  stage: build
+  image: python:3.6
+  before_script:
+   - pip3 install --upgrade virtualenv
+  script:
+   - virtualenv env
+   - source env/bin/activate
+   - pip install -r requirements.txt
+   - python manage.py check	
+   
+#test stage. to add the following, it needs to add - test in stages level too.
+django_test:
+  stage: test
+  image: python:3.6
+  before_script:
+   - pip3 install --upgrade virtualenv
+  script:
+   - virtualenv env
+   - source env/bin/activate
+   - pip install -r requirements.txt
+   - python manage.py test taskManager
+   
+#integration stage. 
+django_integration:
+  stage: integration
+  script:
+    - echo "This is an integration step"
+    - exit 1
+  allow_failure: true # Even if the job fails, continue to the next stages
+   
+   
+#deploy stage.
+#to have a human approval process before deployment, you can use the continuous delivery feature of Gitlab using the when tag.
+django_deployment:
+  stage: deploy
+  script:
+    - echo "This is a deploy step."
+  when: manual # Continuous Delivery
+
+
+#artifact
+someScan:
+  script: 
+    - ./security-tool.sh    # <-- this example script may generate a file as an output
+  artifacts:                    # <--- To save results, we use artifacts tag
+    paths:                      # <--- We then give the path/paths of the scan result files we want to store for further processing
+    - vulnerabilities.json                  #<--- The filename
+    when: always
+    expire_in: 1 week       # <--- To save disk space, we want to store only for 1 week
+
+#artifact produced from docker output
+#-v command to bind the local machine path to the Docker container machine path
+test:
+  stage: test
+  script:
+    - echo "This is a test step."
+    - docker run -i -v $(pwd):/app alpine sh -c "echo '{\"vulnerability\":\"XSS Injection\"}' > /app/vulnerabilities.json"
+  artifacts:      # notice a new tag artifacts
+    paths: [vulnerabilities.json]   # this is the path to the vulnerabilities.json file
+  allow_failure: true   #<--- allow the build to fail but don't mark it as such
+
+
+#control when a job will be triggered in a pipeline based on the rules you defined
+#if no rules attribute, defaults are when: on_success and allow_failure: false
+build:              # this is job named build, it can be anything, job1, job2, etc.,
+  stage: build      # this job belongs to the build stage. Here both job name and stage name is the same, i.e., build
+  script:
+    - echo "This is a build step."          # We are running an echo command, but it can be any command.
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'   # this job will get triggered when the branch name is __main__
+
+
+#specifies that the job named build should only run when a file named Dockerfile is changed
+build:              # this is job named build, it can be anything, job1, job2, etc.,
+  stage: build      # this job belongs to the build stage. Here both job name and stage name is the same, i.e., build
+  script:
+    - echo "This is a build step."          # We are running an echo command, but it can be any command.
+  rules:
+    - changes:
+      - Dockerfile
+   
+   
+
+   
+   
+   
+   
+   
+   
+   

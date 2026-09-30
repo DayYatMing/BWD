@@ -1,0 +1,68 @@
+#Chapter 1
+#Introduction to DevSecOps.
+
+#Chapter 2
+#Understand the basic of DevSecOps.
+
+#----------------------------------------------------------------------------------------------------------
+
+#Chapter 3
+#Tools to be used and alternatives (GitHub, BitBucket, etc.)
+#Git, GitLab commonly used commands 
+#SSH/BASH commonly used commands
+#Docker commonly used commands
+
+#Chapter 4
+#Secure SDLC and CI/CD pipeline, and alternatives (GitHub Actions, CircleCI, etc.)
+#Integrate tools (Docker) into CI/CD pipeline.
+#GitLab CI/CD
+#Jenkins CI/CD
+
+#Chapter 5
+#Software Component Analysis (SCA) to embed into CI/CD pipeline.
+#Run OAST tools, and alternatives (Safety, RetireJS, pip-audit, dependency-check, Snyk, NPM Audit, etc.)
+##Jenkins CI/CD embedded with Snyk
+
+#Chapter 6
+#SAST (Static Analysis) in CI/CD pipeline to find out any secrets hidden in the code.
+#Secrets scanning by using tools, and alternatives (TruffleHog, Bandit, SonarQube, etc.)
+#False Positive Analysis (FPA)
+#Jenkins CI/CD embedded with TruffleHog
+
+
+#Chapter 7
+#DAST (Dynamic Analysis) in CI/CD pipeline to find out any vulnerabilities hidden in the web application.
+#Run DAST tools, and alternatives (Nikto, SSLyze, ZAP, Nuclei, etc.)
+#Jenkins CI/CD embedded with ZAP
+#Jenkins CI/CD embedded with Nuclei
+
+
+#Chapter 8
+#Infrastructure as Code (IaC) and security, and to encapsulate a set of tasks and configurations for a specific purpose.
+#Hardening using Ansible, and alternatives.
+##Alternative - Kubernetes (K8).
+
+
+#Chapter 9
+#Compliance as code (CaC), to be compliant with regulations like PCI-DSS, HIPAA, GDPR, etc.
+#CaC using InSpec, and alternatives (Lynis, etc.)
+#Jenkins CI/CD embedded with InSpec.
+
+
+#Chapter 10
+#Vulnerability Management with Custom Tools, to integrate all scans and reports from above to a single place.
+#DefectDojo is a tool to be used.
+#Automated results upload in Jenkins CI/CD pipeline.
+
+#----------------------------------------------------------------------------------------------------------
+
+#Chapter 11
+#Summary and Conclusion
+
+#Chapter 12
+#Exam and Certification
+
+#Chapter 13
+#Practice Exam
+
+

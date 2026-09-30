@@ -1,0 +1,202 @@
+Background and IT team:
+
+BW Digital:
+“BW Digital is a digital infrastructure company focused on building and operating data centers and subsea cable connectivity across the Asia-Pacific region. 
+The goal is to support high-performance, scalable digital infrastructure for cloud, enterprise, and telecom customers.
+
+Within the company, our IT team acts as an internal enablement function, supporting engineering and operations teams with the systems and tools they need.
+
+In addition to internal support systems, we also develop and maintain external-facing applications for customers, such as ticketing systems and data visualization platforms. 
+These tools help customers monitor services, raise support requests, and interact with our infrastructure more effectively.”
+
+
+IT Team:
+“From a technical perspective, most of our systems are built using a Java-based stack, with Spring Boot for backend services and Angular for frontend development.
+
+For delivery and operations, we use CI/CD pipelines with Jenkins, and most applications are containerized using Docker to ensure consistency across environments and deployments.
+
+Lastly, we use Cucumber for automation testing as part of our QA process to support behavior-driven testing and improve release quality.”
+
+=============================================================================================
+
+Differences among following annotations:
+@Component
+@Service
+@Repository
+@RestController (vs. @Controller)
+
+@Component - Generic Spring bean.
+Use it when the class does not clearly belong to a specific layer.
+
+@Service, @Repository, @Controller are specialized forms of @Component.
+@Service
+Used for business logic/service layer classes.
+
+@Repository
+Used for database access layer (DAO/repository layer).
+
+@Controller
+Used for web controllers / handling HTTP requests.
+
+Note:
+“Controller → Service → Repository is a logical separation, not mandatory technically.”
+
+----------------------------------------------------------------------------------------------------
+
+@bean scope
+For non a web application, practically we mostly use singleton and occasionally prototype.
+- Singleton, default, one instance of the bean is created per Spring container, stateless.
+- Prototype (not commonly used), new instance is created every time the bean is requested, stateful, ie: ReportBuilder, PDFGenerator
+
+For Web:
+- Request, Each request gets its own bean.
+- Session, Each logged-in user has their own cart.
+- Application, One bean for the whole web application.
+- WebSocket, Each WebSocket connection gets its own state.
+
+------------------------------------------------------------------------------------------------------
+
+How to inject bean so that you can use it, and how many ways to inject it?
+
+@Autowired
+Field injection.
+
+@Autowired
+Settrer injection.
+
+Constructor injection.
+
+
+------------------------------------------------------------------------------------------------
+Spring boot feature:
+
+Actuator, what is the purpose of actuator? 
+Actuator provides built-in operational endpoints to monitor application health (/actuator/health), metrics, and environment properties.
+Actuator could combine with Grafana to build metrics services.
+
+
+-------------------------------------------------------------------------------------------------------
+
+Common HTTP methods and when to use them?
+GET, POST, PUT, PATCH, DELETE.
+Differences between PUT and PATCH.
+
+Common HTTP status codes?
+200 OK
+201 Created
+204 No Content
+400 Bad Request
+401 Unauthorized
+403 Forbidden
+404 Not Found
+409 Conflict
+500 Internal Server Error
+503 Service Unavailable
+504 Gateway Timeout
+
+------------------------------------------------------------------------------------------------------------
+
+For frontend, concept of component?
+A component is a self-contained, reusable piece of UI that includes its own structure (HTML/JSX/etc.), styling, and often its own logic and state.
+
+Purpose of spliting UI into components?
+1. Reusability
+2. Maintainability
+3. Separation of concerns
+4. Better scalability
+5. Testability
+6. Improved collaboration
+
+-------------------------------------------------------------------------------------------------------------------
+
+Describe how a frontend request flow reaches the backend, reaches the database, and returns response.
+Give details of each step as much as possible.
+
+1. user action in the frontend.
+2. request hits the backend controller - validation by DTO layer, such as @NotNull @Email @Size.
+3. request continues on business logic layer, depends on the business logic and validation continues.
+4. data access layer processes data based on the request.
+5. database interaction proceeds, executes and returns result set if there is any.
+6. result returns through repository, service, controller till frontend receives response.
+
+In between services above, there are logging (logger), exception handling (global exception @ControllerAdvise), re-try, timeout to be implemented.
+
+-----------------------------------------------------------------------------------------------------------
+To design a service api, such as payment
+
+ /api/payment
+ 
+ GET
+ POST
+ PUT
+ PATCH
+ DELETE
+ 
+ in service layer:
+ timeout
+ retry
+ circuit breaker prevent cascade failure
+ 
+---------------------------------------------------------------------------------------------------
+
+Webflux
+
+Mono vs Flux
+
+Webflux vs Spring standard Web
+
+reactive process, no waiting.
+
+
+-----------------------------------------------------------------------------------------
+To develop a new service, how would you design a flow to automate this service to be deployed and released into Docker TEST and PROD.
+Also how to make sure they work properly with security check and quality check in place.
+
+- Git to repository source code, Webhook -> when merging working branch to develop, and flow starts automatically.
+- Jenkins CI/CD pipeline starts.
+- Config checking, Vulnerabilities checking, source code deployment, build into .jar/.war, package docker image and config settings, docker compose down then up for new image, post deployment checking.
+- automation testing (Cucumber testing) starts.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Production issue/Debugging Scenario:
+if the api is very slow today, or it's not responding the request, or feedback indicates no data is showing, 
+how would you investigate?
+
+check logs - status, response time/performance, traffic/active users increased
+Error metrices - error indicators/status code, request if re-trying, non-stop re-trying?
+DB performance - Query execution time, connection pool usage.
+recent deployment - may increase time to process, taking long time to process, etc.
+external dependencies - request external depenedencies timeout, disconnected, no responding, no data, etc.
+system metrics - system CPU usage/memory/disk i/o. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

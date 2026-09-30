@@ -1,0 +1,13 @@
+
+1. Introduction - about your self.
+2. Why are you interested in our company? As you have mostly frontend skillsets, whereas our tech stacks are not only on frontend, but also on backend, DevOps and Database. 
+3. Have you worked on any projects or tasks that are on the backend side? What was that? How did you complete that task? And what was the outcome?
+or just go through CV's projects and tasks.
+4. If a task was required to have some skillsets that you may not have or unfamiliar with, what would you do and how would you complete the task? 
+5. Are you familiar with API development, such as REST API. Could you elaborate any project that you worked on before? 
+6. Are you familar with CI/CD development? Any work example you have done before? 
+7. Have you come across with any Containerized application? Docker, Kubernetes or any similar applications and tools? 
+8. Have you dealt with massive amount of data before? Like data collection, processing, transformation, conversion and visualization, etc.
+9. If an application goes wrong, or not working, or cannot function as expected, what would you do to resolve the issues? 
+10. What does your typical day look like? 
+

@@ -1,0 +1,14 @@
+
+- CAB runs weekly basis, CAB meeting runs every Thursday usually.
+- Before CAB meeting, CAB-email needs to be sent before indicating the details of the changes, check example.
+- Email to be sent and created ticket in OTRS Support NOC Hawaiki <support@bw-digital.com>.
+- Then email includes: cab <cab@bw-digital.com>; itsys <itsys@bw-digital.com>; ITDEV <itdev@bw-digital.com>; and Justin Spake in case auto-create ticket failed. And addition with any other people involved.
+- On this email, explain your CAB details.
+- If approved, then on start date, the changes will be made in PROD. 
+- After finished, email sent to conclude the details of the changes.
+
+
+
+
+
+

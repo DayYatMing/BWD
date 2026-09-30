@@ -1,0 +1,124 @@
+#pull image, without tag, will get the latest by default
+#--quiet or -q to hide the output
+docker pull ubuntu
+docker pull -q alpine
+
+
+#run to start a container (if no process attached to the container so it will exit as soon as it starts with the status exited)
+#docker run command also pulls an image automatically if one doesn't exist
+#-d to run a container in the background, --name to give it a name of container
+#--interactive or -i to keep the container running
+docker run -d --name myubuntu ubuntu
+docker run -d --name myubuntu -i ubuntu
+
+
+#exec is to execute a command inside a container
+docker exec myubuntu whoami
+docker exec myubuntu cat /etc/lsb-release
+
+
+#exec -it to interact inside a container
+#exit to exit interact from a container
+docker exec -it myubuntu bash
+
+
+#top is an argument to display the running processes inside a container
+docker top myubuntu
+
+
+#--env or -e to set the environment variable that is default value for further usage
+docker run -d --name webserver --env APP=nginx nginx:1.21.3
+docker run -d --name webserver -e APP=nginx nginx:1.21.3
+
+
+#run a container by binding port 80 with the host's 80 port
+#-p 127.0.0.1:80:80, then the container’s port 80 will only be bound to the host port 80 through the IP address 127.0.0.1
+#-p 80:80 which will bind the container’s port 80 to all IP addresses on the host through port 80
+docker run -d --name webserver --env APP=nginx -p 80:80 nginx:1.21.3
+
+
+#force to remove a container even if it's still running
+docker rm -f ubuntu
+
+
+#build image by using Dockerfile that has following common commands
+#FROM Initialize an operating system that will be used as a base
+#COPY Copy files or directories from the host to the container
+#WORKDIR Sets the working directory similar to cd command on Linux
+#RUN Execute commands in the current image
+docker build -t django.nv:1.0 .
+
+
+#rename docker image
+docker tag django.nv:1.0 django.nv:1.1
+
+
+#--entrypoint instruction is used to set executables that will always run when the container is initiated
+#run a container named webserver with the image django.nv:1.0 and override entrypoint with bash (/bin/bash) shell
+docker run --name=webserver -it --entrypoint /bin/bash django.nv:1.0
+
+
+#docker volumns to share data among containers
+#list all volumes 
+#create volume and volume is located under /var/lib/docker/volumes/
+docker volume ls
+docker volume create demo
+ls /var/lib/docker/volumes/
+
+
+#a container with the following command and map the demo volume to the /opt directory inside the container
+#remove the container won't remove the content, as created volume demo
+#attach the existing volume to another container on a different path (e.g., /tmp)
+docker run --name ubuntu -d -v demo:/opt -it ubuntu:20.04
+ls /var/lib/docker/volumes/demo/_data/
+docker run --name ubuntu1 -d -v demo:/tmp -it ubuntu:20.04
+
+
+#use bind mounts, and docker will map host directory to the container’s specific directory
+#then it will become shared dicrectory, deleting from host or container will delete the file either location
+docker run --name ubuntu2 -d -v /opt:/opt -it ubuntu:20.04
+
+
+#login to registry, such as Docker Hub
+#in order to push image to registry, prefix must be defined
+docker login
+docker tag django.nv:1.0 icsosy/django.nv:1.0
+docker push icsosy/django.nv:1.0
+
+
+#network has following types:
+#bridge: This is the default network driver when you don't specify a driver for the containers. Containers on the same bridged network can speak to each other, but are isolated from containers on other bridged networks. All containers can access the external network through NAT
+#host: The containers use the host's networking directly, while retaining separation on storage and processing. Ports exposed by the container are exposed on the external network using the host's IP address
+#macvlan: When creating a macvlan, you assign a parent network device (eg.'eth0'). Each container on the macvlan network will receive its own MAC address on the network that eth0 is connected to. Each container has full network access. Warning: when misconfigured, you may overrun the network with too many MACs, or you may duplicate IP addresses
+#none: networking is disabled with this network driver, containers cannot communicate to each other, nor with the external network
+#list existing docker network
+#inspect the network
+#test network connectivitiy in the container by exec command with apt update
+#remove network
+docker network ls
+docker network list
+docker network create mynetwork
+docker inspect mynetwork
+docker exec ubuntu apt update
+docker network rm mynetwork
+
+
+#create macvlan network, and run container with macvlan network
+#attach a network to a container that doesn't have network
+docker network create --driver macvlan mymacvlan
+docker run -d --name ubuntu --network mymacvlan -it ubuntu:20.04
+docker inspect ubuntu -f "{{json .NetworkSettings.Networks }}" | jq
+docker network connect mynetwork myubuntu
+
+
+#disable network container
+#create network with subnet
+docker run -d --name ubuntu --network=none -it ubuntu:20.04
+docker network create app --subnet "172.10.2.0/16"
+
+
+
+
+
+
+

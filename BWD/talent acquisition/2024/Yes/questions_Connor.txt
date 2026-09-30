@@ -1,0 +1,20 @@
+
+1. Introduction - about your self.
+2. Go through CV's the most recent project or task.
+
+3. If a task was required to have some skillsets that you may not have or unfamiliar with, what would you do and how would you complete the task? 
+
+4. Are you familiar with API development, such as REST API. Could you elaborate any project that you worked on before? 
+5. Are you familar with CI/CD development? Any work example you have done before? 
+6. Have you come across with any Containerized application? Docker, Kubernetes or any similar applications and tools? 
+
+7. Experience in Java, difference (Interface vs Abstract); (StringBuffer vs StringBuilder); (Highest level of Collection hierarchy - Set | Queue | List - all are interfaces)
+8. Database, SQL? Left Join vs Full Join.
+INNER JOIN : Returns records when there is a match in both tables. 
+LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table.
+FULL (OUTER) JOIN : Returns all records when there is a match in either left or right table.
+
+8. Have you dealt with massive amount of data before? Like data collection, processing, transformation, conversion and visualization, etc.
+
+9. If an application goes wrong, or not working, or cannot function as expected, what would you do to resolve the issues? 
+10. What does your typical day look like? 

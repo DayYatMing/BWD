@@ -1,0 +1,32 @@
+
+1. Introduction - about your self.
+2. Go over CV projects/companies/tasks.
+
+3. Are you familiar with API development, such as REST API. Could you elaborate any project that you worked on before? 
+4. Are you familar with CI/CD development? Any work example you have done before? 
+5. Have you come across with any Containerized application? Docker, Kubernetes or any similar applications and tools? 
+
+6. Experience in Java, difference (Interface vs Abstract); (StringBuffer vs StringBuilder); (Highest level of Collection hierarchy - Set | Queue | List - all are interfaces)
+7. Spring/Spring boot, are you familiar with Aspect-Oriented Programming (AOP) 
+that is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.
+
+7. Database, SQL? Left Join vs Full Join.
+INNER JOIN : Returns records when there is a match in both tables. 
+LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table.
+FULL (OUTER) JOIN : Returns all records when there is a match in either left or right table.
+
+8. Have you dealt with massive amount of data before? Like data collection, processing, transformation, conversion and visualization, etc.
+And any ETL (extraction, transformation, load) or ELT (extraction, load, transformation) tools have you been familiar with?
+
+9. what is your usual day look like?
+
+
+Spring AOP:
+Terminologies-Action Performed
+Aspect-It is a module that provides cross-cutting concerns by encapsulating the advice and pointcuts. An application can have any number of aspects in it. In order to use it, we need to annotate a class with @Aspect annotation.
+Advice-It is an action that is taken before or after method execution. An action is a block of code that gets invoked during the execution of a program. The Spring AOP framework support five type of advice before, after, after-returning, after-throwing, and around advice. The advice is taken for join points. Advice is applied over the target object.
+Pointcuts-Pointcuts are the set of join points where the advice is executed. These pointcuts are defined using the expression or pattern.
+Join Points-It is a place in an application where the AOP Aspect is applied. A join point can be a method execution, exception handling, etc.
+Target Object-It is an object where the advice is applied. These target objects are proxied
+Proxied-Target objects are proxied which means during the runtime the target methods are overridden and depending on method configuration, the advice is included in the target object.
+Weaving-The process of linking the application with the aspect is called weaving. It can be done at load time, compile time and run time.
