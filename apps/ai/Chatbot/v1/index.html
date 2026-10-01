@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <base href="./" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>nrms</title>
+    <meta name="description" content="">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.webapp" />
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/data/countries2.js">
+    <script src="//www.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <link href="https://ej2.syncfusion.com/angular/demos/styles/index.css" rel="stylesheet" />
+    <link href="https://ej2.syncfusion.com/angular/demos/styles/codemirror/codemirror.css" rel="stylesheet" />
+    <link href="https://ej2.syncfusion.com/angular/demos/styles/highlight.css" rel="stylesheet" />
+    <link href="https://ej2.syncfusion.com/angular/demos/styles/bootstrap4.css" rel="stylesheet" />
+<!--    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />-->
+    <link   type="text/css" href="../content/material.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+
+
+    <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
+</head>
+<body id="root" class="bodylogin">
+    <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <jhi-main></jhi-main>
+    <div id="webchat"></div>
+<!--    <script>-->
+<!--        WebChat.default.init({-->
+<!--            selector: "#webchat",-->
+<!--            initPayload: "/get_started",-->
+<!--            customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket-->
+<!--            socketUrl: "http://localhost:5010",-->
+<!--            socketPath: "/socket.io/",-->
+<!--            title: "Alice",-->
+<!--            subtitle: "I'm Still in devlopment",-->
+<!--            displayUnreadCount: true,-->
+<!--            inputTextFieldHint: "Type a message",-->
+<!--            showMessageDate: true,-->
+<!--            welcomeMessage: "Hi, I am Sara. How may I help you?",-->
+<!--            speechRecognition: "en-US",-->
+<!--            voiceLang: "en-US",-->
+<!--            params: {"storage": "local" ,-->
+<!--                images: {-->
+<!--                    dims: {-->
+<!--                        width: 300,-->
+<!--                        height: 200-->
+<!--                    }-->
+<!--                }-->
+<!--            } // can be set to "local"  or "session". details in storage section.-->
+<!--        })-->
+<!--    </script>-->
+    <noscript>
+        <h1>You must enable javascript to view this page.</h1>
+    </noscript>
+    <!-- uncomment this for adding service worker
+        <script>
+            if ('serviceWorker' in navigator) {
+                 navigator.serviceWorker
+                    .register('./sw.js')
+                    .then(function() { console.log('Service Worker Registered'); });
+            }
+        </script>
+    -->
+    <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>-->
+</body>
+</html>

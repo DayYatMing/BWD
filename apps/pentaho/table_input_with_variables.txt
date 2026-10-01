@@ -1,0 +1,15 @@
+#sql passing varibles in Pentaho Table input:
+
+    STR_TO_DATE('${TARGET_DATE_START}', '%Y-%m-%d %H:%i:%s') date_timestart,
+	STR_TO_DATE('${TARGET_DATE_END}', '%Y-%m-%d %H:%i:%s') date_timeend,
+	
+    SUBTIME(CURRENT_TIMESTAMP(),"00:30:00") date_timestart,
+	CURRENT_TIMESTAMP() date_timeend,
+	
+	
+	
+	
+#for repeat.property, date_start and date_end must have the following formats:
+date_start=2025-09-17 02:30:00
+date_end=2025-09-17 02:45:00
+	

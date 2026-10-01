@@ -1,0 +1,21 @@
+services:
+  fluent-bit:
+    image: fluent/fluent-bit:latest
+    user: root
+    container_name: logs_fluentbit
+    environment:
+      HTTP_PROXY: ""
+      HTTPS_PROXY: ""
+      http_proxy: ""
+      https_proxy: ""
+      ALL_PROXY: ""
+      all_proxy: ""
+      NO_PROXY: "10.10.1.4,localhost,127.0.0.1"
+      no_proxy: "10.10.1.4,localhost,127.0.0.1"
+    volumes:
+      - ./fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
+      - /hawaiki_il:/hawaiki_il:ro
+
+networks:
+  default:
+    name: loki-net

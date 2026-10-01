@@ -1,0 +1,26 @@
+Command to run Snyk:
+There are two portable drivers: snyk-linux, snyk-win.exe
+locate to the root project folder, or specify folder path at the end of its command.
+
+- first to authenticate, below is Akshat account api token, replace it when necessary.
+snyk-linux auth 06388db3-9f85-4263-bf00-946b7ef8fa4f
+
+
+- start test scan for all projects under the same path, with severity level high 
+snyk-linux test --all-projects --severity-threshold=high || true
+
+
+- monitor is to push results in Snyk, login to Snyk to view results
+snyk-linux monitor --all-projects --severity-threshold=high
+
+
+
+
+# Rename projects in the Snyk:
+When you run snyk monitor in the CLI we use the name of the root package to find the appropriate project. If a project for that package-name is not found, we create one using that name. The CLI will use the directory base-name if the root package has no name.
+Similarly, we will use the remote url for the Project group name.
+You can override the Project name in the Snyk UI by using the --project-name argument in the CLI.
+You can override the Project group name in the Snyk UI by using the --remote-repo-url argument in the CLI.
+Note: You must be running CLI version 1.217.3 or above for the --remote-repo-url flag.
+For example:
+snyk monitor --remote-repo-url='Group_name' --project-name='Project_name'

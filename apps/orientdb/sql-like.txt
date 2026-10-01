@@ -1,0 +1,2 @@
+#get all classes (tables)
+select expand(classes) from metadata:schema;

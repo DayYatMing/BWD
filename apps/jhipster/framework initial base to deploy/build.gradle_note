@@ -1,0 +1,14 @@
+// to add below dependencies
+
+dependencies {
+
+	...
+
+    implementation "org.mariadb.jdbc:mariadb-java-client:3.4.1"
+    implementation 'com.orientechnologies:orientdb-core:3.0.18'
+    implementation 'com.orientechnologies:orientdb-client:3.0.18'
+    implementation 'com.orientechnologies:orientdb-object:3.0.18'
+    implementation 'com.orientechnologies:orientdb-graphdb:3.0.18'
+	
+}
+

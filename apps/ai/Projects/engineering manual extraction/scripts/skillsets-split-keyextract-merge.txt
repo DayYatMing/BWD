@@ -1,0 +1,73 @@
+{
+  "@odata.etag": "\"0x8DDE52822CDCD42\"",
+  "name": "skillsets-split-keyextract-merge",
+  "description": "Handles long documents by splitting, recognizing entities, embedding content, and merging results",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
+      "name": "splitSkill",
+      "description": "Split large text into chunks of ~1000 characters",
+      "context": "/document",
+      "defaultLanguageCode": "en",
+      "textSplitMode": "pages",
+      "maximumPageLength": 1000,
+      "pageOverlapLength": 0,
+      "maximumPagesToTake": 0,
+      "unit": "characters",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "textItems",
+          "targetName": "contentChunks"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "keyPhrases",
+      "description": "Extract key phrases from each chunk",
+      "context": "/document/contentChunks/*",
+      "defaultLanguageCode": "en",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/contentChunks/*",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyPhrases"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.MergeSkill",
+      "name": "mergeChunks",
+      "description": "Merge enriched chunks back together",
+      "context": "/document",
+      "insertPreTag": " ",
+      "insertPostTag": " ",
+      "inputs": [
+        {
+          "name": "itemsToInsert",
+          "source": "/document/contentChunks/*/keyPhrases/*",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mergedText",
+          "targetName": "allKeyPhrases"
+        }
+      ]
+    }
+  ]
+}

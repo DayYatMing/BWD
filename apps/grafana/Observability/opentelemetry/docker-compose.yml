@@ -1,0 +1,46 @@
+services:
+
+    otel-collector:
+      image: otel/opentelemetry-collector-contrib:latest
+      container_name: otel-collector
+      restart: unless-stopped
+
+      environment:
+        - NO_PROXY=tempo,otel-collector,localhost,127.0.0.1
+        - no_proxy=tempo,otel-collector,localhost,127.0.0.1
+
+      networks:
+        - monitoring_network
+        - preprod_network
+
+      ports:
+        - "4317:4317"
+        - "4318:4318"
+
+      volumes:
+        - ./otel-collector-config.yml:/etc/otelcol-contrib/config.yaml:ro
+
+    tempo:
+      image: grafana/tempo:2.8.2
+      container_name: tempo
+
+      restart: unless-stopped
+
+      command:
+        - "-config.file=/etc/tempo.yaml"
+
+      volumes:
+        - ./tempo/tempo.yaml:/etc/tempo.yaml:ro
+
+      ports:
+        - "4200:3200"
+
+      networks:
+        - monitoring_network
+
+
+networks:
+    monitoring_network:
+      external: true
+    preprod_network:
+      external: true

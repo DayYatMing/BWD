@@ -1,0 +1,68 @@
+Explain what the code does:
+
+1. Search for marker if exists, if not, to add the followings:
+        <marker refX="1.72" v:arrowSize="0" markerUnits="strokeWidth"
+                fill="#ff0000" orient="auto" v:arrowType="2" v:setback="1.72"
+                id="mrkr_bh_sal_a" preserveAspectRatio="xMidYMid meet"
+                overflow="visible">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 transform="scale(1.96) "
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lend2"/></marker>
+        <marker refX="1.72" v:arrowSize="0" markerUnits="strokeWidth"
+                fill="#008000" orient="auto" v:arrowType="2" v:setback="1.72"
+                id="mrkr_bh_nes_a" preserveAspectRatio="xMidYMid meet"
+                overflow="visible">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 transform="scale(1.96) "
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lend2"/></marker>
+        <marker refX="-1.96" v:arrowSize="0" markerUnits="strokeWidth"
+                fill="#008000" orient="auto" v:arrowType="2" v:setback="1.96"
+                id="mrkr_bh_nes_z" preserveAspectRatio="xMidYMid meet"
+                overflow="visible">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 transform="scale(-1.96,-1.96) "
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lend2"/></marker>
+        <marker refX="-1.96" v:arrowSize="0" markerUnits="strokeWidth"
+                fill="#ff0000" orient="auto" v:arrowType="2" v:setback="1.96"
+                id="mrkr_bh_sal_z" preserveAspectRatio="xMidYMid meet"
+                overflow="visible">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 transform="scale(-1.96,-1.96) "
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lend2"/></marker>
+
+2. Search for the followings:
+Dynamic connector.4149 ( - USPA-C6500-3 5-5-13 - Nestucca - end)
+Dynamic connector.4150 ( - USFB-C6500-3 5-3-13 - Nestucca - start)
+Dynamic connector.4226 ( - USPA-C6500-3 5-5-15 - Salmon - end)
+Dynamic connector.4227 ( - USFB-C6500-3 5-3-15 - Salmon - start)
+
+Dynamic connector.18885 ( - USFB-C6500-4 7-1-13 - Nestucca - start)
+Dynamic connector.18886 ( - USPA-C6500-2 6-1-13 - Nestucca - end)
+Dynamic connector.18971 ( - USFB-C6500-4 7-1-15 - Salmon - start)
+Dynamic connector.18972 ( - USPA-C6500-2 6-1-15 - Salmon - end)
+
+Dynamic connector.3533 ( - USPA-C6500-2 4-1-13 - Nestucca - end)
+Dynamic connector.3534 ( - USFB-C6500-2 3-2-13 - Nestucca - start)
+Dynamic connector.3610 ( - USPA-C6500-2 4-1-15 - Salmon - end)
+Dynamic connector.3611 ( - USFB-C6500-2 3-2-15 - Salmon - start)
+
+3. To add the following based on the mappings above in the same order, ie: 4149, 4150...:
+<path style="marker-end:url(#mrkr_bh_nes_z);stroke:#008000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;" d="M0 3492.57 L-44.02 3492.57"/>
+<path style="marker-start:url(#mrkr_bh_nes_a);stroke:#008000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;" d="M-2.58 3492.57 L-2.94 3492.57 L-46.96 3492.57"/>
+<path style="marker-end:url(#mrkr_bh_sal_z);stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;stroke-dasharray:0.5,2" d="M0 3492.57 L-44.02 3492.57"/>
+<path style="marker-start:url(#mrkr_bh_sal_a);stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;stroke-dasharray:0.5,2" d="M-2.58 3492.57 L-2.94 3492.57 L-46.96 3492.57"/>
+
+<path style="marker-start:url(#mrkr_bh_nes_a);stroke:#008000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;" d="M-2.58 3506.74 L-2.94 3506.74 L-46.96 3506.74"/>
+<path style="marker-end:url(#mrkr_bh_nes_z);stroke:#008000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;" d="M0 3506.74 L-44.02 3506.74"/>
+<path style="marker-start:url(#mrkr_bh_sal_a);stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;stroke-dasharray:0.5,2" d="M-2.58 3492.57 L-2.94 3492.57 L-46.96 3492.57"/>
+<path style="marker-end:url(#mrkr_bh_sal_z);stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;stroke-dasharray:0.5,2" d="M0 3506.74 L-44.02 3506.74"/>
+
+<path style="marker-end:url(#mrkr_bh_nes_z);stroke:#008000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;" d="M0 3492.57 L-44.02 3492.57"/>
+<path style="marker-start:url(#mrkr_bh_nes_a);stroke:#008000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;" d="M-2.58 3492.57 L-2.94 3492.57 L-46.96 3492.57"/>
+<path style="marker-end:url(#mrkr_bh_sal_z);stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;stroke-dasharray:0.5,2" d="M0 3492.57 L-44.02 3492.57"/>
+<path style="marker-start:url(#mrkr_bh_sal_a);stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;stroke-dasharray:0.5,2" d="M-2.58 3492.57 L-2.94 3492.57 L-46.96 3492.57"/>
+					  
+					  
+					  
+					  
+					  

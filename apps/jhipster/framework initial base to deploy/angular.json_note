@@ -1,0 +1,37 @@
+// to add styles, budgets, analytics:false
+
+
+...
+
+            "styles": [
+              "src/main/webapp/content/scss/vendor.scss",
+              "src/main/webapp/content/scss/global.scss",
+              "src/main/webapp/content/scss/material.scss",
+              "src/main/webapp/content/scss/styles.scss"
+            ]
+          
+...
+
+			"budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
+                }
+              ]
+	
+	
+...
+
+
+  "cli": {
+	...
+	"analytics": false
+	...
+  }
+}

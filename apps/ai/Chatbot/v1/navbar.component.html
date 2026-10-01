@@ -1,0 +1,598 @@
+
+
+<!--    &lt;!&ndash; sample level element  &ndash;&gt;-->
+<div id="wrapper">
+    <div id="sidebar-section">
+        <div id="header_div" >
+            <!--                <ul class="ul_custom">-->
+            <div id="hamburger" >
+                <!--                <div id="hamburger" class="icon-menu icon list" (click)="openClick()">-->
+                <div class="right-header list">
+                    <div class="horizontal-menu">
+                        <!--                        <div  class="e-card e-custom-card">-->
+                        <!--                            <div *ngIf="documentPhoto" class="e-card-header">-->
+                        <!--                                &lt;!&ndash; xLarge Circle Avatar&ndash;&gt;-->
+                        <!--                                <div class="e-avatar e-avatar-circle e-avatar">-->
+                        <!--                                    <img [src] = "documentPhoto" alt="profile_pic">-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                            <div *ngIf="account"  class="e-card-header">-->
+                        <!--                                <div class="e-card-header-caption center">-->
+                        <!--                                    <div class="e-card-header-title name">{{account.login}}</div>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+
+                        <!--                        </div>-->
+                        <div >
+                            <div *ngIf="documentPhoto" class="e-card-header"  (click)="openClick()">
+                                <!-- xLarge Circle Avatar-->
+                                <div class="e-avatar e-avatar-large e-avatar-circle e-avatar">
+                                    <img [src] = "documentPhoto" alt="profile_pic">
+                                </div>
+                            </div>
+                            <div  *ngIf="!documentPhoto"class="e-card e-custom-card">
+                                <div *ngIf="account"  class="e-card-header">
+                                    <div>
+                                        <h6 class="e-card-header-title name">{{account.login}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  *ngIf="documentPhoto">
+                                <div *ngIf="account"  class="e-card-header">
+                                    <div>
+                                        <h6 class="e-card-header-title name">{{account.login}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                        </div>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                </ul>-->
+            <!--header-section  declaration -->
+
+            <!--end of header-section  declaration -->
+            <!-- sidebar element declaration -->
+            <ejs-sidebar id="sidebar-menu" class="dock-menu" (close)="close($event)"  (open)="open($event)"  #sidebarMenuInstance [target]='target'>
+                <div class="main-menu">
+                    <div class="title-logo">
+                        <a class="nav-link" routerLink="/" >
+                        </a>
+                    </div>
+                    <div>
+                        <br><br>
+                        <!-- Menu element declaration -->
+
+                        <div >
+                            <ul class="navbar-nav ml-auto">
+                                <li  class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    <a class="a_sidbar" routerLink="/" >
+                                                    <span>
+                                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                                        <span >Dashboard</span>
+                                                    </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div >
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    <a class="a_sidbar" routerLink="analytics" >
+                                                    <span>
+                                                        <i class="e-icons analyticsChart" aria-hidden="true"></i>
+                                                        <span >Services Correlation</span>
+                                                    </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div >
+                            <!--                        <div >-->
+                            <!--                                <ul class="navbar-nav ml-auto">-->
+                            <!--                                    <li *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+                            <!--                                        <a class="a_sidbar" routerLink="provisioning" >-->
+                            <!--                                                    <span>-->
+                            <!--                                                        <i class="e-icons e-CallActivity" aria-hidden="true"></i>-->
+                            <!--                                                        <span >Provisioning</span>-->
+                            <!--                                                    </span>-->
+                            <!--                                        </a>-->
+                            <!--                                    </li>-->
+                            <!--                                </ul>-->
+                            <!--                            </div>-->
+                            <!--                            <div>-->
+                            <!--                                <ul class="navbar-nav ml-auto">-->
+                            <!--                                    <li *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+                            <!--                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" >-->
+                            <!--                                                    <span>-->
+                            <!--                                                        <i class="e-icons e-ServiceTask" aria-hidden="true"></i>-->
+                            <!--                                                        <span >Provisioning.</span>-->
+                            <!--                                                    </span>-->
+                            <!--                                        </a>-->
+                            <!--                                        <ul class="dropdown-menu-custom" ngbDropdownMenu>-->
+                            <!--                                            <li>-->
+                            <!--                                                <a class="a_sidbar" routerLink="provisioning" routerLinkActive="active" (click)="collapseNavbar()">-->
+                            <!--                                                    <i class="fa fa-fw fa-tasks" aria-hidden="true"></i>-->
+                            <!--                                                    <span>Static</span>-->
+                            <!--                                                </a>-->
+                            <!--                                            </li>-->
+                            <!--                                            <li>-->
+                            <!--                                                <a class="a_sidbar" routerLink="service" routerLinkActive="active" (click)="collapseNavbar()">-->
+                            <!--                                                    <i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>-->
+                            <!--                                                    <span>Dynamic</span>-->
+                            <!--                                                </a>-->
+                            <!--                                            </li>-->
+                            <!--                                        </ul>-->
+                            <!--                            </div>-->
+                            <div>
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                                        *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']">
+                                        <a class="a_sidbar" routerLink="chart" >
+                                                    <span>
+                                                        <i class="e-icons analytics" aria-hidden="true"></i>
+                                                        <span >Capacity Planning</span>
+                                                    </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+<!--                            <div>-->
+<!--                                <ul class="navbar-nav ml-auto">-->
+<!--                                    <li   ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+<!--                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="network-menu">-->
+<!--                                                                                        <span>-->
+<!--                                                                                            <i class="fa fa-th-list" aria-hidden="true"></i>-->
+<!--                                                                                            <span >Tickets</span>-->
+<!--                                                                                        </span>-->
+<!--                                        </a>-->
+<!--                                        <ul class="dropdown-menu-custom" ngbDropdownMenu>-->
+<!--                                            <li>-->
+<!--                                                <a class="a_sidbar" routerLink="allticketanalytics" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                                                    <i class="e-icons analytics" aria-hidden="true"></i>-->
+<!--                                                    <span>Analytics</span>-->
+<!--                                                </a>-->
+<!--                                            </li>-->
+<!--                                            &lt;!&ndash;                                                                        <li>&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                                            <a class="a_sidbar" routerLink="alltickets" routerLinkActive="active" (click)="collapseNavbar()">&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                                                <i class="e-icons schedule" aria-hidden="true"></i>&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                                                <span>All Tickets</span>&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                                            </a>&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                                        </li>&ndash;&gt;-->
+<!--                                        </ul>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+                            <!--                            <div>-->
+                            <!--                                <ul class="navbar-nav ml-auto">-->
+                            <!--                                    <li  *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+                            <!--                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="network-menu">-->
+                            <!--                                                            <span>-->
+                            <!--                                                                <i class="fa fa-th-list" aria-hidden="true"></i>-->
+                            <!--                                                                <span >Tickets</span>-->
+                            <!--                                                            </span>-->
+                            <!--                                        </a>-->
+                            <!--                                        <ul class="dropdown-menu-custom" ngbDropdownMenu>-->
+                            <!--&lt;!&ndash;                                            <li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                <a class="a_sidbar" routerLink="ticketanalytics" routerLinkActive="active" (click)="collapseNavbar()">&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                    <i class="e-icons analytics" aria-hidden="true"></i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                    <span>Analytics</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                </a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                            </li>&ndash;&gt;-->
+                            <!--                                            <li>-->
+                            <!--                                                <a class="a_sidbar" routerLink="alltickets" routerLinkActive="active" (click)="collapseNavbar()">-->
+                            <!--                                                    <i class="e-icons schedule" aria-hidden="true"></i>-->
+                            <!--                                                    <span>All Tickets</span>-->
+                            <!--                                                </a>-->
+                            <!--                                            </li>-->
+                            <!--                                        </ul>-->
+                            <!--                                    </li>-->
+                            <!--                                </ul>-->
+                            <!--                            </div>-->
+                            <div >
+                                <ul class="navbar-nav ml-auto">
+                                    <li *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a class="a_sidbar" routerLink="provisioning" >
+                                                    <span>
+                                                        <i class="e-icons e-ServiceTask" aria-hidden="true"></i>
+                                                        <span >Provisioning</span>
+                                                    </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div >
+
+                                <ul class="navbar-nav ml-auto">
+                                    <li *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="order-menu">
+                                                    <span>
+                                                        <i class="icon-tag icon" aria-hidden="true"></i>
+                                                        <span >Order Mgmt.</span>
+                                                    </span>
+                                        </a>
+                                        <ul class="dropdown-menu-custom" ngbDropdownMenu>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="customer" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                                                    <span>Customer</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="service" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>
+                                                    <span>Service</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="crossconnect" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-list" aria-hidden="true"></i>
+                                                    <span >Cross-Connects</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="thirdparty" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="e-icons e-ServiceTask"  aria-hidden="true"></i>
+                                                    <span >Third-Party</span>
+                                                </a>
+                                            </li>
+
+                                            <!--                                        <li>-->
+                                            <!--                                            <a class="a_sidbar" routerLink="segment" routerLinkActive="active" (click)="collapseNavbar()">-->
+                                            <!--                                                <i class="e-icons e-ServiceTask"  aria-hidden="true"></i>-->
+                                            <!--                                                <span >End To End</span>-->
+                                            <!--                                            </a>-->
+                                            <!--                                        </li>-->
+                                        </ul>
+                            </div>
+                            <div >
+
+                                <!--                            <ul class="navbar-nav ml-auto">-->
+                                <!--                                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+                                <!--                                    <a class="a_sidbar" routerLink="network" >-->
+                                <!--                                                    <span>-->
+                                <!--                                                        <i class="fa fa-th-list" aria-hidden="true"></i>-->
+                                <!--                                                        <span>Network Construction</span>-->
+                                <!--                                                    </span>-->
+                                <!--                                    </a>-->
+                                <!--                                </li>-->
+                                <!--                            </ul>-->
+                                <ul class="navbar-nav ml-auto">
+                                    <li  *jhiHasAnyAuthority="['ROLE_ADMIN',  'ROLE_SERVICE_ADMIN', 'ROLE_ASSIGMENT_ADMIN', 'ROLE_DECOMMISSION_ADMIN']" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="network-menu">
+                                                    <span>
+                                                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                                                        <span >Network Construction</span>
+                                                    </span>
+                                        </a>
+                                        <ul class="dropdown-menu-custom" ngbDropdownMenu>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="site" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                                                    <span>Site</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="segment" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tasks" aria-hidden="true"></i>
+                                                    <span >Segment</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="backhaul" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tasks" aria-hidden="true"></i>
+                                                    <span >Backhaul</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="offnetcapacity" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="e-icons e-ServiceTask"  aria-hidden="true"></i>
+                                                    <span >Off-Net</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="/route" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-bell" aria-hidden="true"></i>
+                                                    <span>Route</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="room-location" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>
+                                                    <span>RR</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!--                                        <a class="a_sidbar" routerLink="rack" routerLinkActive="active" (click)="collapseNavbar()">-->
+                                                <!--                                            <i class="fa fa-fw fa-heart" aria-hidden="true"></i>-->
+                                                <!--                                            <span >Rack</span>-->
+                                                <!--                                        </a>-->
+                                                <!--                                    </li>-->
+                                            <li>
+                                                <a class="a_sidbar" routerLink="card" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-list" aria-hidden="true"></i>
+                                                    <span >Equipment</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="port" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tachometer"  aria-hidden="true"></i>
+                                                    <span >Port</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <hr>
+                            <div >
+                                <ul class="navbar-nav ml-auto">
+                                    <li  class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a class="a_sidbar" routerLink="chatbot" >
+                                                    <span>
+                                                        <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>
+                                                        <span >Chat Bot</span>
+                                                    </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <hr>
+                            <div >
+                                <ul class="navbar-nav ml-auto">
+                                    <li *jhiHasAnyAuthority="'ROLE_ADMIN'" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">
+                                                    <span>
+                                                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                                        <span jhiTranslate="global.menu.admin.main">Administration</span>
+                                                    </span>
+                                        </a>
+                                        <ul class="dropdown-menu-custom" ngbDropdownMenu>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="user-management" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.userManagement">User management</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="jhi-metrics" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.metrics">Metrics</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="jhi-health" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-heart" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.health">Health</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="jhi-configuration" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-list" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.configuration">Configuration</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="audits" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-bell" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.audits">Audits</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="a_sidbar" routerLink="logs" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-tasks" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.logs">Logs</span>
+                                                </a>
+                                            </li>
+                                            <li *ngIf="swaggerEnabled">
+                                                <a class="a_sidbar" routerLink="docs" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-book" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.admin.apidocs">API</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                            </div>
+                            <div>
+                                <ul class="navbar-nav ml-auto">
+                                    <li ngbDropdown class="nav-item dropdown pointer" placement="bottom-right" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a class="a_sidbar dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="account-menu">
+                                                  <span *ngIf="!getImageUrl()">
+                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.account.main">
+                                                      Account
+                                                    </span>
+                                                  </span>
+                                            <span *ngIf="getImageUrl()">
+                                                      <img [src]="getImageUrl()" class="profile-image img-circle" alt="Avatar">
+                                                  </span>
+                                        </a>
+                                        <ul class="dropdown-menu" ngbDropdownMenu>
+                                            <li >
+                                                <a class="dropdown-item" routerLink="settings" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-wrench" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.account.settings">Settings</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a class="dropdown-item" routerLink="password" routerLinkActive="active" (click)="collapseNavbar()">
+                                                    <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.account.password">Password</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a class="dropdown-item" (click)="logout()" id="logout">
+                                                    <i class="fa fa-fw fa-sign-out" aria-hidden="true"></i>
+                                                    <span jhiTranslate="global.menu.account.logout">Sign out</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </ejs-sidebar>
+            <!-- end of sidebar element -->
+
+            <!-- main-content declaration -->
+
+            <!--                <nav  class="main-content" id="maintext">-->
+            <!--                <div>-->
+            <!--                    <div>-->
+            <!--                        <router-outlet id="navbarroute" name="home"></router-outlet>-->
+            <!--                        <router-outlet id="navbarroutepopup" name="popup"></router-outlet>-->
+            <!--                        <jhi-footer></jhi-footer>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                </nav>-->
+            <!-- end of main-content -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--<nav class="navbar navbar-dark navbar-expand-md jh-navbar">-->
+<!--    <div class="jh-logo-container float-left">-->
+<!--        <a class="jh-navbar-toggler d-lg-none float-right" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">-->
+<!--            <i class="fa fa-bars"></i>-->
+<!--        </a>-->
+<!--        <a class="navbar-brand logo float-left" routerLink="/" (click)="collapseNavbar()">-->
+<!--            <span class="logo-img"></span>-->
+<!--            <span jhiTranslate="global.title" class="navbar-title">Nrms</span> <span class="navbar-version">{{version}}</span>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">-->
+<!--        <ul class="navbar-nav ml-auto">-->
+<!--            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+<!--                <a class="nav-link" routerLink="/" (click)="collapseNavbar()">-->
+<!--                    <span>-->
+<!--                        <i class="fa fa-home" aria-hidden="true"></i>-->
+<!--                        <span jhiTranslate="global.menu.home">Home</span>-->
+<!--                    </span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            &lt;!&ndash; jhipster-needle-add-element-to-menu - JHipster will add new menu items here &ndash;&gt;-->
+<!--            <li *jhiHasAnyAuthority="'ROLE_ADMIN'" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+<!--                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">-->
+<!--                    <span>-->
+<!--                        <i class="fa fa-user-plus" aria-hidden="true"></i>-->
+<!--                        <span jhiTranslate="global.menu.admin.main">Administration</span>-->
+<!--                    </span>-->
+<!--                </a>-->
+<!--                <ul class="dropdown-menu" ngbDropdownMenu>-->
+<!--                    <li>-->
+<!--                        <a class="dropdown-item" routerLink="user-management" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-user" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.userManagement">User management</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="dropdown-item" routerLink="jhi-metrics" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.metrics">Metrics</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="dropdown-item" routerLink="jhi-health" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-heart" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.health">Health</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="dropdown-item" routerLink="jhi-configuration" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-list" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.configuration">Configuration</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="dropdown-item" routerLink="audits" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-bell" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.audits">Audits</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="dropdown-item" routerLink="logs" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-tasks" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.logs">Logs</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li *ngIf="swaggerEnabled">-->
+<!--                        <a class="dropdown-item" routerLink="docs" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-book" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.admin.apidocs">API</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    &lt;!&ndash; jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here &ndash;&gt;-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li ngbDropdown class="nav-item dropdown pointer" *ngIf="languages">-->
+<!--                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="languagesnavBarDropdown" *ngIf="languages.length > 1">-->
+<!--                    <span>-->
+<!--                        <i class="fa fa-flag" aria-hidden="true"></i>-->
+<!--                        <span jhiTranslate="global.menu.language">Language</span>-->
+<!--                    </span>-->
+<!--                </a>-->
+<!--                <ul class="dropdown-menu" ngbDropdownMenu *ngIf="languages.length > 1">-->
+<!--                    <li *ngFor="let language of languages">-->
+<!--                        <a class="dropdown-item" [jhiActiveMenu]="language" href="javascript:void(0);" (click)="changeLanguage(language);collapseNavbar();">{{language | findLanguageFromKey}}</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li ngbDropdown class="nav-item dropdown pointer" placement="bottom-right" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+<!--                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="account-menu">-->
+<!--                  <span *ngIf="!getImageUrl()">-->
+<!--                    <i class="fa fa-user" aria-hidden="true"></i>-->
+<!--                    <span jhiTranslate="global.menu.account.main">-->
+<!--                      Account-->
+<!--                    </span>-->
+<!--                  </span>-->
+<!--                    <span *ngIf="getImageUrl()">-->
+<!--                      <img [src]="getImageUrl()" class="profile-image img-circle" alt="Avatar">-->
+<!--                  </span>-->
+<!--                </a>-->
+<!--                <ul class="dropdown-menu" ngbDropdownMenu>-->
+<!--                    <li *ngSwitchCase="true">-->
+<!--                        <a class="dropdown-item" routerLink="settings" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-wrench" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.account.settings">Settings</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li *ngSwitchCase="true">-->
+<!--                        <a class="dropdown-item" routerLink="password" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.account.password">Password</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li *ngSwitchCase="true">-->
+<!--                        <a class="dropdown-item" (click)="logout()" id="logout">-->
+<!--                            <i class="fa fa-fw fa-sign-out" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.account.logout">Sign out</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li *ngSwitchCase="false">-->
+<!--                        <a class="dropdown-item" (click)="login()" id="login">-->
+<!--                            <i class="fa fa-fw fa-sign-in" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.account.login">Sign in</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li *ngSwitchCase="false">-->
+<!--                        <a class="dropdown-item" routerLink="register" routerLinkActive="active" (click)="collapseNavbar()">-->
+<!--                            <i class="fa fa-fw fa-user-plus" aria-hidden="true"></i>-->
+<!--                            <span jhiTranslate="global.menu.account.register">Register</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->

@@ -1,0 +1,52 @@
+{
+  "@odata.etag": "\"0x8DDE52822D25C03\"",
+  "name": "skillsets-split-keyextract",
+  "description": "Handles long documents by splitting, recognizing entities, embedding content, and merging results",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
+      "name": "splitSkill",
+      "description": "Split large text into chunks of ~1000 characters",
+      "context": "/document",
+      "defaultLanguageCode": "en",
+      "textSplitMode": "pages",
+      "maximumPageLength": 1000,
+      "pageOverlapLength": 0,
+      "maximumPagesToTake": 0,
+      "unit": "characters",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "textItems",
+          "targetName": "pages"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "keyPhrases",
+      "description": "Extract key phrases from each chunk",
+      "context": "/document/pages/*",
+      "defaultLanguageCode": "en",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/pages/*",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyPhrases"
+        }
+      ]
+    }
+  ]
+}

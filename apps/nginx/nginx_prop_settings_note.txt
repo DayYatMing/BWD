@@ -1,0 +1,43 @@
+config files are located at: cd /etc/nginx/conf.d/
+
+Nginx is our server to hold the following services in PROD:
+
+auovh-vcenter-local.bw-digital.com.conf    grafana-stats-local.bw-digital.com.conf             mcpciena-local.hawaiki.co.nz.conf                  passbolt-local.bw-digital.com.conf
+ausy-esxi-b1-local.bw-digital.com.conf     grafana-stats-new-local.bw-digital.com.conf         mcpciena-usfb-mediation-local.bw-digital.com.conf  radman-local.bw-digital.com.conf
+broker-local.bw-digital.com.conf           guacamole.bw-digital-ext.com.conf                   mcp-usfb-local.bw-digital.com.conf                 ticketing-local.bw-digital.com.conf
+confluence-local.bw-digital.com.conf       guacamole-local.bw-digital.com.conf                 new-ticketing-ssl.conf.bak                         ticketing-local.bw-digital.com.conf.bak
+crmsportal-local.bw-digital.com.conf       index.html                                          nrms-local.bw-digital.com.conf                     ticketing-test-local.bw-digital.com.conf
+crmsportal-local.bw-digital.com_old.bak    ipam-local.bw-digital.com.conf                      nrms-local.bw-digital.com_old.bak                  vcenter-m2-local.bw-digital.com.conf
+desktop-central-local.bw-digital.com.conf  jenkins-local.bw-digital.com.conf                   nrmsv2-local.bw-digital.com.conf                   zammad-local.bw-digital.com.conf
+dns-m1-local.bw-digital.com.conf           jhipsterregistry-local.bw-digital.com.conf          nrmsv2-local.bw-digital.com_old.bak                zentyal-poc-local.bw-digital.com.conf
+dns-m2-local.bw-digital.com.conf           mcp-ausy-local.bw-digital.com.conf                  old-config-files
+gitlab-local.bw-digital.com.conf           mcpciena2-ausy-mediation-local.bw-digital.com.conf  opennms2-local.bw-digital.com.conf
+glpi-local.bw-digital.com.conf             mcpciena2-local.hawaiki.co.nz.conf                  opennms-local.bw-digital.com.conf
+
+nginx -t | command means to test to verify if the changes has been loaded.
+
+systemctl reload nginx | to reload the server. can be used start/restart, but it failed it won't auto-restart. reload will restart when failed.
+
+
+---------------------------------
+i.e.: NRMSv2 network diagram upload hit the max upload size, to increase the size, nrmsv2-local.bw-digital.com.conf is the prop file to check.
+edit it or add client_max_body_size 100M, save and exit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

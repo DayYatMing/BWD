@@ -1,0 +1,36 @@
+search-indexer-trial-us-split-vector
+
+"fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_name",
+      "targetFieldName": "filename",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "metadata_parent_id",
+      "targetFieldName": "parent_id",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "metadata_title",
+      "targetFieldName": "title",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/content",
+      "targetFieldName": "content",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "/document/contentChunks/*",
+      "targetFieldName": "contentChunks",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "/document/contentChunks/*/chunkEmbeddings",
+      "targetFieldName": "chunkEmbeddings",
+      "mappingFunction": null
+    }
+  ],

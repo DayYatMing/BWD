@@ -1,0 +1,37 @@
+{
+  "@odata.context": "https://bwd-search-service.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DDD9E3D66C6FF2\"",
+  "name": "search-index-trial-indexer-large-file",
+  "description": null,
+  "dataSourceName": "search-index-trial-ds-large-index-file",
+  "skillsetName": null,
+  "targetIndexName": "search-index-trial-large-file",
+  "disabled": null,
+  "schedule": null,
+  "parameters": null,
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_name",
+      "targetFieldName": "filename",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "metadata_storage_path",
+      "targetFieldName": "filepath",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "metadata_storage_name",
+      "targetFieldName": "parent_id",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "metadata_title",
+      "targetFieldName": "title",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [],
+  "cache": null,
+  "encryptionKey": null
+}

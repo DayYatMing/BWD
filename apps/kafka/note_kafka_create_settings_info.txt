@@ -1,0 +1,144 @@
+##########################################################################
+create user and permission accessing topic and group
+##########################################################################
+user creation script:
+------------------------------------------------------
+kafka-configs --bootstrap-server kafka:9092 \
+  --alter \
+  --add-config 'SCRAM-SHA-512=[password=admin-secret]' \
+  --entity-type users \
+  --entity-name admin
+  
+kafka-configs --bootstrap-server kafka:9092 \
+  --alter \
+  --add-config 'SCRAM-SHA-512=[password=service-notification-secret]' \
+  --entity-type users \
+  --entity-name service-notification \
+  --command-config /etc/kafka/client.properties
+
+
+add permission to admin or users for topic and group
+------------------------------------------------------------------------
+#usually admin has full permissions by default
+kafka-acls \
+  --bootstrap-server kafka:9092 \
+  --add \
+  --allow-principal User:admin \
+  --operation All \
+  --topic '*' \
+  --group '*' \
+  --command-config /etc/kafka/client.properties
+
+kafka-acls \
+ --bootstrap-server kafka:9092 \
+ --add \
+ --allow-principal User:service-notification \
+ --operation READ \
+ --topic topic-notification \
+ --command-config /etc/kafka/client.properties
+
+kafka-acls \
+ --bootstrap-server kafka:9092 \
+ --add \
+ --allow-principal User:service-notification \
+ --operation WRITE \
+ --topic topic-notification \
+ --command-config /etc/kafka/client.properties
+
+kafka-acls \
+ --bootstrap-server kafka:9092 \
+ --add \
+ --allow-principal User:service-notification \
+ --operation READ \
+ --group group-notification \
+ --command-config /etc/kafka/client.properties
+
+
+check users created:
+-------------------------------------------------------
+kafka-configs --bootstrap-server kafka:9092 \
+  --command-config /etc/kafka/client.properties \
+  --describe --entity-type users
+  
+  
+kafka-acls \
+ --bootstrap-server kafka:9092 \
+ --list \
+ --command-config /etc/kafka/client.properties \
+ --principal User:demo-service
+  
+  
+  
+delete user:
+-------------------------------------------------------
+kafka-configs --bootstrap-server kafka:9092 \
+  --command-config /etc/kafka/client.properties \
+  --alter \
+  --delete-config 'SCRAM-SHA-512' \
+  --entity-type users \
+  --entity-name admin
+
+
+
+##########################################################################
+create topic
+##########################################################################
+create topic:
+---------------------------------------------------
+kafka-topics --bootstrap-server kafka:9092 \
+  --command-config /etc/kafka/client.properties \
+  --create \
+  --topic topic-notification \
+  --partitions 2 \
+  --replication-factor 1
+  
+  
+check topic:
+-----------------------------------------------
+kafka-topics --bootstrap-server localhost:9092 --list \
+  --command-config /etc/kafka/client.properties
+  
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --describe \
+  --topic topic-notification \
+  --command-config /etc/kafka/client.properties
+  
+check details of topic:
+-----------------------------------------------------
+kafka-console-consumer \
+  --bootstrap-server localhost:9092 \
+  --topic topic-notification \
+  --from-beginning \
+  --consumer.config /etc/kafka/client.properties
+
+kafka-console-consumer \
+  --bootstrap-server localhost:9092 \
+  --topic topic-notification \
+  --partition 0 \
+  --offset 40 \
+  --consumer.config /etc/kafka/client.properties  
+
+check group (group will be created automatically when consumer assigns group-id):
+---------------------------------------------------
+kafka-consumer-groups \
+  --bootstrap-server localhost:9092 \
+  --list  \
+  --command-config /etc/kafka/client.properties
+
+kafka-consumer-groups \
+  --bootstrap-server localhost:9092 \
+  --describe \
+  --group group-notification \
+  --command-config /etc/kafka/client.properties
+  
+continuing tailing the logs for checking group
+--------------------------------------------------  
+watch -n 1 'kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group group-notification --command-config /etc/kafka/client.properties'  
+  
+delete topic:
+---------------------------------------------------
+kafka-topics --bootstrap-server localhost:9092 \
+  --command-config /etc/kafka/client.properties \
+  --delete \
+  --topic demo-topic

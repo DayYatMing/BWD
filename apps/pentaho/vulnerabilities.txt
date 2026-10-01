@@ -1,0 +1,15 @@
+Required to remove these vulnerabilities:
+After removed, if there is any issue, it requires to fix to continue to use this version.
+Reason because Enterprise Pentaho version is expensive, high chance we don't go for it.
+
+
+Vulnerable software installed: Apache Log4j 1.2.17 (C:\Users\ics-oscyip\Documents\pdi-ce-8.1\data-integration\plugins\kettle5-log4j-plugin\lib\log4j-1.2.17.jar)
+ 
+ 
+Vulnerable software installed: Apache Log4j 1.2.17 (C:\Users\ics-oscyip\Documents\pdi-ce-8.1\data-integration\plugins\pentaho-big-data-plugin\hadoop-configurations\hdp26\lib\client\log4j-1.2.17.jar)
+ 
+ 
+Vulnerable software installed: Apache Log4j 1.2.17 (C:\Users\ics-oscyip\Documents\pdi-ce-8.1\data-integration\plugins\pentaho-big-data-plugin\hadoop-configurations\cdh513\lib\client\log4j-1.2.17.jar)
+ 
+ 
+Vulnerable software installed: Apache Log4j 1.2.14 (C:\Users\ics-oscyip\Documents\pdi-ce-8.1\data-integration\lib\log4j-1.2.14.jar)

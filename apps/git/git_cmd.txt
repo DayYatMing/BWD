@@ -1,0 +1,10 @@
+#relocate an existing branch from an existing repo, to be a new branch/development/master with its own repo
+#cd into an existing repo, ie:nrms, then git push to a new repo, ie:nrmsv2.
+#then put the branch name to be created with ':', and put a new branch name.
+git push https://gitlab.local.bw-digital.com/hawaiki-dev/nrmsv2.git 2.0.0_develop:develop
+
+
+
+
+
+

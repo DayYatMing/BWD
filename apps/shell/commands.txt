@@ -1,0 +1,2 @@
+#to check which directories use the most size.
+du -hsx /var/* | sort -rh | head -n 40

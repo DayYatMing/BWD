@@ -1,0 +1,29 @@
+yarn install
+#to install development tools and dependencies
+
+yarn start
+#to start frontend
+
+./gradlew
+#to run backend locally
+
+./gradlew.bat -Pdev
+#to run backend on dev env
+
+#default port no is 9000
+#to set port 9005 on webpack.dev.js in case other apps occupied port 9000.
+
+#on gitlab, NRMS develop branch is for NRMS v1.
+#whereas, NRMS branch 2.0.0 is for NRMS v2.
+
+
+
+
+
+
+
+
+
+
+
+

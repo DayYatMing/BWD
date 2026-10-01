@@ -1,0 +1,52 @@
+global:
+  scrape_interval: 30s
+  scrape_timeout: 10s
+  evaluation_interval: 30s
+
+scrape_configs:
+
+  - job_name: prometheus
+    static_configs:
+      - targets:
+          - 10.10.1.4:9090
+
+  - job_name: brokerotrs
+    metrics_path: /brokerotrs/actuator/prometheus
+    http_headers:
+      apikey:
+        values:
+          - Abc-0-Def-1-Ghi-2-Jkl-3-Mno-4-Pqr-5-Stu-6-Vwx-7-Y-8-Z-9
+    static_configs:
+      - targets:
+          - 10.10.1.4:9500
+
+  - job_name: brokerciena
+    metrics_path: /brokerciena/actuator/prometheus
+    http_headers:
+      apikey:
+        values:
+          - Abc-0-Def-1-Ghi-2-Jkl-3-Mno-4-Pqr-5-Stu-6-Vwx-7-Y-8-Z-9
+    static_configs:
+      - targets:
+          - 10.10.1.4:9500
+
+  - job_name: brokergrafana
+    metrics_path: /brokergrafana/actuator/prometheus
+    http_headers:
+      apikey:
+        values:
+          - Abc-0-Def-1-Ghi-2-Jkl-3-Mno-4-Pqr-5-Stu-6-Vwx-7-Y-8-Z-9
+    static_configs:
+      - targets:
+          - 10.10.1.4:9500
+
+
+  - job_name: brokerai
+    metrics_path: /brokerai/actuator/prometheus
+    http_headers:
+      apikey:
+        values:
+          - Abc-0-Def-1-Ghi-2-Jkl-3-Mno-4-Pqr-5-Stu-6-Vwx-7-Y-8-Z-9
+    static_configs:
+      - targets:
+          - 10.10.1.4:9500

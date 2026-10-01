@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+
+  kong:
+    image: kong:latest
+    container_name: kong
+
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /kong.yml
+
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+
+    ports:
+      - "9500:8000"   # Kong proxy (your API entry)
+      - "9501:8001"   # Kong admin API
+
+    volumes:
+      - ./kong.yml:/kong.yml
+
+    networks:
+      - prod_network
+
+networks:
+  prod_network:
+    external: true

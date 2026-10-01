@@ -1,0 +1,19 @@
+To start NMS, CMS or any JHipster framework applications that are set up initially by using consul.
+Consul is required to run before these apps can be started.
+
+1. docker pull hashicorp/consul # download hashicorp/consul image
+2. docker run -d --name jhipster-consul -p 8500:8500 hashicorp/consul:latest
+
+
+----------------------------------------------------------------------------------------------------
+or create docker compose file to run it directly:
+
+services:
+  consul:
+    image: hashicorp/consul
+    container_name: jhipster-consul
+    ports:
+      - "8500:8500"
+
+
+

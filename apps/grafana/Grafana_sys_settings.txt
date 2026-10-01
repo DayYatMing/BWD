@@ -1,0 +1,22 @@
+These system settings are defined in grafana.ini or custom.ini (or overridden in ENV variables). To change these you currently need to restart grafana.
+
+in order to use panel html feature, the following needs to be enabled,
+#panels	- default is false or not existed, change to true to enable html editable.
+disable_sanitize_html = false
+
+eg:
+#################################### Panels ###################################
+[panels]
+disable_sanitize_html = true
+
+
+#commands to grafana server:
+systemctl status grafana-server | check status of grafana server
+systemctl restart grafana-server | restart grafana server
+
+
+
+
+
+
+

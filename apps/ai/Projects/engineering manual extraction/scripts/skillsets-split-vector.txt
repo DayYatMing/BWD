@@ -1,0 +1,56 @@
+{
+  "@odata.etag": "\"0x8DDE52822D7865C\"",
+  "name": "skillsets-split-vector",
+  "description": "Handles long documents by splitting, recognizing entities, embedding content, and merging results",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
+      "name": "splitSkill",
+      "description": "Split large text into chunks of ~1000 characters",
+      "context": "/document",
+      "defaultLanguageCode": "en",
+      "textSplitMode": "pages",
+      "maximumPageLength": 1000,
+      "pageOverlapLength": 0,
+      "maximumPagesToTake": 0,
+      "unit": "characters",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "textItems",
+          "targetName": "contentChunks"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.AzureOpenAIEmbeddingSkill",
+      "name": "openAiEmbeddings",
+      "description": "Generate embeddings using Azure OpenAI",
+      "context": "/document/contentChunks/*",
+      "resourceUri": "https://azure-openai-serv-trial.openai.azure.com",
+      "apiKey": "<redacted>",
+      "deploymentId": "text-embedding-3-large",
+      "dimensions": 3072,
+      "modelName": "text-embedding-3-large",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/contentChunks/*",
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "embedding",
+          "targetName": "chunkEmbeddings"
+        }
+      ]
+    }
+  ]
+}

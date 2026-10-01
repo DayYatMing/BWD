@@ -1,0 +1,48 @@
+#debug: true
+server:
+  port: 3300
+spring:
+  application:
+    name: kafka-pub
+  kafka:
+    bootstrap-servers: 10.10.1.4:9092
+    #    properties:
+    #      security.protocol: SASL_PLAINTEXT
+    #      sasl.mechanism: SCRAM-SHA-512
+    #      sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="demo-service" password="demo-secret";
+    #    admin:
+    #      fail-fast: true
+
+    #kafka reconnection
+    properties:
+      reconnect:
+        backoff.ms: 1000
+        backoff.max.ms: 10000
+	  
+	##############################################################################################################################
+	#publisher settings
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      retries: 10
+      acks: all
+      properties:
+        enable.idempotence: true
+        delivery.timeout.ms: 120000
+        request.timeout.ms: 30000
+
+	##############################################################################################################################
+	#consumer settings
+    consumer:
+      group-id: demo-group
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: 'com.bwd.*'
+
+    #scale up consumers or create kafkacon services/instances separately
+    listener:
+      concurrency: 2
+      ack-mode: manual

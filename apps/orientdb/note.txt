@@ -1,0 +1,7 @@
+OrientDB is NoSQL
+- JSON object storage
+
+restart orientdb: 
+visit orientdb VM, then systemctl status orientdb check status, systemctl restart orientdb to restart.
+
+

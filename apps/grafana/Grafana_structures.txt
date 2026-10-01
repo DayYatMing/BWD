@@ -1,0 +1,25 @@
+Grafana Dashboard structures:
+
+Main level:
+- (Company folders ... - basically it's not maintained at the moment, and it's for external customer to use.)
+- Amazon
+- Apple
+- Dropbox
+- HawaikiPortal
+...
+
+- (the ones for DEV to maintain and develop are these:)
+- Hawaiki
+- NOC
+
+
+
+
+
+
+
+
+
+
+
+

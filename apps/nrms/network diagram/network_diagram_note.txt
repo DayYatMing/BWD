@@ -1,0 +1,19 @@
+Network diagram servcies displaying (note the differences):
+
+Usually, one service (eg: DEC-BC0017) has its route and segment to show on network diagram.
+Table pm_db.service has 'masked' column to green color it if the service is not working which automatically is blinking with red color.
+
+There are scenarios that one service may have multiple entries where some entries are not used or stop servicing.
+In order to show those working entires but remove those non-working entries, those non-working entries need to be removed from DB on table pm_db.configuration.
+
+pm_db.service table with 'active' column is set to 0, which mean that this service is totally inactive/removed from network diagram.
+
+
+
+
+
+
+
+
+
+
